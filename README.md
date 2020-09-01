@@ -1,4 +1,4 @@
-# Session ID - Session Title
+# IIS360 - Simplify Development of SAP Fiori Apps with OData v4
 
 ## Description
 
