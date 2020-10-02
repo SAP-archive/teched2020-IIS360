@@ -82,10 +82,6 @@ annotate service.Incidents with @(UI : {
     FieldGroup #IncidentDetails          : {Data : [
     {
         $Type : 'UI.DataField',
-        Value : identifier,
-    },
-    {
-        $Type : 'UI.DataField',
         Value : title
     },
     {
@@ -95,6 +91,10 @@ annotate service.Incidents with @(UI : {
     ]},
 
     FieldGroup #GeneralInformation       : {Data : [
+        {
+        $Type : 'UI.DataField',
+        Value : identifier,
+    },
     {
         $Type : 'UI.DataField',
         Value : priority_code
@@ -123,15 +123,15 @@ annotate service.Incidents with @(UI : {
         Facets : [
             {
                 $Type  : 'UI.ReferenceFacet',
-                Label  : '{i18n>IncidentDetails}',
-                ID     : 'IncidentDetailsFacet',
-                Target : '@UI.FieldGroup#IncidentDetails'
-            },
-            {
-                $Type  : 'UI.ReferenceFacet',
                 Label  : '{i18n>GeneralInformation}',
                 ID     : 'GeneralInformationFacet',
                 Target : '@UI.FieldGroup#GeneralInformation'
+            },
+            {
+                $Type  : 'UI.ReferenceFacet',
+                Label  : '{i18n>IncidentDetails}',
+                ID     : 'IncidentDetailsFacet',
+                Target : '@UI.FieldGroup#IncidentDetails'
             },
 
         //begin of reference facet enhancement
