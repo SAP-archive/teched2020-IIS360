@@ -1,4 +1,4 @@
-id;text;type;startTime;endTime;safetyIncident_ID
+id;text;type;startTime;endTime;incident_ID
 2feec9ec-c192-48c6-8971-e3c4838cb802;Incident Record Review;chevron;2020-06-15T10:00:00.723Z;2020-06-30T10:00:00.723Z;2feec9ec-c192-48c6-8971-e3c4838cb861
 2feec9ec-c192-48c6-8971-e3c4838cb803;Incident Investigation;chevron;2020-06-20T10:00:00.723Z;2020-08-31T10:00:00.723Z;2feec9ec-c192-48c6-8971-e3c4838cb861
 2feec9ec-c192-48c6-8971-e3c4838cb804;Incident Report Generation;chevron;2020-08-31T10:00:00.723Z;2020-09-15T10:00:00.723Z;2feec9ec-c192-48c6-8971-e3c4838cb861

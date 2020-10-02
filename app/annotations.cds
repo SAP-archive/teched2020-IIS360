@@ -1,6 +1,6 @@
 using IncidentService as service from '../srv/incidentservice';
 
-annotate service.SafetyIncidents with @(UI : {
+annotate service.Incidents with @(UI : {
     //basic list report annotations
     //the presentation variant defines a per default ascending sorting for the LR table
     //https://github.com/SAP/odata-vocabularies/blob/master/vocabularies/Common.md#SortOrderType
@@ -171,7 +171,7 @@ annotate service.IncidentFlow with @(UI : {LineItem : [
 },
 {
     $Type : 'UI.DataField',
-    Value : safetyIncident.assignedIndividual.businessPartnerID,
+    Value : incident.assignedIndividual.businessPartnerID,
     Label : '{i18n>CreatedBy}'
 }
 ]});

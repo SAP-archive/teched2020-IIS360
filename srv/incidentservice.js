@@ -13,72 +13,79 @@ const FieldControl = {
   
 module.exports = cds.service.impl(async function (srv) {
     const {
-        SafetyIncidents,
+        Incidents,
         BusinessPartner,
         Individual,
         BusinessPartnerAddress
     } = srv.entities
 
-    //read/edit event hook after read  of entity 'SafetyIncidents'
-    srv.after(["READ", "EDIT"], "SafetyIncidents", setTechnicalFlags);
-    srv.after("READ", "SafetyIncidents", setPriorityCriticality);
-    srv.before("SAVE", "SafetyIncidents", validateSafetyIncident);
+    //read/edit event hook after read  of entity 'Incidents'
+    srv.after(["READ", "EDIT"], "Incidents", setTechnicalFlags);
+    srv.after("READ", "Incidents", setPriorityCriticality);
+    srv.before("SAVE", "Incidents", validateincident);
 
     /**
-     * Set technical flags, used for controlling UI behaviour, on the 'SafetyIncidents' entity
+     * Set technical flags, used
+     for controlling UI behaviour, on the 'Incidents'
+     entity
      *
-     * @param safetyIncidents {SafetyIncidents | SafetyIncidents[]}  (Array of) SafetyIncidents
+     * @param Incidents {
+         Incidents | Incidents[]
+     }(Array of ) Incidents
      */
-    function setTechnicalFlags(safetyIncidents) {
+    function setTechnicalFlags(Incidents) {
 
-        function _setFlags(safetyIncident) {
-            safetyIncident.isDraft = !safetyIncident.IsActiveEntity;
+        function _setFlags(incident) {
+            incident.isDraft = !incident.IsActiveEntity;
             // field control on the 'identifier' property
-            if (safetyIncident.IsActiveEntity) {
-                safetyIncident.identifierFieldControl = FieldControl.Optional;
-            } else if (safetyIncident.HasActiveEntity) {
-                safetyIncident.identifierFieldControl = FieldControl.ReadOnly;
+            if (incident.IsActiveEntity) {
+                incident.identifierFieldControl = FieldControl.Optional;
+            } else if (incident.HasActiveEntity) {
+                incident.identifierFieldControl = FieldControl.ReadOnly;
             } else {
-                safetyIncident.identifierFieldControl = FieldControl.Mandatory;
+                incident.identifierFieldControl = FieldControl.Mandatory;
             }
         }
 
-        if (Array.isArray(safetyIncidents)) {
-            safetyIncidents.forEach(_setFlags);
+        if (Array.isArray(Incidents)) {
+            Incidents.forEach(_setFlags);
         } else {
-            _setFlags(safetyIncidents);
+            _setFlags(Incidents);
         }
     };
 
     /**
      * Set priority criticality used for display in LR table
      *
-     * @param safetyIncidents {SafetyIncidents | SafetyIncidents[]}  (Array of) SafetyIncidents
+     * @param Incidents {
+         Incidents | Incidents[]
+     }(Array of ) Incidents
      */
-    function setPriorityCriticality(safetyIncidents) {
+    function setPriorityCriticality(Incidents) {
 
-        function _setCriticality(safetyIncident) {
-            if (safetyIncident.priority) {
-                safetyIncident.priority.criticality = parseInt(safetyIncident.priority.code);
+        function _setCriticality(incident) {
+            if (incident.priority) {
+                incident.priority.criticality = parseInt(incident.priority.code);
             }
         }
 
-        if (Array.isArray(safetyIncidents)) {
-            safetyIncidents.forEach(_setCriticality);
+        if (Array.isArray(Incidents)) {
+            Incidents.forEach(_setCriticality);
         } else {
-            _setCriticality(safetyIncidents);
+            _setCriticality(Incidents);
         }
     }
 
     /**
-     * Validate a 'SafetyIncident' entry
+     * Validate a 'incident'
+     entry
      *
      * @param req   Request
      */
-    function validateSafetyIncident(req) {
+    function validateincident(req) {
         // check mandatory properties
         if (!req.data.identifier) {
-            req.error(400, "Enter a Safety Incident Identifier", "in/identifier");
+            req.error(400, "Enter an Incident Identifier", "in/identifier");
         }
     }
 
@@ -93,7 +100,7 @@ module.exports = cds.service.impl(async function (srv) {
     //     !req.query.cqn.where || (req.query.cqn.where && req.query.cqn.where[0] != "exists") ? extSrv.tx(req).run(req.query) : console.log('skipped')
     // )    
 
-    // this.after('READ', SafetyIncidents, async (response, context) => {
+    // this.after('READ', Incidents, async (response, context) => {
     //     return Promise.all(
     //         //check on expanded entities in query response
     //         response.filter(response => response.assignedIndividual && (response.assignedIndividual.businessPartner || response.assignedIndividual.businessPartnerAddress))

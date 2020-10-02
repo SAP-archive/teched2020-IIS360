@@ -3,7 +3,7 @@ using scp.cloud from '../db/schema';
 service IncidentService {
 
     @odata.draft.enabled
-    entity SafetyIncidents         as projection on cloud.SafetyIncidents;
+    entity Incidents               as projection on cloud.Incidents;
 
     @readonly
     entity IncidentFlow            as projection on cloud.IncidentFlow;

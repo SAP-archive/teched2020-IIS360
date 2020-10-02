@@ -15,7 +15,7 @@ using {
 
 type Url : String;
 
-entity SafetyIncidents : managed, identified {
+entity Incidents : managed, identified {
   title                   : String(50)                        @title : '{i18n>Title}';
   category                : Association to one Category       @title : '{i18n>Category}';
   priority                : Association to one Priority       @title : '{i18n>Priority}';
@@ -23,9 +23,9 @@ entity SafetyIncidents : managed, identified {
   description             : String(1000)                      @title : '{i18n>IncidentDescription}';
   assignedIndividual      : Association to one Individual;
   incidentFlow            : Association to many IncidentFlow
-                              on incidentFlow.safetyIncident = $self;
+                              on incidentFlow.incident = $self;
   incidentProcessTimeline : Association to many IncidentProcessTimeline
-                              on incidentProcessTimeline.safetyIncident = $self;
+                              on incidentProcessTimeline.incident = $self;
   isDraft                 : TechnicalBooleanFlag not null default false;
   identifierFieldControl  : TechnicalFieldControlFlag not null default 7; // 7 = #Mandatory;
 }
@@ -38,7 +38,7 @@ entity IncidentFlow : managed {
       stepStartDate  : Date      @title : '{i18n>StepStartDate}';
       stepEndDate    : Date      @title : '{i18n>StepEndDate}';
       @assert.integrity :                 false
-      safetyIncident : Association to SafetyIncidents;
+      incident      : Association to Incidents;
 }
 
 entity IncidentProcessTimeline : managed {
@@ -48,7 +48,7 @@ entity IncidentProcessTimeline : managed {
       startTime      : DateTime;
       endTime        : DateTime;
       @assert.integrity : false
-      safetyIncident : Association to SafetyIncidents;
+      incident  : Association to Incidents;
 }
 
 entity Individual : managed {
@@ -56,8 +56,8 @@ entity Individual : managed {
       businessPartnerID : String;
       addressID         : String @UI.Hidden;
       @assert.integrity : false
-      safetyIncidents   : Association to many SafetyIncidents
-                            on safetyIncidents.assignedIndividual = $self;
+      Incidents         : Association to many Incidents
+                            on Incidents.assignedIndividual = $self;
 }
 
 entity IncidentsCodeList : common.CodeList {

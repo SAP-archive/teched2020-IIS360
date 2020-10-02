@@ -48,13 +48,13 @@ type Criticality : Integer @(
     Core.Computed
 );
 
-annotate service.SafetyIncidents with {
+annotate service.Incidents with {
     ID @UI.Hidden: true;
     assignedIndividual @UI.Hidden : true;
     identifier @(Common.FieldControl: identifierFieldControl);
 };
 
-annotate service.SafetyIncidents with {
+annotate service.Incidents with {
     incidentStatus @Common : {
         Text            : incidentStatus.name,
         TextArrangement : #TextOnly,
