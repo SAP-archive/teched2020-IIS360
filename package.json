@@ -10,6 +10,7 @@
     "express": "^4"
   },
   "devDependencies": {
+    "@sap/ux-specification": "^1.78.10-20201005080347",
     "sqlite3": "^5"
   },
   "scripts": {
@@ -31,5 +32,8 @@
     "odata": {
       "version": "v4"
     }
-  }
+  },
+  "sapux": [
+    "app/incidents"
+  ]
 }
