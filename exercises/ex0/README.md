@@ -59,14 +59,15 @@ Click this tool icon to access the SAP Business Application Studio<br>
 <br>4. In the terminal window, type the following commands and confirm with return:
 <br>4a. cd projects
 <br>4b. git clone https://github.com/SAP-samples/teched2020-IIS360.git (you can paste the copied link here)
-<br>4c. cd teched2020-IIS30
+<br>4c. cd teched2020-IIS360
 <br>4d. npm install (this installs all node modules as defined in the projects package.json)
 <br>4e. cds w (this compiles the service and runs it in watch mode)<br>
 <br>5. Click button 'Expose and Open(1) on the appearing dialog<br>
 
 ![expose button](../ex0/images/00_00_0110.png)
 
-<br>6. Enter 'preview' in the input field (1). Confirm with 'Enter'.
+<br>6. You can now provide an alias for the exposed port.
+<br>Enter 'preview' in the input field (1). Confirm with 'Enter'.
 
 ![SAP Business Application Studio - Google Chrome](../ex0/images/00_00_0120.png)
 
