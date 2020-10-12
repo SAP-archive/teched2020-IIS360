@@ -1,44 +1,110 @@
-# Exercise 1 - Exercise 1 Description
+# Exercise 1 - Generating a Fiori elements app
 
-In this exercise, we will create...
+In this exercise, we will create an SAP Fiori elements application based on the given CAP service.
+For this we will make usage of the SAP Fiori Tools Application Generatzor
+We will consume our local CAP service and use the List Report Object Page floorplan.
 
-## Exercise 1.1 Sub Exercise 1 Description
+(1) In SAP Business Application Studio, invoke the Command Palette 
+(View -\>Command Palette or ctrl+shift+p) and choose
+ ![](./images/image2.png).
 
-After completing these steps you will have created...
+![](./images/image1.png)
 
-1. Click here.
-<br>![](/exercises/ex1/images/01_01_0010.png)
+(2) Click on tile \'SAP Fiori elements application\'.
 
-2.	Insert this line of code.
-```abap
-response->set_text( |Hello World! | ). 
-```
+(3) Click ![](./images/image4.png).
+![](./images/image3.png)
+
+(4) In the template selection, click on tile \'List Report Object Page\'
+
+(5) Click ![](./images/image6.png).
+
+![](./images/image5.png)
+
+(6) In step \'Datasource and Service Selection\', select
+
+![](./images/image8.png).
+![](./images/image7.png)
+
+(7) Click the \'Browse for folder\' icon to select your CAP project folder.
+
+![](./images/image9.png)
+
+(8) Open the folder hierarchy path \'home-\>user-\>projects\'. Click
+![](./images/image11.png).
+
+(9) Click ![](./images/image12.png).
+
+![](./images/image10.png)
+
+(10) In the OData service drop down, select
+
+![](./images/image14.png).
+
+(11) Click ![](./images/image6.png).
+![](./images/image13.png)
+
+(12) In the Entity Selection drop down, select as main entity:
+![](./images/image16.png).
+
+The properties of this entity will be used for display of data on List
+Report, showing data from the entity collection.
+Leave drop down for navigation entity as \'none\' since we want to show
+data of a single instance of the main entity on the object page, too.
+
+(13) Click ![](./images/image6.png).
+![](./images/image15.png)
+
+(14) Enter as module name \'incidents\' (this has to match exactly for
+subsequent exercises to work properly)
+
+(15) Enter as App Title \'My Incidents\'
+
+(16) Enter as namespace \'sap.fe.demo\' (this has to match exactly for
+subsequent exercises to work properly)
+![](./images/image17.png)
 
 
+(17) Click ![](./images/image19.png)to configure advanced options.
 
-## Exercise 1.2 Sub Exercise 2 Description
+(18) Click ![](./images/image20.png)in order to skip generation of an
+additional associated annotation.cds file.
+The CAP service already provides a basic set of UI annotations in a
+corresponding file in app-\>annotation.cds.
 
-After completing these steps you will have...
+![](./images/image18.png)
 
-1.	Enter this code.
-```abap
-DATA(lt_params) = request->get_form_fields(  ).
-READ TABLE lt_params REFERENCE INTO DATA(lr_params) WITH KEY name = 'cmd'.
-  IF sy-subrc <> 0.
-    response->set_status( i_code = 400
-                     i_reason = 'Bad request').
-    RETURN.
-  ENDIF.
+(19) Click ![](./images/image21.png).
 
-```
+## Exercise 1.2 Testing the app
 
-2.	Click here.
-<br>![](/exercises/ex1/images/01_02_0010.png)
+After completing these steps you will have started and tested the generated app.
+
+(20) Switch to the service preview browser tab and refresh it. An
+additional path for the web app is now served. Click
+![](./images/image23.png).
+
+![](./images/image22.png)
+
+(21) Click on app tile **My Incidents .**
+
+![](./images/image24.png)
+
+(22) Click ![](./images/image26.png).
+
+![](./images/image25.png)
+
+(23) Click on a list item to navigate to the object page.
+
+![](./images/image27.png)
+
+
+![](./images/image28.png)
 
 
 ## Summary
 
-You've now ...
+You've now successfully generated the Fiori elements app.
 
 Continue to - [Exercise 2 - Exercise 2 Description](../ex2/README.md)
 
