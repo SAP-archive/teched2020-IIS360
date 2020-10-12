@@ -65,9 +65,9 @@ subsequent exercises to work properly)
 ![](./images/image17.png)
 
 
-(17) Click ![](./images/image19.png)to configure advanced options.
+(17) Click ![](./images/image19.png) in order to configure advanced options.
 
-(18) Click ![](./images/image20.png)in order to skip generation of an
+(18) Click ![](./images/image20.png) in order to skip generation of an
 additional associated annotation.cds file.
 The CAP service already provides a basic set of UI annotations in a
 corresponding file in app-\>annotation.cds.
