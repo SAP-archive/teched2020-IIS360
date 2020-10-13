@@ -76,7 +76,7 @@ corresponding file in app-\>annotation.cds.
 ![](./images/image18.png)
 
 
-## Exercise 1.2 Testing the app
+## Exercise 1.2 Testing the App
 
 After completing these steps you will have started and tested the generated app.
 

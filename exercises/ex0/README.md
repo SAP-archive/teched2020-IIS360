@@ -1,4 +1,4 @@
-# Setting up your development environment
+# Getting Started - Setting up your development environment
 
 Welcome to the workshop 'Creating Simple Fiori elements apps with OData V4'.
 <br>This workshop will guide you step-by-step through the process of creating a Fiori elements floorplans for OData V4 app.
