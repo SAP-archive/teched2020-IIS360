@@ -75,7 +75,9 @@ Click this tool icon to access the SAP Business Application Studio<br>
 
 ![metadata](../ex0/images/00_00_0130.png)<br>
 
-## Reopen the exposed port again by applying the following steps
+## Reopen the exposed port
+
+If you closed the preview browser tab, you can reopen it by applying the following steps.
 
 (1) Click ![](images/fieldicon01.png) .
 
