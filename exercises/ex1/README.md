@@ -24,6 +24,7 @@ We will consume our local CAP service and use the List Report Object Page floorp
 ![](./images/image5.png)
 
 (6) In step **Datasource and Service Selection**, select ![](./images/image8.png).
+
 ![](./images/image7.png)
 
 (7) Click the **Browse for folder** icon to select your CAP project folder.
@@ -71,17 +72,20 @@ additional associated annotation.cds file.<br>
 The CAP service already provides a basic set of UI annotations in a
 corresponding file in app-\>annotation.cds.
 
-(19) Click ![](./images/image21.png).
+(19) Click ![](./images/image21.png).<br>
 
 ![](./images/image18.png)
 
+This will start the app generation. When done, you can review the generated artifacts in the Explorer View of SAP Business Application Studio.<br>
+![](./images/image29.png)
 
 ## Exercise 1.2 Testing the App
 
 After completing these steps you will have started and tested the generated app.
 
 (20) Switch to the service preview browser tab and refresh it.<br>
-An additional path for the web app is now served.
+An additional path for the web app is now served.<br>
+If your preview browser tab had been closed, you can relaunch it by following the steps as described [here](../ex0#reopen-the-exposed-port-again-by-applying-the-following-steps).
 
 Click ![](./images/image23.png).
 
