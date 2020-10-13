@@ -84,10 +84,9 @@ This will start the app generation. When done, you can review the generated arti
 After completing these steps you will have started and tested the generated app.
 
 (20) Switch to the service preview browser tab and refresh it.<br>
-An additional path for the web app is now served.<br>
-If your preview browser tab had been closed, you can relaunch it by following the steps 'Reopen the exposed ports' as described [here](../ex0#reopen-the-exposed-port).
+Click on the served path.<br>
+If your preview browser tab had been closed, you can relaunch it by following the steps 'Reopen the exposed ports' as described [here](../ex0#reopen-the-exposed-port).<br>
 
-Click ![](./images/image23.png).
 
 ![](./images/image22.png)
 
