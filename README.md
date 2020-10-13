@@ -16,8 +16,8 @@ The requirements to follow the exercises in this repository are...
 
 - [Getting Started - Setting up your development environment](exercises/ex0/)
 - [Exercise 1 - Generating a Fiori elements app](exercises/ex1/)
-    - [Exercise 1.1 - Using the UI Generator](exercises/ex1#exercise-11-sub-exercise-1-description)
-    - [Exercise 1.2 - Testing the App](exercises/ex1#exercise-12-sub-exercise-2-description)
+    - [Exercise 1.1 - Using the UI Generator](exercises/ex1#exercise-11---using-the-ui-generator)
+    - [Exercise 1.2 - Testing the App](exercises/ex1#exercise-12-testing-the-app)
 - [Exercise 2 - Second Exercise Description](exercises/ex2/)
     - [Exercise 2.1 - Exercise 2 Sub Exercise 1 Description](exercises/ex2#exercise-21-sub-exercise-1-description)
     - [Exercise 2.2 - Exercise 2 Sub Exercise 2 Description](exercises/ex2#exercise-22-sub-exercise-2-description)
