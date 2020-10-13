@@ -17,7 +17,7 @@ We will consume our local CAP service and use the List Report Object Page floorp
 
 ![](./images/image3.png)
 
-(4) In the template selection, click on tile  d**List Report Object Page**.
+(4) In the template selection, click on tile  **List Report Object Page**.
 
 (5) Click ![](./images/image6.png).
 
@@ -48,7 +48,7 @@ Click ![](./images/image11.png).
 (12) In the Entity Selection drop down, select **Incidents** as main entity.<br>
 The properties of this entity will be used for display of data on List
 Report, showing data from the entity collection.<br>
-Leave drop down for navigation entity to **none** since we want to show
+Leave value for drop down **Navigation Entity** to **none** since we want to show
 data of a single instance of the main entity on the object page, too.
 
 (13) Click ![](./images/image6.png).
@@ -56,16 +56,16 @@ data of a single instance of the main entity on the object page, too.
 ![](./images/image15.png)
 
 (14) Enter as module name **incidents** (module name has to match exactly for
-subsequent exercises to work properly)
+some of the subsequent exercises to work properly)
 
-(15) Enter as App Title **My Incidents**
+(15) Choose an App Title, for example **My Incidents**
 
 (16) Enter as namespace **sap.fe.demo** (namespace has to match exactly for
-subsequent exercises to work properly)
+some of the subsequent exercises to work properly)
 
 ![](./images/image17.png)
 
-(17) Select **Yes in order to configure advanced options.
+(17) Select **Yes** in order to configure advanced options.
 
 (18) Select **Yes** in order to skip generation of an
 additional associated annotation.cds file.<br>
@@ -76,7 +76,8 @@ corresponding file in app-\>annotation.cds.
 
 ![](./images/image18.png)
 
-This will start the app generation. When done, you can review the generated artifacts in the Explorer View of SAP Business Application Studio.<br>
+This will start the app generation. When done, you can review the generated artifacts in the Explorer View of SAP Business Application Studio.
+
 ![](./images/image29.png)
 
 ## Exercise 1.2 Testing the App
