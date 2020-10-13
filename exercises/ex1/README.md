@@ -1,8 +1,10 @@
 # Exercise 1 - Generating a Fiori elements app
 
 In this exercise, we will create an SAP Fiori elements application based on the given CAP service.
-For this we will make usage of the SAP Fiori Tools Application Generatzor
+For this we will make usage of the SAP Fiori Tools Application Generator.<br>
 We will consume our local CAP service and use the List Report Object Page floorplan.
+
+## Exercise 1.1 - Using the UI Generator
 
 (1) In SAP Business Application Studio, invoke the Command Palette 
 (View -\>Command Palette or ctrl+shift+p) and choose
@@ -10,79 +12,78 @@ We will consume our local CAP service and use the List Report Object Page floorp
 
 ![](./images/image1.png)
 
-(2) Click on tile \'SAP Fiori elements application\'.
-
+(2) Click on tile **SAP Fiori elements application**.<br>
 (3) Click ![](./images/image4.png).
+
 ![](./images/image3.png)
 
-(4) In the template selection, click on tile \'List Report Object Page\'
+(4) In the template selection, click on tile  d**List Report Object Page**.
 
 (5) Click ![](./images/image6.png).
 
 ![](./images/image5.png)
 
-(6) In step \'Datasource and Service Selection\', select
-
-![](./images/image8.png).
+(6) In step **Datasource and Service Selection**, select ![](./images/image8.png).
 ![](./images/image7.png)
 
-(7) Click the \'Browse for folder\' icon to select your CAP project folder.
+(7) Click the **Browse for folder** icon to select your CAP project folder.
 
 ![](./images/image9.png)
 
-(8) Open the folder hierarchy path \'home-\>user-\>projects\'. Click
-![](./images/image11.png).
+(8) Open the folder hierarchy path **home-\>user-\>projects**.
+
+Click ![](./images/image11.png).
 
 (9) Click ![](./images/image12.png).
 
 ![](./images/image10.png)
 
-(10) In the OData service drop down, select
-
-![](./images/image14.png).
+(10) In the OData service drop down, select ![](./images/image14.png)
 
 (11) Click ![](./images/image6.png).
+
 ![](./images/image13.png)
 
-(12) In the Entity Selection drop down, select as main entity:
-![](./images/image16.png).
-
+(12) In the Entity Selection drop down, select **Incidents** as main entity.<br>
 The properties of this entity will be used for display of data on List
-Report, showing data from the entity collection.
-Leave drop down for navigation entity as \'none\' since we want to show
+Report, showing data from the entity collection.<br>
+Leave drop down for navigation entity to **none** since we want to show
 data of a single instance of the main entity on the object page, too.
 
 (13) Click ![](./images/image6.png).
+
 ![](./images/image15.png)
 
-(14) Enter as module name \'incidents\' (this has to match exactly for
+(14) Enter as module name **incidents** (module name has to match exactly for
 subsequent exercises to work properly)
 
-(15) Enter as App Title \'My Incidents\'
+(15) Enter as App Title **My Incidents**
 
-(16) Enter as namespace \'sap.fe.demo\' (this has to match exactly for
+(16) Enter as namespace **sap.fe.demo** (namespace has to match exactly for
 subsequent exercises to work properly)
+
 ![](./images/image17.png)
 
+(17) Select **Yes in order to configure advanced options.
 
-(17) Click ![](./images/image19.png) in order to configure advanced options.
-
-(18) Click ![](./images/image20.png) in order to skip generation of an
-additional associated annotation.cds file.
+(18) Select **Yes** in order to skip generation of an
+additional associated annotation.cds file.<br>
 The CAP service already provides a basic set of UI annotations in a
 corresponding file in app-\>annotation.cds.
 
+(19) Click ![](./images/image21.png).
+
 ![](./images/image18.png)
 
-(19) Click ![](./images/image21.png).
 
 ## Exercise 1.2 Testing the app
 
 After completing these steps you will have started and tested the generated app.
 
-(20) Switch to the service preview browser tab and refresh it. An
-additional path for the web app is now served. Click
-![](./images/image23.png).
+(20) Switch to the service preview browser tab and refresh it.<br>
+An additional path for the web app is now served.
+
+Click ![](./images/image23.png).
 
 ![](./images/image22.png)
 
@@ -90,7 +91,8 @@ additional path for the web app is now served. Click
 
 ![](./images/image24.png)
 
-(22) Click ![](./images/image26.png).
+(22) Click ![](./images/image26.png) to trigger selection.<br>
+You can use the selection fields in order to set a filter.<br>
 
 ![](./images/image25.png)
 
@@ -99,12 +101,17 @@ additional path for the web app is now served. Click
 ![](./images/image27.png)
 
 
-![](./images/image28.png)
+On the object page, you can click **Edit** which creates an edit draft and sets the UI to edit mode.<br>
+Changing input field values will automatically update the draft when input field focus is changed, or when you navigate back to the list report.<br>
+While in edit mode, the List Report shows a draft indicator in the corresponding line item.
+The draft is saved back to the active instance by pressing **Save** on the bottom of the object page.<br>
+You can create a new draft on the List Report by clicking button **Create**.
 
+![](./images/image28.png)
 
 ## Summary
 
-You've now successfully generated the Fiori elements app.
+You've now successfully generated and tested the Fiori elements app.
 
-Continue to - [Exercise 2 - Exercise 2 Description](../ex2/README.md)
+Continue to - [Exercise 2 - Extending the app with the Page Map](../ex2/README.md)
 
