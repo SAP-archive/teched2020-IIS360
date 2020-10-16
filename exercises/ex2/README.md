@@ -1,7 +1,7 @@
 # Exercise 2 - Switch to Flexible Column Layout
 
-In this exercise, we will switch the page layout to flexible column layout by making usage of the SAP Fiori Tool Page map.
-Flexible column layout splits the screen into several areas, allowing faster navigation between the list report line items.
+In this exercise, we will switch the page layout to flexible column layout by making usage of the SAP Fiori Tool Page Map.<br>
+Flexible column layout splits the screen into several areas, allowing faster navigation between the List Report line items.
 
 (1) In BAS Explorer view, right-clicking on ![](./images/image2.png)
 opens a shortcut menu.<br>
@@ -55,4 +55,4 @@ The List Report column is closed, and the object page is shown full screen.
 
 You've now enabled flexible column layout (FCL) for the app. FCL is supported for up to 2 navigation levels, splitting the screen into three areas.
 
-Continue to - [Exercise 3 - Excercise 3 ](../ex3/README.md)
+Continue to - [Exercise 3 - Configuring the app ](../ex3/README.md)
