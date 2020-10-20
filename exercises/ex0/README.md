@@ -30,48 +30,48 @@ In your subaccount, choose 'Subscriptions' in the left-hand navigation.
 
 ### Access SAP Business Application Studio
 
-Click this tool icon to access the SAP Business Application Studio<br>
+Click on the Quick Tool Access icon **SAP Business Application Studio**.<br>
 <br>![Welcome SCP Trial](../ex0/images/00_00_0020.png)<br>
 
 ## Create Dev Space
 
-<br>1. Click here to create your dev space.<br>
+<br>Click on button **Create Dev Space**.<br>
 <br>![Create Dev Space](../ex0/images/00_00_0030.png)<br>
 
-<br>2. Enter a name for your dev space and select profile 'SAP Fiori'<br>
+<br>Enter a name for your dev space and select profile **SAP Fiori**.<br>
 <br>![Select Profile](../ex0/images/00_00_0040.png)<br>
 
-<br>3. In the lower right corner press button 'Create Dev Space'<br>
+<br>In the lower right corner of the page press button **Create Dev Space**.<br>
 <br>![confirm](../ex0/images/00_00_0050.png)<br>
 
-<br>4. Once your dev space has status running, click on the dev space name to access it<br>
+<br>Once your dev space has status running, click on the development space name to open it.<br>
 <br>![enter dev space](../ex0/images/00_00_0060.png)<br>
 
 ## Get the sample scenario
 
-<br>1. Access the Github Repository via [this link](https://github.com/SAP-samples/teched2020-IIS360)
-<br>2. Click button code, then click here (1) to copy the git clone link<br>
+<br>Access the Github Repository via [this link](https://github.com/SAP-samples/teched2020-IIS360)
+<br>Click on button **Code** (1), then click on icon (2) to copy the git clone link<br>
 
 ![copy link](../ex0/images/00_00_0070.png)
 
-<br>3. Open a new terminal via the header menu (1)
+<br>(3) Open a new terminal via the header menu.
 <br>![new terminal](../ex0/images/00_00_0080.png)<br>
-<br>4. In the terminal window, type the following commands and confirm with return:
-<br>4a. cd projects
-<br>4b. git clone https://github.com/SAP-samples/teched2020-IIS360.git (you can paste the copied link here)
-<br>4c. cd teched2020-IIS360
-<br>4d. npm install (this installs all node modules as defined in the projects package.json)
-<br>4e. cds w (this compiles the service and runs it in watch mode)<br>
-<br>5. Click button 'Expose and Open(1) on the appearing dialog<br>
+<br> In the terminal window, type the following commands and confirm with return:
+<br>- cd projects
+<br>- git clone https://github.com/SAP-samples/teched2020-IIS360.git (you can paste the copied link here)
+<br>- cd teched2020-IIS360
+<br>- npm install (this installs all node modules as defined in the projects package.json)
+<br>- cds w (this compiles the service and runs it in watch mode)<br>
+<br>(4) Click button **Expose and Open** on the appearing dialog<br>
 
 ![expose button](../ex0/images/00_00_0110.png)
 
-<br>6. You can now provide an alias for the exposed port.
-<br>Enter 'preview' in the input field (1). Confirm with 'Enter'.
+<br>You can now provide an alias for the exposed port.
+<br>(5)Enter 'preview' in the input field. Confirm with 'Enter'.
 
 ![SAP Business Application Studio - Google Chrome](../ex0/images/00_00_0120.png)
 
-<br>7. A browser is opened. Click the $metadata link (1)
+<br>A browser is opened. Click the $metadata link (6)
 
 ![metadata](../ex0/images/00_00_0130.png)<br>
 
@@ -79,22 +79,21 @@ Click this tool icon to access the SAP Business Application Studio<br>
 
 If you closed the preview browser tab, you can reopen it by applying the following steps.
 
-(1) Click ![](images/fieldicon01.png) .
-
-![SAP Business Application Studio - Google Chrome](images/img_038.png)
-
-(1) Click ![](images/fieldicon02.png) .
+(7) Click **View -> Find Command...**.
 
 ![SAP Business Application Studio - Google Chrome](images/img_039.png)
 
-(1) Click ![](images/fieldicon03.png) .
+(8) Enter **port** in the dialogs input field to filter the available commands.
+
+![SAP Business Application Studio - Google Chrome](images/img_039a.png)<br>
+
+(9) Select ![](images/fieldicon03.png) .
 
 ![SAP Business Application Studio - Google Chrome](images/img_040.png)<br>
 
-(1) Click ![](images/fieldicon04.png) .
+(10) A list with exposed ports is shown. Selecting one opens up a new browser tab.
 
 ![SAP Business Application Studio - Google Chrome](images/img_041.png)<br>
-
 
 ## Summary
 
