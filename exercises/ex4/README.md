@@ -1,40 +1,68 @@
 # Exercise 4 - Adding a Custom Page
 
-In this exercise, we will create...
+In this exercise, we will add a custom page to the app.
 
-## Exercise 4.1 Sub Exercise 1 Description
+## Exercise 4.1 Copy over sample custom page
 
-After completing these steps you will have created...
+With the Sap Fiori Tool **Page Map**, you can add additional object pages and custom pages to your app.<br>
+For custom pages, you have the option of having new custom view controller artifacts generated,<br>
+or, as we will do in this exercise, integrate an existing custom view in the navigation flow.<br>
+For this, we will copy the sample artifacts to the apps webapp folder.
 
-1. Click here.
-<br>![](/exercises/ex2/images/02_01_0010.png)
+(1) In the project explorer, expand folder paths **app/incidents** and **app/test-resources**.<br>
+In folder **app/test-resources**, click and hold folder ![](./images/image2.png).
 
-2.	Insert this line of code.
-```abap
-response->set_text( |Hello ABAP World! | ). 
-```
+(2) Drag & Drop the folder over to **app/incidents/webapp**.<br>
+Alternatively, you can use the context menu for copy and paste of the folder.
 
-## Exercise 4.2 Sub Exercise 2 Description
+![](./images/image1.png)
 
-After completing these steps you will have...
+Open the page map (via Context Menu on folder **app** or via **View -> Command Palette...**)<br>
+(3) Click on icon **Add New Page**.
+![](./images/image4.png)
 
-1.	Enter this code.
-```abap
-DATA(lt_params) = request->get_form_fields(  ).
-READ TABLE lt_params REFERENCE INTO DATA(lr_params) WITH KEY name = 'cmd'.
-  IF sy-subrc = 0.
-    response->set_status( i_code = 200
-                     i_reason = 'Everything is fine').
-    RETURN.
-  ENDIF.
+(4) Open the dropdown list **Select Page Type**.
 
-```
+(5) Select entry ![](./images/image9.png).
+![](./images/image8.png)
 
-2.	Click here.
-<br>![](/exercises/ex2/images/02_02_0010.png)
+(6) We want to navigate to the custom page from table **Incident Flow** shown on the object page.<br>
+ Open the dropdown list **Navigation** to select the corresponding navigation property.
+![](./images/image10.png)
+
+(7) Select entry ![](./images/image13.png).
+![](./images/image12.png)
+
+(8) As we want to use the prepared sample custom view, select radio button **Use Existing View**.
+![](./images/image14.png)
+
+(9) In dropdown **View Name**, the custom view **ProcessFlow** is automatically preselected.
+![](./images/image16.png)
+
+(10) Click button ![](./images/image19.png).
+![](./images/image18.png)
+
+
+(11) A success message toast ![](./images/image21.png) is shown.<br>
+(12) The page map now shows an additional page node below the object
+page.
+![](./images/image20.png)
+
+(13) Switch to the preview browser tab and refresh.<br>
+Click on a list item in table **Incident Process FLow**.
+![](./images/image22.png)
+
+(14) The custom page is opened to the right.<br>
+To expand the view, click on  icon **Expand the last column** ![](./images/image24.png).
+![](./images/image23.png)
+
+The right page column is expanded. <br>
+(15) The custom page title shows the process step title from the selected item of table Incident Process Flow via context model binding.<br>
+(16) As the object page, the custom page offers the expand/collapse buttons for the flexible column layout.
+![](./images/image25.png)
 
 ## Summary
 
-You've now ...
+You've now successfully added a custom page by using the Page Map.
 
 Continue to - [Exercise 5 - Adding a Custom Section ](../ex5/README.md)
