@@ -2,7 +2,7 @@
 
 In this exercise, we will configure the apps behaviour by making usage of the Fiori page map tool.
 
-## Exercise 2.1 Data load during start of the app
+## Exercise 3.1 Enable data load during start of the app
 
 When starting the app, per default the user has to press the
 **Go** button in order to trigger the selection.<br>
@@ -34,7 +34,7 @@ Refresh the preview browser, then navigate back to the Fiori launch
 page.
 Data will now be immediately loaded when starting the app.<br>
 
-## Exercise 2.2 Enable control level variant managment
+## Exercise 3.2 Enable control level variant managment
 
 The List Report pages offers per default page variant managment.<br>
 With it, all personalizations of visible selection fields and table columns can be
@@ -50,7 +50,7 @@ Refresh the preview browser tab. You now can manage filter (5) and table variant
 
 ![](./images/image9.png)
 
-## Exercise 2.3 Configure Editable Object Page Header
+## Exercise 3.3 Configure Editable Object Page Header
 
 When in edit mode, header fields are per default shown as editable
 input fields.<br>This might not be wanted in case these fields are
@@ -92,7 +92,7 @@ In the object page, click ![](./images/image20.png)
 (15) Click ![](./images/image22.png)to switch back to display mode.
 
 ![](./images/image21.png)
-## Exercise 2.4 Tab based section layout
+## Exercise 3.4 Tab based section layout
 
 Per default, all the sections in the object page are displayed one
 below the other.

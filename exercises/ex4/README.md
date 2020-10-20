@@ -17,6 +17,8 @@ Alternatively, you can use the context menu for copy and paste of the folder.
 
 ![](./images/image1.png)
 
+## Exercise 4.2 Add Custom Page via Page Map
+
 Open the page map (via Context Menu on folder **app** or via **View -> Command Palette...**)<br>
 (3) Click on icon **Add New Page**.
 ![](./images/image4.png)
@@ -42,11 +44,12 @@ Open the page map (via Context Menu on folder **app** or via **View -> Command P
 (10) Click button ![](./images/image19.png).
 ![](./images/image18.png)
 
-
 (11) A success message toast ![](./images/image21.png) is shown.<br>
 (12) The page map now shows an additional page node below the object
 page.
 ![](./images/image20.png)
+
+## Exercise 4.3 Custom Page: Testing the app
 
 (13) Switch to the preview browser tab and refresh.<br>
 Click on a list item in table **Incident Process FLow**.

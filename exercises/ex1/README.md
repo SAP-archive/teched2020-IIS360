@@ -4,7 +4,7 @@ In this exercise, we will create an SAP Fiori elements application based on the 
 For this we will make usage of the SAP Fiori Tools Application Generator.<br>
 We will consume our local CAP service and use the List Report Object Page floorplan.
 
-## Exercise 1.1 - Using the UI Generator
+## Exercise 1.1 Using the UI Generator
 
 (1) In SAP Business Application Studio, invoke the Command Palette 
 (View -\>Command Palette or ctrl+shift+p) and choose
@@ -80,7 +80,7 @@ This will start the app generation. When done, you can review the generated arti
 
 ![](./images/image29.png)
 
-## Exercise 1.2 Testing the App
+## Exercise 1.2 Starting the App
 
 After completing these steps you will have started and tested the generated app.
 
