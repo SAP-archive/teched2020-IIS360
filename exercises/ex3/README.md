@@ -10,8 +10,7 @@ This allows to define filters before the query is executed.<br>
 The default behaviour can be changed in a way that selection is immediately
 triggered when the app is started.
 
-In SAP Business Application Studio, go to the page map. (**Application
-Modeller - Show Page Map** via Command Palette).
+In the SAP Business Application Studio, open the page map (via Context Menu on folder **app** or via **View -> Command Palette...**)<br>
 
 (1) On tile **List Report**, click **Configure
 Page**
@@ -92,6 +91,7 @@ In the object page, click ![](./images/image20.png)
 (15) Click ![](./images/image22.png)to switch back to display mode.
 
 ![](./images/image21.png)
+
 ## Exercise 3.4 Tab based section layout
 
 Per default, all the sections in the object page are displayed one
@@ -117,6 +117,8 @@ now displayed in a separate tab.
 
 ![](./images/image27.png)
 
+Tab based layout helps reducing the need for scrolling the page in case of many object page sections.<br>
+In the sample scenario there are currently only 2 content sections, so you can switch back to page based section layout.
 
 ## Summary
 

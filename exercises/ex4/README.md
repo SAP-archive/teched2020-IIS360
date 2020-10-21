@@ -19,7 +19,7 @@ Alternatively, you can use the context menu for copy and paste of the folder.
 
 ## Exercise 4.2 Add Custom Page via Page Map
 
-Open the page map (via Context Menu on folder **app** or via **View -> Command Palette...**)<br>
+In the SAP Business Application Studio, open the page map (via Context Menu on folder **app** or via **View -> Command Palette...**)<br>
 (3) Click on icon **Add New Page**.
 ![](./images/image4.png)
 
