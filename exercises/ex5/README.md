@@ -6,7 +6,6 @@ In this exercise, we will add a custom section to the object page by using the S
 
 Custom sections offer the possibility of enhancing the object page with a freestyle UI5 XML fragment.<br>
 The object page provides its current model context to the custom section, allowing displaying data from the UI5 OData model via context binding.<br>
-An additional JS event handler can handle user input.
 
 ## Exercise 5.1.1 Enhancing the language model
 
@@ -24,17 +23,18 @@ Save changes (**File->Save**).
 
 ## Exercise 5.1.2 Add custom section via Page Map
 
-The sample scenario provides a prepared XML fragment in folder **app/incidents/webapp/ext/fragment** (3) showing a Gantt chart which you will now add to a new custom section shown on the object page.<br>
+(3) The sample scenario provides a prepared XML fragment in folder **app/incidents/webapp/ext/fragment**,<br>
+along with a javaScript file where you can implement event handler functions.<br>
 
 In the SAP Business Application Studio, open the page map (via Context Menu on folder **app** or via **View -> Command Palette...**)<br>
-(4) On the page map tile **Object Page**, click icon ![](./images/image5.png) (**Configure Page**.).
+(4) On the page map tile **Object Page**, click icon ![](./images/image5.png) (**Configure Page**.).<br>
 ![](./images/image3.png)
 
-(5) In the Page Editor,  hover in the top right corner of **sections** and click icon![](./images/image7.png) (**Add Custom Section**)
+(5) In the Page Editor, click icon![](./images/image7.png) (**Add Custom Section**) in the top right corner of area **sections**.
 
 ![](./images/image6.png)
 
-(6) In dialog **Add Custom Section**, enter the language property added in step 5.1.1 as a title.
+(6) In dialog **Add Custom Section**, enter in field **Title** the language property added in [step 5.1.1](#exercise-511-enhancing-the-language-model) in the following format:
 
 ```json
 {i18n>MaxProcessingTime}
@@ -58,12 +58,19 @@ on the object page.
 
 ![](./images/image15.png)
 
-(11) Switch to the preview browser tab and refresh. The custom section is shown.
+(11) Switch to the preview browser tab and refresh. The custom section is shown.<br>
+Selecting another list item in the List Report changes the object pages context binding and with it also the data shown in the Gantt chart.
 
 ![](./images/image16.png)
 
 ## Summary
 
-You've now ...
+You've now added a custom section to the object page based on an XML fragment.
 
 Continue to - [Exercise 6 - Adding Annotations ](../ex3/README.md)
+
+- [Exercise 5 - Adding a Custom Section](#exercise-5---adding-a-custom-section)
+  - [Exercise 5.1 Custom Sections Overview](#exercise-51-custom-sections-overview)
+  - [Exercise 5.1.1 Enhancing the language model](#exercise-511-enhancing-the-language-model)
+  - [Exercise 5.1.2 Add custom section via Page Map](#exercise-512-add-custom-section-via-page-map)
+  - [Summary](#summary)
