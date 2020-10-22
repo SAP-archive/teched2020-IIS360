@@ -13,10 +13,11 @@ For the title of custom sections to be shown on the object page, we want to use 
 (1) Open file **app/incidents/webapp/i18n/i18n.properties**<br>
 (2) Enter the following new property:
 
-```json
+```js
 #XFLD
 MaxProcessingTime=Maximum Processing Time
 ```
+
 ![](./images/image1.png)
 
 Save changes (**File->Save**).
@@ -36,7 +37,7 @@ In the SAP Business Application Studio, open the page map (via Context Menu on f
 
 (6) In dialog **Add Custom Section**, enter in field **Title** the language property added in [step 5.1.1](#exercise-511-enhancing-the-language-model) in the following format:
 
-```json
+```js
 {i18n>MaxProcessingTime}
 ```
 
