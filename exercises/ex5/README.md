@@ -48,8 +48,6 @@ In the SAP Business Application Studio, open the page map (via Context Menu on f
 In combination with the **Section Position** (we leave it to **After**), you define where the custom section should be located<br>
 on the object page.
 
-![](./images/image11.png)
-
 (9) Click button ![](./images/image14.png)
 
 ![](./images/image13.png)
