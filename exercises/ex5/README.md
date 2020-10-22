@@ -2,7 +2,7 @@
 
 In this exercise, we will add a custom section to the object page by using the SAP Fiori Page Map.
 
-## Exercise 5.1 Custom Sections Overview
+## Custom Sections Overview
 
 Custom sections offer the possibility of enhancing the object page with a freestyle UI5 XML fragment.<br>
 The object page provides its current model context to the custom section, allowing displaying data from the UI5 OData model via context binding.<br>
@@ -66,9 +66,3 @@ Selecting another list item in the List Report changes the object pages context 
 You've now added a custom section to the object page based on an XML fragment.
 
 Continue to - [Exercise 6 - Adding Annotations ](../ex3/README.md)
-
-- [Exercise 5 - Adding a Custom Section](#exercise-5---adding-a-custom-section)
-  - [Exercise 5.1 Custom Sections Overview](#exercise-51-custom-sections-overview)
-  - [Exercise 5.1.1 Enhancing the language model](#exercise-511-enhancing-the-language-model)
-  - [Exercise 5.1.2 Add custom section via Page Map](#exercise-512-add-custom-section-via-page-map)
-  - [Summary](#summary)

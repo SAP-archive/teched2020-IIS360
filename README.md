@@ -36,6 +36,10 @@ There are no special requirements to follow the exercises in this repository.
   - [Exercise 4.1 Copy over sample custom page](exercises/ex4#exercise-41-copy-over-sample-custom-page)
   - [Exercise 4.2 Add Custom Page via Page Map](exercises/ex4#exercise-42-add-custom-page-via-page-map)
   - [Exercise 4.3 Custom Page: Testing the app](exercises/ex4#exercise-43-custom-page-testing-the-app)
+- [Exercise 5 - Adding a Custom Section](exercises/ex5#exercise-5---adding-a-custom-section)
+  - [Custom Sections Overview](exercises/ex5#custom-sections-overview)
+  - [Exercise 5.1.1 Enhancing the language model](exercises/ex5#exercise-511-enhancing-the-language-model)
+  - [Exercise 5.1.2 Add custom section via Page Map](exercises/ex5#exercise-512-add-custom-section-via-page-map)
 
 ## License
 Copyright (c) 2020 SAP SE or an SAP affiliate company. All rights reserved. This file is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE](LICENSES/Apache-2.0.txt) file.
