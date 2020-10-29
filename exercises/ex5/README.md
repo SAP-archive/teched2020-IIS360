@@ -66,4 +66,4 @@ Selecting another list item in the List Report changes the object pages context 
 
 You've now added a custom section to the object page based on an XML fragment.
 
-Continue to - [Exercise 6 - Adding Annotations ](../ex3/README.md)
+Continue to - [Exercise 6 - Enhance the UI with annotations ](../ex6/README.md)
