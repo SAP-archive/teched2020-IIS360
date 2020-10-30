@@ -53,7 +53,7 @@ Start typing in **created** to filter the list.\
 
 ![](./images/image11.png)
 
-You can also copy and paste the full annotation form here:
+The full annotation:
 
 ```js
 FieldGroup #Admin: {
@@ -144,21 +144,29 @@ With the cursor sitting behind **Value :**, trigger LSP support.\
 
 ![](./images/image25.png)
 
+For highlighting of table column values, we now add property **Criticality**.\
+As value we point it to a corresponding property of entity **IncidentFlow** representing the criticality of each entity instance as a number.\
+
 Add an empty line after **Value : stepStatus**\
 Trigger LSP support (ctrl+space).\
 (19)Choose ![](./images/image28.png).
 
 ![](./images/image27.png)
 
-Trigger LSP support.\
-(20) Choose entity property **'criticality'**.\
+Trigger again LSP support.\
+(20) Choose entity property **'criticality'**.
 
 ![](./images/image29.png)
 
 Save changes.
-The full annotation now looks the following:
-
-![](./images/image30.png)
+The full annotation:
+```js
+{
+    $Type : 'UI.DataField',
+    Value : stepStatus,
+    Criticality : criticality
+},
+```
 
 Switch to the preview browser tab and refresh.\
 (21) On the object page, A new column **Process Step Status** is shown
@@ -168,6 +176,7 @@ in table **Incident Process Flow**
 
 ## Summary
 
-You've now ...
+You've now used the LSP annotation support and added annotations for
+**UI.FieldGroup**, **UI.ReferenceFacet** and **UI.DataField**.
 
-Continue to - [Exercise 3 - Excercise 3 ](../ex3/README.md)
+Continue to - [Exercise 7 - Integrating into S/4 HANA ](../ex7/README.md)

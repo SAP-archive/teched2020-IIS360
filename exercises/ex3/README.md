@@ -5,12 +5,12 @@ In this exercise, we will configure the apps behaviour by making usage of the Fi
 ## Exercise 3.1 Enable data load during start of the app
 
 When starting the app, per default the user has to press the
-**Go** button in order to trigger the selection.<br>
-This allows to define filters before the query is executed.<br>
+**Go** button in order to trigger the selection.\
+This allows to define filters before the query is executed.\
 The default behaviour can be changed in a way that selection is immediately
 triggered when the app is started.
 
-In the SAP Business Application Studio, open the page map (via Context Menu on folder **app** or via **View -> Command Palette...**)<br>
+In the SAP Business Application Studio, open the page map (via Context Menu on folder **app** or via **View -> Command Palette...**)
 
 (1) On tile **List Report**, click **Configure
 Page**
@@ -24,22 +24,23 @@ Page**
 Chrome](./images/image3.png)
 
 (3) In the drop down box **initialLoad**, select
-![](./images/image6.png).<br> The configuration is automatically saved.
+![](./images/image6.png).\
+The configuration is automatically saved.
 
 ![SAP Business Application Studio - Google
 Chrome](./images/image5.png)
 
 Refresh the preview browser, then navigate back to the Fiori launch
 page.
-Data will now be immediately loaded when starting the app.<br>
+Data will now be immediately loaded when starting the app.
 
 ## Exercise 3.2 Enable control level variant managment
 
-The List Report pages offers per default page variant managment.<br>
+The List Report pages offers per default page variant managment.\
 With it, all personalizations of visible selection fields and table columns can be
-saved as a presentation variant.<br>
+saved as a presentation variant.\
 With the page map, you can switch to control level variant managment.
-This allows separate managment of filter and table variants on List Report.<br>
+This allows separate managment of filter and table variants on List Report.\
 (4) In the Page Editor properties for table view, open drop down box **variantManagment** and select **Control**.
 
 ![SAP Business Application Studio - Google
@@ -52,13 +53,13 @@ Refresh the preview browser tab. You now can manage filter (5) and table variant
 ## Exercise 3.3 Configure Editable Object Page Header
 
 When in edit mode, header fields are per default shown as editable
-input fields.<br>This might not be wanted in case these fields are
+input fields.\This might not be wanted in case these fields are
 additionally displayed in another section of the object page (7)(8).
 
 ![](./images/image10.png)
 
-In order to prevent that, you can set the header to display only during editing.<br>
-Switch back to Business Application Studio.<br>
+In order to prevent that, you can set the header to display only during editing.\
+Switch back to Business Application Studio.\
 (9) Click ![](./images/image12.png) icon to get back to the page map overview.
 
 ![SAP Business Application Studio - Google
@@ -117,7 +118,7 @@ now displayed in a separate tab.
 
 ![](./images/image27.png)
 
-Tab based layout helps reducing the need for scrolling the page in case of many object page sections.<br>
+Tab based layout helps reducing the need for scrolling the page in case of many object page sections.\
 In the sample scenario there are currently only 2 content sections, so you can switch back to page based section layout.
 
 ## Summary

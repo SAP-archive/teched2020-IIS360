@@ -4,13 +4,13 @@ In this exercise, we will add a custom section to the object page by using the S
 
 ## Custom Sections Overview
 
-Custom sections offer the possibility of enhancing the object page with a freestyle UI5 XML fragment.<br>
-The object page provides its current model context to the custom section, allowing displaying data from the UI5 OData model via context binding.<br>
+Custom sections offer the possibility of enhancing the object page with a freestyle UI5 XML fragment.\
+The object page provides its current model context to the custom section, allowing displaying data from the UI5 OData model via context binding.\
 
 ## Exercise 5.1.1 Enhancing the language model
 
-For the title of custom sections to be shown on the object page, we want to use a property from the apps language model.<br>
-(1) Open file **app/incidents/webapp/i18n/i18n.properties**<br>
+For the title of custom sections to be shown on the object page, we want to use a property from the apps language model.\
+(1) Open file **app/incidents/webapp/i18n/i18n.properties**\
 (2) Enter the following new property:
 
 ```js
@@ -24,11 +24,11 @@ Save changes (**File->Save**).
 
 ## Exercise 5.1.2 Add custom section via Page Map
 
-(3) The sample scenario provides a prepared XML fragment in folder **app/incidents/webapp/ext/fragment**,<br>
-along with a javaScript file where you can implement event handler functions.<br>
+(3) The sample scenario provides a prepared XML fragment in folder **app/incidents/webapp/ext/fragment**,\
+along with a javaScript file where you can implement event handler functions.
 
-In the SAP Business Application Studio, open the page map (via Context Menu on folder **app** or via **View -> Command Palette...**)<br>
-(4) On the page map tile **Object Page**, click icon ![](./images/image5.png) (**Configure Page**.).<br>
+In the SAP Business Application Studio, open the page map (via Context Menu on folder **app** or via **View -> Command Palette...**)\
+(4) On the page map tile **Object Page**, click icon ![](./images/image5.png) (**Configure Page**.).\
 ![](./images/image3.png)
 
 (5) In the Page Editor, click icon![](./images/image7.png) (**Add Custom Section**) in the top right corner of area **sections**.
@@ -45,8 +45,8 @@ In the SAP Business Application Studio, open the page map (via Context Menu on f
 
 ![](./images/image8.png).
 
-(8) Open drop down **Target Facet/Section** and select **IncidentOverViewFacet**.<br>
-In combination with the **Section Position** (we leave it to **After**), you define where the custom section should be located<br>
+(8) Open drop down **Target Facet/Section** and select **IncidentOverViewFacet**.\
+In combination with the **Section Position** (we leave it to **After**), you define where the custom section should be located\
 on the object page.
 
 (9) Click button ![](./images/image14.png)
@@ -57,7 +57,7 @@ on the object page.
 
 ![](./images/image15.png)
 
-(11) Switch to the preview browser tab and refresh. The custom section is shown.<br>
+(11) Switch to the preview browser tab and refresh. The custom section is shown.\
 Selecting another list item in the List Report changes the object pages context binding and with it also the data shown in the Gantt chart.
 
 ![](./images/image16.png)

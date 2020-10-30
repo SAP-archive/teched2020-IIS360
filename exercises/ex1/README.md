@@ -1,7 +1,7 @@
 # Exercise 1 - Generating a Fiori elements app
 
 In this exercise, we will create an SAP Fiori elements application based on the given CAP service.
-For this we will make usage of the SAP Fiori Tools Application Generator.<br>
+For this we will make usage of the SAP Fiori Tools Application Generator.\
 We will consume our local CAP service and use the List Report Object Page floorplan.
 
 ## Exercise 1.1 Using the UI Generator
@@ -12,7 +12,7 @@ We will consume our local CAP service and use the List Report Object Page floorp
 
 ![](./images/image1.png)
 
-(2) Click on tile **SAP Fiori elements application**.<br>
+(2) Click on tile **SAP Fiori elements application**.\
 (3) Click ![](./images/image4.png).
 
 ![](./images/image3.png)
@@ -45,9 +45,9 @@ Click ![](./images/image11.png).
 
 ![](./images/image13.png)
 
-(12) In the Entity Selection drop down, select **Incidents** as main entity.<br>
+(12) In the Entity Selection drop down, select **Incidents** as main entity.\
 The properties of this entity will be used for display of data on List
-Report, showing data from the entity collection.<br>
+Report, showing data from the entity collection.\
 Leave value for drop down **Navigation Entity** to **none** since we want to show
 data of a single instance of the main entity on the object page, too.
 
@@ -68,11 +68,11 @@ some of the subsequent exercises to work properly)
 (17) Select **Yes** in order to configure advanced options.
 
 (18) Select **Yes** in order to skip generation of an
-additional associated annotation.cds file.<br>
+additional associated annotation.cds file.\
 The CAP service already provides a basic set of UI annotations in a
 corresponding file in app-\>annotation.cds.
 
-(19) Click ![](./images/image21.png).<br>
+(19) Click ![](./images/image21.png).\
 
 ![](./images/image18.png)
 
@@ -84,9 +84,9 @@ This will start the app generation. When done, you can review the generated arti
 
 After completing these steps you will have started and tested the generated app.
 
-(20) Switch to the service preview browser tab and refresh it.<br>
-Click on the served path.<br>
-If your preview browser tab had been closed, you can relaunch it by following the steps 'Reopen the exposed ports' as described [here](../ex0#reopen-the-exposed-port).<br>
+(20) Switch to the service preview browser tab and refresh it.\
+Click on the served path.\
+If your preview browser tab had been closed, you can relaunch it by following the steps 'Reopen the exposed ports' as described [here](../ex0#reopen-the-exposed-port).\
 
 
 ![](./images/image22.png)
@@ -95,8 +95,8 @@ If your preview browser tab had been closed, you can relaunch it by following th
 
 ![](./images/image24.png)
 
-(22) Click ![](./images/image26.png) to trigger selection.<br>
-You can use the selection fields in order to set a filter.<br>
+(22) Click ![](./images/image26.png) to trigger selection.\
+You can use the selection fields in order to set a filter.\
 
 ![](./images/image25.png)
 
@@ -105,10 +105,10 @@ You can use the selection fields in order to set a filter.<br>
 ![](./images/image27.png)
 
 
-On the object page, you can click **Edit** which creates an edit draft and sets the UI to edit mode.<br>
-Changing input field values will automatically update the draft when input field focus is changed, or when you navigate back to the list report.<br>
+On the object page, you can click **Edit** which creates an edit draft and sets the UI to edit mode.\
+Changing input field values will automatically update the draft when input field focus is changed, or when you navigate back to the list report.\
 While in edit mode, the List Report shows a draft indicator in the corresponding line item.
-The draft is saved back to the active instance by pressing **Save** on the bottom of the object page.<br>
+The draft is saved back to the active instance by pressing **Save** on the bottom of the object page.\
 You can create a new draft on the List Report by clicking button **Create**.
 
 ![](./images/image28.png)
