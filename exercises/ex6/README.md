@@ -6,7 +6,9 @@ After applying new annotations, you can use Format Document (Shift+Alt+F) to for
 
 ## Exercise 6.1 Sub Exercise 1 Adding a field group
 
-After completing these steps you will have added a new content section to the object page, showing a field group.
+After completing these steps you will have added a new content section to the object page.\
+You will use annotation **FieldGroup** which represents a collection of different types of data fields.\
+The field group annotation definition with link to the different data field representation options can be found [here](https://github.com/SAP/odata-vocabularies/blob/master/vocabularies/UI.md#FieldGroupType).
 
 (1) In BAS Explorer, open file **app/annotations.cds**.
 
@@ -16,33 +18,33 @@ After completing these steps you will have added a new content section to the ob
 
 ![](./images/image3.png)
 
-Trigger the LSP support for annotation modelling by pressing keys **ctrl+space**.<br>
+Trigger the LSP support for annotation modelling by pressing keys **ctrl+space**.\
 (3) In the popup menu, select **FieldGroup**.
 
 ![](./images/image4.png)
 
-The annotation is added along with its basic structural elements.<br> 
-The cursor is placed between 'Fieldgroup' and ':' .<br>
-Here you add a qualifier for the annotation which you later can refer to.<br>
+The annotation is added along with its basic structural elements.\ 
+The cursor is placed between 'Fieldgroup' and ':' .\
+Here you add a qualifier for the annotation which you later can refer to.\
 (4)Type **#Admin** as qualifier. 
 
 ![](./images/image6.png)
 
-Press tab to move cursor inside the curly brackets.<br>
-Trigger LSP support (ctrl+space).<br>
-(5)  Select **Property "Data"**.<br> 
+Press tab to move cursor inside the curly brackets.\
+Trigger LSP support (ctrl+space).\
+(5)  Select **Property "Data"**.\ 
 
 ![](./images/image7.png)
 
-The cursor is moved inside the collection [].<br>
-Trigger LSP support (ctrl+ space).<br>
-(6) Type in **da** to filter the list. Select **Record "DataField"**.
+The cursor is moved inside the collection brackets [].\
+Trigger again LSP support (ctrl+ space).\
+(6) Start typing in **datafield** to filter the list. Select **Record "DataField"**.
 
 ![](./images/image8.png)
 
-DataField record is added along with its required value, the cursor is placed inside the record {}.<br>
-Trigger LSP support.<br>
-Type in **cr** to filer the list.<br> 
+DataField record is added along with its required value, the cursor is placed inside the record {}.\
+Trigger LSP support.\
+Start typing in **created** to filter the list.\ 
 (7) Select property ![](./images/image10.png).
 
 ![](./images/image9.png)
@@ -51,64 +53,105 @@ Type in **cr** to filer the list.<br>
 
 ![](./images/image11.png)
 
-## Exercise 6.2 Add a reference facet
+You can also copy and paste the full annotation form here:
 
-The object pages content area is defined via so called reference facet.<br>
-You will now add the field group **#Admin** you just created by referring to in a new reference facet.
+```js
+FieldGroup #Admin: {
+    $Type:'UI.FieldGroupType',
+    Data : [
+        {
+            $Type:'UI.DataField',
+            Value : createdAt,
+        },
+        {
+            $Type:'UI.DataField',
+            Value : createdBy
+        },
+        ]
+},
+```
+
+## Exercise 6.2 Add a reference facet annotation
+
+The different sections of the object pages content area are defined by so called **reference facet** annotations.\
+You can group several reference facets in so called **collection facet** annotations.\
+You will now add the field group **#Admin** you just created by referring to in a new reference facet inside the  collection facet **IncidentOverviewFacet**.
 
 (9) Place cursor in section **'reference facet enhancement'**
 
 ![](./images/image12.png)
 
-(10) Select** **![](./images/image14.png).
+(10) Trigger LSP support (ctrl+space) and select ![](./images/image14.png).
 
 ![](./images/image13.png)
 
-(11) For property \'Target\', inside quotes \' \', trigger LSP support
-with crtl+space.
+The annotation is added along with its basic structural elements.\ 
+(11) For property **'Target'**, place cursor inside quotes ' ' and trigger LSP support (crtl+space).
 
 ![](./images/image15.png)
 
-(12) Select** **![](./images/image17.png).
+(12) Select ![](./images/image17.png).
 
 ![](./images/image16.png)
 
-Press \*\*Tab\*\* key to move cursor to the Label property.<br>
-(13) Type **'{i18n\>AdminData}'**.
+Press **Tab** key to move cursor to the Label property.\
+(13) Type in **'{i18n\>AdminData}'**. This refers to a property defined in the language model definition file (db/_i18n/i18n.properties). Hovering the mouse over the value gives a preview of the underlying text.
 
 ![](./images/image19.png)
 
-Press **Tab** key to move cursor to ID property.<br>
-(14) Type \*\*\'AdminDataFacet\'\*\* in quotes. Save changes.
+Press **Tab** key to move cursor to ID property.\
+(14) Type **'AdminDataFacet'** in quotes. Save changes.
 
 ![](./images/image20.png)
 
-(15) New section \'Admin Data\' is shown.
+The full annotation:
+```js
+            {
+                $Type  : 'UI.ReferenceFacet',
+                Target : '@UI.FieldGroup#Admin',
+                Label  : '{i18n>AdminData}',
+                ID     : 'AdminDataFacet'
+            }
+```
+
+Switch to the preview browser tab and refresh.\
+(15) On the object page, new section **'Admin Data'** is shown inside the collection facet **Incident Overview**.
 
 ![](./images/image21.png)
 
-(16) Place cursor below comment \'//begin of column enhancement\'
+## Exercise 6.3 Add a new table column with criticality highlighting
+
+In this exercise, you will add an additional column to table **Incident Flow** shown on the object page.\
+Tables are defined by a so called **lineItem annotations**, representing a collection of different kinds of data field annotations.\
+Each data field annotation refers to a property of the annotated service entity, representing a piece of data.\
+An overview of the different data representation options can be found [here](https://github.com/SAP/odata-vocabularies/blob/master/vocabularies/UI.md#DataFieldAbstract).\
+
+You will enhance the existing lineItem annotation for entity **IncidentFlow** by adding an additional data field annotation.
+
+(16) Open file **app/annotations.cds**.\
+Place cursor in section **'column enhancement'**
 
 ![](./images/image22.png)
 
-Trigger LSP support (**Ctrl+Space**).\
+Trigger LSP support (**ctrl+space**).\
 (17)  Choose ![](./images/image24.png).
 
 ![](./images/image23.png)
 
-Trigger LSP at property **Value :**.<br>
+The annotation is added along with its basic structural elements.\
+With the cursor sitting behind **Value :**, trigger LSP support.\
 (18)Choose![](./images/image26.png).
 
 ![](./images/image25.png)
 
-Add an empty line after **Value : stepStatus**<br>
-Trigger LSP support\
+Add an empty line after **Value : stepStatus**\
+Trigger LSP support (ctrl+space).\
 (19)Choose ![](./images/image28.png).
 
 ![](./images/image27.png)
 
-Trigger LSP support.<br>
-(20) Choose entity property **'criticality'**.<br>
+Trigger LSP support.\
+(20) Choose entity property **'criticality'**.\
 
 ![](./images/image29.png)
 
@@ -117,31 +160,11 @@ The full annotation now looks the following:
 
 ![](./images/image30.png)
 
-Switch to the preview browser tab and refresh.<br>
+Switch to the preview browser tab and refresh.\
 (21) On the object page, A new column **Process Step Status** is shown
 in table **Incident Process Flow**
 
 ![](./images/image31.png)
-
-
-## Exercise 2.2 Sub Exercise 2 Description
-
-After completing these steps you will have...
-
-1.	Enter this code.
-```abap
-DATA(lt_params) = request->get_form_fields(  ).
-READ TABLE lt_params REFERENCE INTO DATA(lr_params) WITH KEY name = 'cmd'.
-  IF sy-subrc = 0.
-    response->set_status( i_code = 200
-                     i_reason = 'Everything is fine').
-    RETURN.
-  ENDIF.
-
-```
-
-2.	Click here.
-<br>![](/exercises/ex2/images/02_02_0010.png)
 
 ## Summary
 
