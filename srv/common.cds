@@ -76,21 +76,21 @@ annotate service.Category with {
     code @Common : {
         Text            : name,
         TextArrangement : #TextOnly
-    }    @title :  'Category'
+    }    @title :  '{i18n>Category}'
 };
 
 annotate service.Priority with {
     code @Common : {
         Text            : name,
         TextArrangement : #TextOnly
-    }    @title :  'Priority'
+    }    @title :  '{i18n>Priority}'
 };
 
 annotate service.IncidentStatus with {
     code @Common : {
         Text            : name,
         TextArrangement : #TextOnly
-    }    @title :  'Incident Status'
+    }    @title :  '{i18n>IncidentStatus}'
 };
 
 annotate service.Individual with @(Communication.Contact : {
