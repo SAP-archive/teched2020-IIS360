@@ -18,21 +18,21 @@
                                 type="Transparent"
                                 icon="sap-icon://full-screen"
 								visible="{= ${fclhelper>/actionButtonsInfo/fullScreen} !== null }"
-                                press=".routingListener.handleFCLFullScreen($event)"
+                                press=".fcl.handleFullScreen($event)"
                             />
                             <m:OverflowToolbarButton
                                 id="incidentsProcessFlowHandleExitFullScreen"                            
                                 type="Transparent"
                                 icon="sap-icon://exit-full-screen"
                                 visible="{= ${fclhelper>/actionButtonsInfo/exitFullScreen} !== null }"
-                                press=".routingListener.handleFCLExitFullScreen($event)"
+                                press=".fcl.handleExitFullScreen($event)"
                             />
                             <m:OverflowToolbarButton
                                 id="incidentsProcessFlowHandleClose"
                                 type="Transparent"
                                 icon="sap-icon://decline"
                                 visible="{= ${fclhelper>/actionButtonsInfo/closeColumn} !== null }"
-                                press=".routingListener.handleFCLClose($event)"
+                                press=".fcl.handleClose($event)"
                             />
 						</f:navigationActions>                    
 				</f:DynamicPageTitle>
