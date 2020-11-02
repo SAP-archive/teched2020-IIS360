@@ -19,7 +19,7 @@ module.exports = cds.service.impl(async function (srv) {
     //read/edit event hook after read  of entity 'Incidents'
     srv.after(["READ", "EDIT"], "Incidents", setTechnicalFlags);
     srv.after("READ", "Incidents", setPriorityCriticality);
-    srv.before("SAVE", "Incidents", validateincident);
+    srv.before("SAVE", "Incidents", validateIncident);
 
     /**
      * Set technical flags, used
@@ -79,7 +79,7 @@ module.exports = cds.service.impl(async function (srv) {
      *
      * @param req   Request
      */
-    function validateincident(req) {
+    function validateIncident(req) {
         // check mandatory properties
         if (!req.data.identifier) {
             req.error(400, "Enter an Incident Identifier", "in/identifier");
