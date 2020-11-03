@@ -7,20 +7,20 @@ In this exercise, we will add a custom page to the app.
 With the Sap Fiori Tool **Page Map**, you can add additional object pages and custom pages to your app.\
 For custom pages, you have the option of having new custom view controller artifacts generated,\
 or, as we will do in this exercise, integrate an existing custom view in the navigation flow.\
-For this, we will copy the sample artifacts to the apps webapp folder.
+For this, we will copy the sample artifacts to the webapp folder of the app.
 
 (1) In the project explorer, expand folder paths **app/incidents** and **app/test-resources**.\
-In folder **app/test-resources**, click and hold folder ![](./images/image2.png).
+In the folder **app/test-resources**, click and hold folder ![](./images/image2.png).
 
 (2) Drag & Drop the folder over to **app/incidents/webapp**.\
-Alternatively, you can use the context menu for copy and paste of the folder.
+Alternatively, you can use the context menu to copy and paste the folder.
 
 ![](./images/image1.png)
 
 ## Exercise 4.2 Add Custom Page via Page Map
 
-In the SAP Business Application Studio, open the page map (via Context Menu on folder **app** or via **View -> Command Palette...**)\
-(3) Click on icon **Add New Page**.
+In the SAP Business Application Studio, open the page map (via Context Menu on the folder **app** or via **View -> Command Palette...**)\
+(3) Click on the icon **Add New Page**.
 
 ![](./images/image4.png)
 
@@ -29,7 +29,7 @@ Open the dropdown list **Select Page Type**.\
 
 ![](./images/image8.png)
 
-(6) We want to navigate to the custom page from table **Incident Flow** shown on the object page.\
+(6) We want to navigate to the custom page from the table **Incident Flow** shown on the object page.\
  Open the dropdown list **Navigation** to select the corresponding navigation property.
 ![](./images/image10.png)
 
@@ -41,7 +41,7 @@ Open the dropdown list **Select Page Type**.\
 
 ![](./images/image14.png)
 
-(9) In dropdown **View Name**, the custom view **ProcessFlow** is automatically preselected.
+(9) In the dropdown **View Name**, the custom view **ProcessFlow** is automatically preselected.
 
 ![](./images/image16.png)
 
@@ -58,12 +58,12 @@ page.
 ## Exercise 4.3 Custom Page: Testing the app
 
 (13) Switch to the preview browser tab and refresh.\
-Click on a list item in table **Incident Process FLow**.
+Click on a list item in the table **Incident Process Flow**.
 
 ![](./images/image22.png)
 
 (14) The custom page is opened to the right.\
-To expand the view, click on  icon **Expand the last column** ![](./images/image24.png).
+To expand the view, click on the icon **Expand the last column** ![](./images/image24.png).
 
 ![](./images/image23.png)
 
