@@ -11,7 +11,7 @@ abstract entity identified : cuid {
 }
 
 //Bolded display of first table column values can be achieved by defining annotations Common.SemanticKey and
-//Common.TextArrangment for the entities key and referring to a 'human-readable' identifier to be displayed instead.
+//Common.TextArrangement for the entities key and referring to a 'human-readable' identifier to be displayed instead.
 
 annotate identified with @(
     Common.SemanticKey : [identifier],
@@ -21,7 +21,7 @@ annotate identified with @(
     ID         @Common : {
         Text            : identifier,
         TextArrangement : #TextOnly
-        
+
     };
 }
 
@@ -64,7 +64,7 @@ annotate service.Incidents with {
         Text            : category.name,
         TextArrangement : #TextOnly,
         ValueListWithFixedValues
-    };  
+    };
   priority @Common : {
         Text            : priority.name,
         TextArrangement : #TextOnly,
