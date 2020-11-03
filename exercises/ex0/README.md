@@ -8,7 +8,7 @@ List Report Object Page Fiori elements application with the help of Fiori Tools 
 ## Access SAP Business Application Studio (TechEd 2020 live workshop registered participants only)
 
 Log on the SAP Business Application Studio via [this link](https://sap-ux-teched.cry10cf.int.applicationstudio.cloud.sap/index.html) by using the provided live workshop credentials.\
-You can continue with step 'Create Dev Space'.
+You can continue with the step 'Create Dev Space'.
 
 ## Set up Business Application Studio in an SAP Cloud Platform Trial Account
 
@@ -40,7 +40,7 @@ Click on the Quick Tool Access icon **SAP Business Application Studio**.
 
 ## Create Dev Space
 
-Click on button **Create Dev Space**.
+Click on the button **Create Dev Space**.
 
 ![Create Dev Space](../ex0/images/00_00_0030.png)
 
@@ -59,7 +59,7 @@ Once your dev space has status running, click on the development space name to o
 ## Get the sample scenario
 
 Access the Github Repository via [this link](https://github.com/SAP-samples/teched2020-IIS360)\
-Click on button **Code** (1), then click on icon (2) to copy the git clone link.
+Click on the button **Code** (1), then click on the icon (2) to copy the git clone link.
 
 ![copy link](../ex0/images/00_00_0070.png)
 
