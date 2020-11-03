@@ -12,18 +12,18 @@ We will consume our local CAP service and use the List Report Object Page floorp
 
 ![](./images/image1.png)
 
-(2) Click on tile **SAP Fiori elements application**.\
+(2) Click on the tile **SAP Fiori elements application**.\
 (3) Click ![](./images/image4.png).
 
 ![](./images/image3.png)
 
-(4) In the template selection, click on tile  **List Report Object Page**.
+(4) In the template selection, click on the tile  **List Report Object Page**.
 
 (5) Click ![](./images/image6.png).
 
 ![](./images/image5.png)
 
-(6) In step **Datasource and Service Selection**, select ![](./images/image8.png).
+(6) In the step **Datasource and Service Selection**, select ![](./images/image8.png).
 
 ![](./images/image7.png)
 
