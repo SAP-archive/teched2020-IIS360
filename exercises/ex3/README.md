@@ -39,7 +39,7 @@ Data will now be immediately loaded when starting the app.
 The List Report pages offers per default page variant managment.\
 With it, all personalizations of visible selection fields and table columns can be
 saved as a presentation variant.\
-With the page map, you can switch to control level variant managment.
+With the page map, you can switch to control level variant management.
 This allows separate managment of filter and table variants on List Report.\
 (4) In the Page Editor properties for table view, open drop down box **variantManagment** and select **Control**.
 
