@@ -5,7 +5,7 @@ Flexible column layout splits the screen into several areas, allowing faster nav
 
 (1) In BAS Explorer view, right-clicking on ![](./images/image2.png)
 opens a shortcut menu.\
-Alternatively, choose **Application Modeller - Show Page Map** via Command Palette
+Alternatively, choose **Application Modeller - Show Page Map** via Command Palette.
 
 ![](./images/image1.png)
 
