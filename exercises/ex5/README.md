@@ -9,7 +9,7 @@ The object page provides its current model context to the custom section, allowi
 
 ## Exercise 5.1.1 Enhancing the language model
 
-For the title of custom sections to be shown on the object page, we want to use a property from the apps language model.\
+For the title of custom sections to be shown on the object page, we want to use a property from the language model of the app.\
 (1) Open file **app/incidents/webapp/i18n/i18n.properties**\
 (2) Enter the following new property:
 
@@ -22,12 +22,12 @@ MaxProcessingTime=Maximum Processing Time
 
 Save changes (**File->Save**).
 
-## Exercise 5.1.2 Add custom section via Page Map
+## Exercise 5.1.2 Add a custom section via Page Map
 
-(3) The sample scenario provides a prepared XML fragment in folder **app/incidents/webapp/ext/fragment**,\
+(3) The sample scenario provides a prepared XML fragment in the folder **app/incidents/webapp/ext/fragment**,\
 along with a javaScript file where you can implement event handler functions.
 
-In the SAP Business Application Studio, open the page map (via Context Menu on folder **app** or via **View -> Command Palette...**)\
+In the SAP Business Application Studio, open the page map (via Context Menu on the folder **app** or via **View -> Command Palette...**)\
 (4) On the page map tile **Object Page**, click icon ![](./images/image5.png) (**Configure Page**.).\
 ![](./images/image3.png)
 
@@ -35,7 +35,7 @@ In the SAP Business Application Studio, open the page map (via Context Menu on f
 
 ![](./images/image6.png)
 
-(6) In dialog **Add Custom Section**, enter in field **Title** the language property added in [step 5.1.1](#exercise-511-enhancing-the-language-model) in the following format:
+(6) In the dialog **Add Custom Section**, enter into the field **Title** the language property added in [step 5.1.1](#exercise-511-enhancing-the-language-model) in the following format:
 
 ```js
 {i18n>MaxProcessingTime}
@@ -45,7 +45,7 @@ In the SAP Business Application Studio, open the page map (via Context Menu on f
 
 ![](./images/image8.png).
 
-(8) Open drop down **Target Facet/Section** and select **IncidentOverViewFacet**.\
+(8) Open the drop down **Target Facet/Section** and select **IncidentOverViewFacet**.\
 In combination with the **Section Position** (we leave it to **After**), you define where the custom section should be located\
 on the object page.
 
