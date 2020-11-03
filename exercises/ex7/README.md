@@ -9,10 +9,44 @@ After completing these steps you will have created...
 1. Click here.
 <br>![](/exercises/ex2/images/02_01_0010.png)
 
-2.	Insert this line of code.
-```abap
-response->set_text( |Hello ABAP World! | ). 
+2.	Insert this line of code in schema.cds.
+```js
+ using { API_BUSINESS_PARTNER as external } from '../srv/external/API_BUSINESS_PARTNER.csn';
+    @readonly
+    entity BusinessPartner         as projection on external.A_BusinessPartner {
+        key BusinessPartner
+    };
+
+    @readonly
+    entity BusinessPartnerAddress  as projection on external.A_BusinessPartnerAddress {
+        key BusinessPartner, key AddressID, CityName, Country, PostalCode, FullName, StreetName, HouseNumber
+    }
 ```
+
+2. uncomment properties in schema.cds Individuals entity
+3. Insert lines of code in schema.cds
+```js
+extend scp.cloud.Individual with {
+  businessPartner        : Association to one external.A_BusinessPartner
+  on businessPartner.BusinessPartner = businessPartnerID;
+  businessPartnerAddress : Association to one external.A_BusinessPartnerAddress
+  on  businessPartnerAddress.BusinessPartner = businessPartnerID
+  and businessPartnerAddress.AddressID       = addressID;
+}
+```
+
+4.	Insert this line of code in incidentsservice.cds.
+```js
+ using { API_BUSINESS_PARTNER as external } from '../srv/external/API_BUSINESS_PARTNER.csn';
+extend scp.cloud.Individual with {
+  businessPartner        : Association to one external.A_BusinessPartner
+  on businessPartner.BusinessPartner = businessPartnerID;
+  businessPartnerAddress : Association to one external.A_BusinessPartnerAddress
+  on  businessPartnerAddress.BusinessPartner = businessPartnerID
+  and businessPartnerAddress.AddressID       = addressID;
+    }
+```
+
 
 ## Exercise 2.2 Sub Exercise 2 Description
 

@@ -20,6 +20,6 @@ service IncidentService {
     @readonly
     entity Priority                as projection on cloud.Priority;
     
-    //extend service
+    //expose additional entities
 
 }
