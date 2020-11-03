@@ -18,13 +18,13 @@ After completing these steps you will have created...
 2. insert
    ```js
     entity BusinessPartner         as projection on external.A_BusinessPartner {
-        key BusinessPartner
+        key BusinessPartner, BusinessPartnerFullname
     };
     entity BusinessPartnerAddress  as projection on external.A_BusinessPartnerAddress {
-        key BusinessPartner, key AddressID, CityName, Country, PostalCode, FullName, StreetName, HouseNumber
+        key BusinessPartner, key AddressID, CityName, Country, PostalCode, StreetName, HouseNumber
     }
     ```
-    
+
 3. insert
    ,
     {
@@ -62,6 +62,20 @@ insert
         Target : 'assignedIndividual/@Communication.Contact',
         Label  : '{i18n>AssignedContact}'
     }
+
+
+annotate service.Individual with @(Communication.Contact : {
+      fn   : businessPartner.BusinessPartnerFullName,
+        adr   : [{
+            type     : #work,
+            code     : businessPartnerAddress.PostalCode,
+            street   : businessPartnerAddress.StreetName,
+            building : businessPartnerAddress.HouseNumber,
+            country  : businessPartnerAddress.Country,
+            locality : businessPartnerAddress.CityName
+        }]
+})
+;
 
 ## Exercise 2.2 Sub Exercise 2 Description
 
