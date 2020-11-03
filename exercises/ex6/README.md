@@ -2,19 +2,19 @@
 
 In this exercise, we will enhance the UI by adding annotations. For each exercise, you will make usage of the CDS compilers
 LSP support for annotation modelling. Alternatively, you can apply prepared code snippets.
-After applying new annotations, you can use Format Document (Shift+Alt+F) to format code for better readibility.
+After applying new annotations, you can use Format Document (Shift+Alt+F) to format code for better readability.
 
 ## Exercise 6.1 Adding a field group
 
 After completing these steps you will have added a new content section to the object page.\
 You will use annotation **FieldGroup** which represents a collection of different types of data fields.\
-The field group annotation definition with link to the different data field representation options can be found [here](https://github.com/SAP/odata-vocabularies/blob/master/vocabularies/UI.md#FieldGroupType).
+The field group annotation definition with the link to the different data field representation options can be found [here](https://github.com/SAP/odata-vocabularies/blob/master/vocabularies/UI.md#FieldGroupType).
 
 (1) In BAS Explorer, open file **app/annotations.cds**.
 
 ![](./images/image1.png)
 
-(2) Place cursor in section **'field group enhancement'**
+(2) Place cursor in the section **'field group enhancement'**
 
 ![](./images/image3.png)
 
@@ -24,7 +24,7 @@ Trigger the LSP support for annotation modelling by pressing keys **ctrl+space**
 ![](./images/image4.png)
 
 The annotation is added along with its basic structural elements.\ 
-The cursor is placed between 'Fieldgroup' and ':' .\
+The cursor is placed between 'FieldGroup' and ':' .\
 Here you add a qualifier for the annotation which you later can refer to.\
 (4)Type **#Admin** as qualifier. 
 
@@ -77,7 +77,7 @@ The different sections of the object pages content area are defined by so called
 You can group several reference facets in so called **collection facet** annotations.\
 You will now add the field group **#Admin** you just created by referring to in a new reference facet inside the  collection facet **IncidentOverviewFacet**.
 
-(9) Place cursor in section **'reference facet enhancement'**
+(9) Place cursor in the section **'reference facet enhancement'**
 
 ![](./images/image12.png)
 
@@ -86,7 +86,7 @@ You will now add the field group **#Admin** you just created by referring to in 
 ![](./images/image13.png)
 
 The annotation is added along with its basic structural elements.\ 
-(11) For property **'Target'**, place cursor inside quotes ' ' and trigger LSP support (crtl+space).
+(11) For property **'Target'**, place cursor inside quotes ' ' and trigger LSP support (ctrl+space).
 
 ![](./images/image15.png)
 
@@ -170,7 +170,7 @@ The full annotation:
 
 Switch to the preview browser tab and refresh.\
 (21) On the object page, A new column **Process Step Status** is shown
-in table **Incident Process Flow**
+in the table **Incident Process Flow**
 
 ![](./images/image31.png)
 
