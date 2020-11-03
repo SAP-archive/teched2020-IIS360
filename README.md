@@ -29,7 +29,7 @@ There are no special requirements to follow the exercises in this repository.
 - [Exercise 2 - Switch to Flexible Column Layout](exercises/ex2#exercise-2---switch-to-flexible-column-layout)
 - [Exercise 3 - Configuring the app](exercises/ex3#exercise-3---configuring-the-app)
   - [Exercise 3.1 Enable data load during start of the app](exercises/ex3#exercise-31-data-load-during-start-of-the-app)
-  - [Exercise 3.2 Enable control level variant managment](exercises/ex3#exercise-32-enable-control-level-variant-managment)
+  - [Exercise 3.2 Enable control level variant management](exercises/ex3#exercise-32-enable-control-level-variant-managment)
   - [Exercise 3.3 Configure Editable Object Page Header](exercises/ex3#exercise-33-configure-editable-object-page-header)
   - [Exercise 3.4 Tab based section layout](exercises/ex3#exercise-34-tab-based-section-layout)
 - [Exercise 4 - Adding a Custom Page](exercises/ex4#exercise-4---adding-a-custom-page)
