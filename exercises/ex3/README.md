@@ -1,18 +1,18 @@
 # Exercise 3 - Configuring the app
 
-In this exercise, we will configure the apps behaviour by making usage of the Fiori page map tool.
+In this exercise, we will configure the behaviour of the app using the Fiori page map tool.
 
 ## Exercise 3.1 Enable data load during start of the app
 
 When starting the app, per default the user has to press the
 **Go** button in order to trigger the selection.\
-This allows to define filters before the query is executed.\
+This allows defining filters before the query is executed.\
 The default behaviour can be changed in a way that selection is immediately
 triggered when the app is started.
 
-In the SAP Business Application Studio, open the page map (via Context Menu on folder **app** or via **View -> Command Palette...**)
+In the SAP Business Application Studio, open the page map (via Context Menu on the folder **app** or via **View -> Command Palette...**)
 
-(1) On tile **List Report**, click **Configure
+(1) On the tile **List Report**, click **Configure
 Page**
 
 ![](./images/image1.png).
@@ -34,19 +34,19 @@ Refresh the preview browser, then navigate back to the Fiori launch
 page.
 Data will now be immediately loaded when starting the app.
 
-## Exercise 3.2 Enable control level variant managment
+## Exercise 3.2 Enable control level variant management
 
-The List Report pages offers per default page variant managment.\
+The List Report pages offers per default page variant management.\
 With it, all personalizations of visible selection fields and table columns can be
 saved as a presentation variant.\
 With the page map, you can switch to control level variant management.
-This allows separate managment of filter and table variants on List Report.\
-(4) In the Page Editor properties for table view, open drop down box **variantManagment** and select **Control**.
+This allows separate management of filter and table variants on List Report.\
+(4) In the Page Editor properties for table view, open drop down box **variantManagement** and select **Control**.
 
 ![SAP Business Application Studio - Google
 Chrome](./images/image7.png)
 
-Refresh the preview browser tab. You now can manage filter (5) and table variants (6) separately.
+Refresh the preview browser tab. You now can manage the filter (5) and table variants (6) separately.
 
 ![](./images/image9.png)
 
@@ -65,7 +65,7 @@ Switch back to Business Application Studio.\
 ![SAP Business Application Studio - Google
 Chrome](./images/image11.png)
 
-(10) In the page map overview, on tile **Object Page** click the **Configure
+(10) In the page map overview, on the tile **Object Page** click the **Configure
 Page** icon![](./images/image14.png)
 
 ![SAP Business Application Studio - Google
@@ -118,11 +118,11 @@ now displayed in a separate tab.
 
 ![](./images/image27.png)
 
-Tab based layout helps reducing the need for scrolling the page in case of many object page sections.\
+Tab based layout helps to reduce the need for scrolling the page in case of many object page sections.\
 In the sample scenario there are currently only 2 content sections, so you can switch back to page based section layout.
 
 ## Summary
 
-By using the page map, you've now configured initial load during app start, editable header content, control level variant managment and tab based section layout.
+By using the page map, you've now configured initial load during app start, editable header content, control level variant management and tab based section layout.
 
 Continue to - [Exercise 4 - Adding a Custom Page ](../ex4/README.md)
