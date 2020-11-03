@@ -40,6 +40,11 @@ There are no special requirements to follow the exercises in this repository.
   - [Custom Sections Overview](exercises/ex5#custom-sections-overview)
   - [Exercise 5.1.1 Enhancing the language model](exercises/ex5#exercise-511-enhancing-the-language-model)
   - [Exercise 5.1.2 Add custom section via Page Map](exercises/ex5#exercise-512-add-custom-section-via-page-map)
+- [Exercise 6 - Enhance the UI with annotations](exercises/ex6#exercise-6---enhance-the-ui-with-annotations)
+  - [Exercise 6.1 Adding a field group](exercises/ex6#exercise-61-adding-a-field-group)
+  - [Exercise 6.2 Add a reference facet annotation](exercises/ex6#exercise-62-add-a-reference-facet-annotation)
+  - [Exercise 6.3 Add a new table column with criticality highlighting](exercises/ex6#exercise-63-add-a-new-table-column-with-criticality-highlighting)
+  - [Summary](#summary)
 
 ## License
 Copyright (c) 2020 SAP SE or an SAP affiliate company. All rights reserved. This file is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE](LICENSES/Apache-2.0.txt) file.

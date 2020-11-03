@@ -92,7 +92,3 @@ annotate service.IncidentStatus with {
         TextArrangement : #TextOnly
     }    @title :  '{i18n>IncidentStatus}'
 };
-
-annotate service.Individual with @(Communication.Contact : {
-    fn   : businessPartnerID
-});

@@ -4,7 +4,7 @@ In this exercise, we will enhance the UI by adding annotations. For each exercis
 LSP support for annotation modelling. Alternatively, you can apply prepared code snippets.
 After applying new annotations, you can use Format Document (Shift+Alt+F) to format code for better readibility.
 
-## Exercise 6.1 Sub Exercise 1 Adding a field group
+## Exercise 6.1 Adding a field group
 
 After completing these steps you will have added a new content section to the object page.\
 You will use annotation **FieldGroup** which represents a collection of different types of data fields.\

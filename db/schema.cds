@@ -53,8 +53,8 @@ entity IncidentProcessTimeline : managed {
 
 entity Individual : managed {
   key id                : UUID;
-      businessPartnerID : String;
-      addressID         : String @UI.Hidden;
+      // businessPartnerID : String;
+      // addressID         : String;
       @assert.integrity : false
       Incidents         : Association to many Incidents
                             on Incidents.assignedIndividual = $self;
