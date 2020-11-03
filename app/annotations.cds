@@ -71,12 +71,7 @@ annotate service.Incidents with @(UI : {
     FieldGroup #HeaderGeneralInformation : {Data : [
     {Value : priority_code},
     {Value : incidentStatus_code},
-    {Value : category_code},
-    {
-        $Type  : 'UI.DataFieldForAnnotation',
-        Target : 'assignedIndividual/@Communication.Contact',
-        Label  : '{i18n>AssignedContact}'
-    }
+    {Value : category_code}
     ]},
 
     FieldGroup #IncidentDetails          : {Data : [

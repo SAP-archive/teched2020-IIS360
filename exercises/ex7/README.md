@@ -12,19 +12,28 @@ After completing these steps you will have created...
 2.	Insert this line of code in schema.cds.
 ```js
  using { API_BUSINESS_PARTNER as external } from '../srv/external/API_BUSINESS_PARTNER.csn';
-    @readonly
+
+```
+
+2. insert
+   ```js
     entity BusinessPartner         as projection on external.A_BusinessPartner {
         key BusinessPartner
     };
-
-    @readonly
     entity BusinessPartnerAddress  as projection on external.A_BusinessPartnerAddress {
         key BusinessPartner, key AddressID, CityName, Country, PostalCode, FullName, StreetName, HouseNumber
     }
-```
-
-2. uncomment properties in schema.cds Individuals entity
-3. Insert lines of code in schema.cds
+    ```
+    
+3. insert
+   ,
+    {
+        $Type  : 'UI.DataFieldForAnnotation',
+        Target : 'assignedIndividual/@Communication.Contact',
+        Label  : '{i18n>AssignedContact}'
+    }
+4. uncomment properties in schema.cds Individuals entity
+5. Insert lines of code in schema.cds
 ```js
 extend scp.cloud.Individual with {
   businessPartner        : Association to one external.A_BusinessPartner
@@ -46,7 +55,13 @@ extend scp.cloud.Individual with {
   and businessPartnerAddress.AddressID       = addressID;
     }
 ```
-
+insert
+   ,
+    {
+        $Type  : 'UI.DataFieldForAnnotation',
+        Target : 'assignedIndividual/@Communication.Contact',
+        Label  : '{i18n>AssignedContact}'
+    }
 
 ## Exercise 2.2 Sub Exercise 2 Description
 
