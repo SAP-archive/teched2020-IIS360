@@ -143,76 +143,11 @@ This will show the business partner address data inline with the Individual data
 
 ## Exercise 7.4 Add annotation for contact card
 
-In this exercise you will add an annotation of type @Communication.Contact with properties referring to the new external entities.
+In this exercise you will add an annotation of type **@Communication.Contact** with properties referring to the new external entities, and enhance the object page header to show a contact card link.
 
-(16) In BAS project explorer, open file **common.cds**.\
- Add contact card annotation
-
-![](./images/image17.png)
-
-
-![](./images/image18.png)
-
-(17) Add header field
-
-![](./images/image19.png)
-
-(18) Object Page header shows contact card. Click name.
-
-![](./images/image20.png)
-
-(19) Drag **incidentservice.js **![](./images/image21.png).
-
-(20) Drop on .
-
-![](./images/image22.png)
-
-(21) Click **Yes **![](./images/image23.png).
-
-![](./images/image24.png)
-
-(22) Remove hyphens to enable external API credentials
-
-![](./images/image25.png)
-
-(23) Click **BusinessPartnerAddress.**
-
-![](./images/image26.png)
-
-![](./images/image27.png)
-
-(24) Click **Kirchhög, 99867 Gotha, DE **![](./images/image28.png).
-
-1. insert
-   ,
-    {
-        $Type  : 'UI.DataFieldForAnnotation',
-        Target : 'assignedIndividual/@Communication.Contact',
-        Label  : '{i18n>AssignedContact}'
-    }
-2. uncomment properties in schema.cds Individuals entity
-3. Insert lines of code in schema.cds
+In BAS project explorer, open file **common.cds**.\
+(16) Add the following code to the end of the files content:
 ```js
-extend scp.cloud.Individual with {
-  businessPartner        : Association to one external.A_BusinessPartner
-  on businessPartner.BusinessPartner = businessPartnerID;
-  businessPartnerAddress : Association to one external.A_BusinessPartnerAddress
-  on  businessPartnerAddress.BusinessPartner = businessPartnerID
-  and businessPartnerAddress.AddressID       = addressID;
-}
-```
-
-4.	Insert this line of code in incidentsservice.cds.
-
-insert
-   ,
-    {
-        $Type  : 'UI.DataFieldForAnnotation',
-        Target : 'assignedIndividual/@Communication.Contact',
-        Label  : '{i18n>AssignedContact}'
-    }
-
-
 annotate service.Individual with @(Communication.Contact : {
       fn   : businessPartner.BusinessPartnerFullName,
         adr   : [{
@@ -225,26 +160,71 @@ annotate service.Individual with @(Communication.Contact : {
         }]
 })
 ;
-
-## Exercise 2.2 Sub Exercise 2 Description
-
-After completing these steps you will have...
-
-1.	Enter this code.
-```abap
-DATA(lt_params) = request->get_form_fields(  ).
-READ TABLE lt_params REFERENCE INTO DATA(lr_params) WITH KEY name = 'cmd'.
-  IF sy-subrc = 0.
-    response->set_status( i_code = 200
-                     i_reason = 'Everything is fine').
-    RETURN.
-  ENDIF.
-
 ```
 
-2.	Click here.
-<br>![](/exercises/ex2/images/02_02_0010.png)
+![](./images/image17.png)
+
+To visualize the contact card in the object pages header, you need to add an additional annotation.\
+Open file **app/annotation.cds**.\
+Locate **FieldGroup #HeaderGeneralInformation**.\
+(17) Put a comma after line **{Value : category_code}** and enter the following code:
+
+```js
+,
+    {
+        $Type  : 'UI.DataFieldForAnnotation',
+        Target : 'assignedIndividual/@Communication.Contact',
+        Label  : '{i18n>AssignedContact}'
+    }
+```
+
+
+![](./images/image18.png)
+
+(18) Go to the preview browser tab and refresh. The Object Page header shows a contact card link.
+
+![](./images/image19.png)
+
+## Exercise 7.4 Fetch business partner data from S/4 HANA Cloud system
+
+
+In order to consume data from an S/4 HANA Cloud system in a local setup, you need to add the VCAP_SERVICE credentials to the default-env.json file located in the root folder of this project.
+The file has been prepared for basic authentication so that you just have to enter user and password, and complete the OData URL to the S/4 HANA cloud instance.\
+Some further notes: in a deployment scenario, you would create a destination service and bind it to your application in order to have the VCAP_SERVICE credentials.
+Details about creating a destination in SAP Cloud Platform can be found [here](https://help.sap.com/viewer/92204dcdf722491883c7819f66a70de8/latest/en-US/e08040a9cf664555957a419dc2df0e19.html).\
+Then you can configure the external service in the package.json file using [this guide](https://cap.cloud.sap/docs/guides/consuming-services#configuring-required-services).
+
+In this exercise, you will add custom handler code which is called on the READ event of the BusinessPartner and BusinessPartnerAddress entities. Whenever an OData call for business partner data issued from the UI, this handler is called. For further details about the currently supported query capabilities, please refer to the [CAP documentation](https://cap.cloud.sap/docs/guides/consuming-services#sending-requests).
+
+In BAS project explorer, open folder **app/test-resources/api-hub**.\
+(19) Drag file ![](./images/image21.png).\
+(20) Drop on folder **srv**.
+
+![](./images/image20.png)
+
+(21) Click **Yes **![](./images/image23.png) to confirm that the existing file is overwritten.
+
+![](./images/image22.png)
+
+Open file package.json and scroll down to section **"cds"**
+(22) Remove hyphens from properties **model** and **credentials** to enable the external service configuration.
+
+![](./images/image24.png)
+
+(23) On your preview browser tab, select entity **BusinessPartnerAddress.**
+
+![](./images/image25.png)
+
+The OData response will now show data retrieved from the S/4 HANA system.
+
+![](./images/image26.png)
+
+(24) In your preview browser, open the app and navigate to the object page.\
+The contact card now shows data from S/4 HANA.
+
+![](./images/image27.png)
+
 
 ## Summary
 
-You've now ...
+You've now successfully completed the hands-on workshop. Congratulations!

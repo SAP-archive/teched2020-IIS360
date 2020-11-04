@@ -1,3 +1,24 @@
-{
-    
-}
+"s4-hana-cloud": [
+    {
+      "label": "s4-hana-cloud",
+      "provider": null,
+      "plan": "api-access",
+      "name": "teched-2020",
+      "tags": ["s4-hana-cloud"],
+      "instance_name": "teched-2020",
+      "binding_name": null,
+      "credentials": {
+        "Type": "HTTP",
+        "XFSystemName": "S/4HANA 300098",
+        "User": "XXXXXXXXXXXXXXXXXXXXXXXXX",
+        "Authentication": "BasicAuthentication",
+        "WebIDEEnabled": "true",
+        "ProxyType": "Internet",
+        "URL": "https://myXXXXX-api.s4hana.ondemand.com/sap/opu/odata/sap/API_BUSINESS_PARTNER",
+        "Name": "teched-2020",
+        "Password": "XXXXXXXXXXXXXXXXXXXXXXXXX"
+      },
+      "syslog_drain_url": null,
+      "volume_mounts": []
+    }
+  ]
