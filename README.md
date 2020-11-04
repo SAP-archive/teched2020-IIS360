@@ -44,7 +44,12 @@ There are no special requirements to follow the exercises in this repository.
   - [Exercise 6.1 Adding a field group](exercises/ex6#exercise-61-adding-a-field-group)
   - [Exercise 6.2 Add a reference facet annotation](exercises/ex6#exercise-62-add-a-reference-facet-annotation)
   - [Exercise 6.3 Add a new table column with criticality highlighting](exercises/ex6#exercise-63-add-a-new-table-column-with-criticality-highlighting)
-  - [Summary](#summary)
+- [Exercise 7 - Adding a contact card showing data from SAP S/4 HANA](exercises/ex7#exercise-7---adding-a-contact-card-showing-data-from-sap-s4-hana)
+  - [Exercise 7.1 Get the Business Partner EDMX file](#exercise-71-get-the-business-partner-edmx-file)
+  - [Exercise 7.2 Add the EDMX File and local data to your project](exercises/ex7#exercise-72-add-the-edmx-file-and-local-data-to-your-project)
+  - [Exercise 7.3 Add associations to Incidents Service entities](exercises/ex7#exercise-73-add-associations-to-incidents-service-entities)
+  - [Exercise 7.4 Add annotation for contact card](#exercise-74-add-annotation-for-contact-card)
+  - [Exercise 7.4 Fetch business partner data from S/4 HANA Cloud system](exercises/ex7#exercise-74-fetch-business-partner-data-from-s4-hana-cloud-system)
 
 ## License
 Copyright (c) 2020 SAP SE or an SAP affiliate company. All rights reserved. This file is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE](LICENSES/Apache-2.0.txt) file.
