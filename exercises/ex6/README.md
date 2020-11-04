@@ -179,4 +179,4 @@ in the table **Incident Process Flow**
 You've now used the LSP annotation support and added annotations for
 **UI.FieldGroup**, **UI.ReferenceFacet** and **UI.DataField**.
 
-Continue to - [Exercise 7 - Integrating into S/4 HANA ](../ex7/README.md)
+Continue to - [Exercise 7 - Adding a contact card showing data from SAP S/4 HANA ](../ex7/README.md)
