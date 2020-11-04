@@ -163,10 +163,5 @@ annotate service.IncidentFlow with @(UI : {LineItem : [
 {
     $Type : 'UI.DataField',
     Value : stepEndDate
-},
-{
-    $Type : 'UI.DataField',
-    Value : incident.assignedIndividual.businessPartnerID,
-    Label : '{i18n>CreatedBy}'
 }
 ]});

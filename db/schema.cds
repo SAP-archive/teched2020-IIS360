@@ -72,4 +72,4 @@ entity Priority : IncidentsCodeList {
 
 entity IncidentStatus : IncidentsCodeList {}
 
-//extend service with business partner entities
+//add associations to external entities
