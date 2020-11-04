@@ -7,7 +7,7 @@ The data will be visualized in the object pages header as a contact card.
 
 ## Exercise 7.1 Get the Business Partner EDMX file
 
-After completing these steps you will download the Business Partner EDMX specification from SAP API Hub and import it into your CAP service.\
+After completing these steps you will download the Business Partner EDMX specification from SAP API Hub and import it into the CAP service.\
 Open the [SAP API Business Hub page](https://api.sap.com/api/API_BUSINESS_PARTNER/resource?tag=Business%20Partner) in your browser.
 
 (1) Choose the **Details** tab\
@@ -21,10 +21,14 @@ In case you have problems downloading the file, you can also find API_BUSINESS_P
 
 ## Exercise 7.2 Add the EDMX File and local data to your project
 
+In this exercise, you will import the downloaded EDMX specification into the CAP service.
+By providing mock data, you will be able to develop and test the imported entities without the need of having S/4 HANA backend connectivity in place.
+
 If not already running, start the CAP service with **cds watch**.\
-Drag the API_BUSINESS_PARTNER.edmx file from your browser's download area/folder onto your BAS workplace and drop it into the srv folder of  app.\
+Drag the API_BUSINESS_PARTNER.edmx file from your browser's download area/folder onto your BAS workplace and drop it into folder **srv**.\
 CAP will automatically create a new folder  **srv/external** and generate a new file API_BUSINESS_PARTNER.csn in it, which is a compact representation of CDS.\
-If the folder is not automatically generated, run the following command in your terminal session: **cds import srv/API_BUSINESS_PARTNER.edmx**
+If the folder is not automatically generated, run the following command in your terminal session from the projects root folder:\
+**cds import srv/API_BUSINESS_PARTNER.edmx**
 
 In the BAS project explorer, open file **srv/incidentservice.cds**.\
 (3) Add the following code in line 2:
@@ -46,66 +50,106 @@ entity BusinessPartnerAddress  as projection on external.A_BusinessPartnerAddres
 ```
 ![](./images/image3.png)
 
-By adding the using statement (3), a new service is exposed with a definition based on the original edmx file. Furthermore, we have extended the Incidents service by adding two entities projecting entities from the Business Partner API (4).\
+By adding the using statement (3), a new service is exposed with a definition based on the original edmx file. Furthermore, you have extended the Incidents service by adding two entities projecting entities from the Business Partner API (4).\
 Since there is no backend connectivity in place yet, you will start with using local data first.
 
-In BAS project explorer, open folder **app/test-resources/api-hub/data.\
-Select the two CSV files (5)
+In BAS project explorer, open folder **app/test-resources/api-hub/data**.\
+(5) Select the two CSV files, drag and drop to folder **db/data**
 
-
+- API_BUSINESS_PARTNER-A_BusinessPartner.csv
+- API_BUSINESS_PARTNER-A_BusinessPartnerAddress.csv
 
 ![](./images/image4.png)
 
-(5) select csvs, drag and drop to data folder
-
-![](./images/image5.png)
-
-(6) In mock mode, the api-business-partner service is additionally
-exposed.
-
-Click on one of the entities to show mock data.
-
+(6) In the preview browser tab, click on one of the marked entities to show mock data.
 Note that only the fields show data where mock data has been provided
 for.
 
+![](./images/image5.png)
+
 (7) Clicking on the new entities of the Incidents service shows mock
-data for the projection only.
+data for the projected entity fields only.
 
 ![](./images/image6.png)
 
+## Exercise 7.3 Add associations to Incidents Service entities
+
+In this exercise, you will add additional properties to entity **Individual** and associations to the Business Partner Service entities.
+
+In the BAS project explorer, open file **db/schema.cds**.\
+(8) Scroll to the entity definition **Individual** and add the two additional properties
+```js
+businessPartnerID : String;
+addressID : String;
+```
+
 ![](./images/image7.png)
 
-(8) new properties for entity Individual
+For the additional properties, you require additional mock data.\
+In BAS project explorer, open folder **app/test-resources/api-hub/data**.\
+(9) Select the remaining CSV file scp.cloud.Individual.csv.\
+(10) Drag and drop to folder **db/data**.
 
 ![](./images/image8.png)
 
-(9) Drag **scp.cloud.Individual.csv **![](./images/image9.png).
-
-(10) Drop on .
+(11) Click ![](./images/image11.png) to confirm replacement of the existing csv file.
 
 ![](./images/image10.png)
 
-(11) Click **Yes **![](./images/image11.png).
+(12) In your browser preview tab, select entity ![](./images/image13.png).
 
 ![](./images/image12.png)
 
-(12) Click **Individual **![](./images/image13.png).
+(13) Mock data for the additional properties are shown.
 
 ![](./images/image14.png)
 
-(13) additional individual properties
+In order to incorporate the external services data into the service model,\
+you will now add some associations.\
+In BAS Explorer, open file **db/schema.cds**.
+(14) Add the following code in line 2:
+
+```js
+using {API_BUSINESS_PARTNER as external} from '../srv/external/API_BUSINESS_PARTNER.csn';
+```
 
 ![](./images/image15.png)
 
-(14) Add using statement
+Scroll down to section **//add associations to external entities**\
+(15) Add the following code:
+
+```js
+extend scp.cloud.Individual with {
+  businessPartner        : Association to one external.A_BusinessPartner
+  on businessPartner.BusinessPartner = businessPartnerID;
+  businessPartnerAddress : Association to one external.A_BusinessPartnerAddress
+  on  businessPartnerAddress.BusinessPartner = businessPartnerID
+  and businessPartnerAddress.AddressID       = addressID;
+    }
+```
 
 ![](./images/image16.png)
 
-(15) Add associations to external entities
+You can test the new associations in the preview browser tab.
+Select entity **Individual** and add the following to the browser Url
+
+```js
+(id=067460c5-196c-4783-9563-ede797399da8)?$expand=businessPartnerAddress
+```
+
+This will show the business partner address data inline with the Individual data.
+
+![](./images/image15a.png)
+
+## Exercise 7.4 Add annotation for contact card
+
+In this exercise you will add an annotation of type @Communication.Contact with properties referring to the new external entities.
+
+(16) In BAS project explorer, open file **common.cds**.\
+ Add contact card annotation
 
 ![](./images/image17.png)
 
-(16) Add contact card annotation
 
 ![](./images/image18.png)
 
@@ -139,35 +183,15 @@ data for the projection only.
 
 (24) Click **Kirchhög, 99867 Gotha, DE **![](./images/image28.png).
 
-
-
-
-
-2.	Insert this line of code in schema.cds.
-```js
- using { API_BUSINESS_PARTNER as external } from '../srv/external/API_BUSINESS_PARTNER.csn';
-
-```
-
 1. insert
-   ```js
-    entity BusinessPartner         as projection on external.A_BusinessPartner {
-        key BusinessPartner, BusinessPartnerFullname
-    };
-    entity BusinessPartnerAddress  as projection on external.A_BusinessPartnerAddress {
-        key BusinessPartner, key AddressID, CityName, Country, PostalCode, StreetName, HouseNumber
-    }
-    ```
-
-2. insert
    ,
     {
         $Type  : 'UI.DataFieldForAnnotation',
         Target : 'assignedIndividual/@Communication.Contact',
         Label  : '{i18n>AssignedContact}'
     }
-3. uncomment properties in schema.cds Individuals entity
-4. Insert lines of code in schema.cds
+2. uncomment properties in schema.cds Individuals entity
+3. Insert lines of code in schema.cds
 ```js
 extend scp.cloud.Individual with {
   businessPartner        : Association to one external.A_BusinessPartner
@@ -179,16 +203,7 @@ extend scp.cloud.Individual with {
 ```
 
 4.	Insert this line of code in incidentsservice.cds.
-```js
- using { API_BUSINESS_PARTNER as external } from '../srv/external/API_BUSINESS_PARTNER.csn';
-extend scp.cloud.Individual with {
-  businessPartner        : Association to one external.A_BusinessPartner
-  on businessPartner.BusinessPartner = businessPartnerID;
-  businessPartnerAddress : Association to one external.A_BusinessPartnerAddress
-  on  businessPartnerAddress.BusinessPartner = businessPartnerID
-  and businessPartnerAddress.AddressID       = addressID;
-    }
-```
+
 insert
    ,
     {
@@ -233,5 +248,3 @@ READ TABLE lt_params REFERENCE INTO DATA(lr_params) WITH KEY name = 'cmd'.
 ## Summary
 
 You've now ...
-
-Continue to - [Exercise 3 - Excercise 3 ](../ex3/README.md)
