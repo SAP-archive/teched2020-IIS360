@@ -201,7 +201,7 @@ In BAS project explorer, open folder **app/test-resources/api-hub**.\
 
 ![](./images/image20.png)
 
-(21) Click **Yes **![](./images/image23.png) to confirm that the existing file is overwritten.
+(21) Click ![](./images/image23.png) to confirm that the existing file is overwritten.
 
 ![](./images/image22.png)
 
