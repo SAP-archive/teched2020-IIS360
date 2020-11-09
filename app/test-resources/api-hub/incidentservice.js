@@ -1,5 +1,4 @@
 const cds = require("@sap/cds");
-const _ = require("lodash");
 
 /**
  * Enumeration values for FieldControlType
