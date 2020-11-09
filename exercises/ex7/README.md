@@ -166,18 +166,16 @@ annotate service.Individual with @(Communication.Contact : {
 
 To visualize the contact card in the object pages header, you need to add an additional annotation.\
 Open file **app/annotation.cds**.\
-Locate **FieldGroup #HeaderGeneralInformation**.\
-(17) Put a comma after line **{Value : category_code}** and enter the following code:
+Locate section **header facet enhancement**.\
+(17) Enter the following code:
 
 ```js
-,
     {
-        $Type  : 'UI.DataFieldForAnnotation',
+        $Type : 'UI.ReferenceFacet',
+        Label : '{i18n>AssignedContact}',
         Target : 'assignedIndividual/@Communication.Contact',
-        Label  : '{i18n>AssignedContact}'
     }
 ```
-
 
 ![](./images/image18.png)
 
