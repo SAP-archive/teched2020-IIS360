@@ -1,5 +1,5 @@
 const cds = require("@sap/cds");
-
+const _ = require("lodash");
 /**
  * Enumeration values for FieldControlType
  * @see https://github.com/SAP/odata-vocabularies/blob/master/vocabularies/Common.md#FieldControlType
@@ -44,7 +44,7 @@ module.exports = cds.service.impl(async function (srv) {
         }
 
         if (Array.isArray(Incidents)) {
-            Incidentss.forEach(_setFlags);
+            Incidents.forEach(_setFlags);
         } else {
             _setFlags(Incidents);
         }
@@ -53,9 +53,9 @@ module.exports = cds.service.impl(async function (srv) {
     /**
      * Set priority criticality used for display in LR table
      *
-     * @param Incidentss {Incidents | Incidents[]}  (Array of) Incidents
+     * @param Incidents {Incidents | Incidents[]}  (Array of) Incidents
      */
-    function setPriorityCriticality(Incidentss) {
+    function setPriorityCriticality(Incidents) {
 
         function _setCriticality(Incidents) {
             if (Incidents.priority) {
@@ -63,10 +63,10 @@ module.exports = cds.service.impl(async function (srv) {
             }
         }
 
-        if (Array.isArray(Incidentss)) {
-            Incidentss.forEach(_setCriticality);
+        if (Array.isArray(Incidents)) {
+            Incidents.forEach(_setCriticality);
         } else {
-            _setCriticality(Incidentss);
+            _setCriticality(Incidents);
         }
     }
 
