@@ -38,13 +38,13 @@ Click on the Quick Tool Access icon **SAP Business Application Studio**.
 
 ![Welcome SCP Trial](../ex0/images/00_00_0020.png)
 
-## Create Dev Space
+## Create development space
 
 Click on the button **Create Dev Space**.
 
 ![Create Dev Space](../ex0/images/00_00_0030.png)
 
-Enter a name for your dev space and select profile **SAP Fiori**.
+Enter a name for your development space and select profile **SAP Fiori**.
 
 ![Select Profile](../ex0/images/00_00_0040.png)
 
@@ -52,7 +52,7 @@ In the lower right corner of the page press button **Create Dev Space**.
 
 ![confirm](../ex0/images/00_00_0050.png)<br>
 
-Once your dev space has status running, click on the development space name to open it.
+Once your development space has status running, click on the development space name to open it.
 
 ![enter dev space](../ex0/images/00_00_0060.png)
 
@@ -121,7 +121,7 @@ If you closed the preview browser tab, you can reopen it by applying the followi
 With the setup procedure done, you now have completed:
 - setting up the SAP Cloud Platform trial account
 - Access to SAP Business Application Studio (SBAS)
-- Creation of your dev space
+- Creation of your development space
 - Setting up the sample OData V4 service in SBAS
 
 Continue to - [Exercise 1 - Generation of the Fiori elements app](../ex1/README.md)
