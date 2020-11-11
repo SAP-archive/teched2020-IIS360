@@ -20,7 +20,7 @@ There are no special requirements to follow the exercises in this repository.
     - [New Trial Users](exercises/ex0#new-trial-users)
     - [Existing Trial Users](exercises/ex0#existing-trial-users)
     - [Access SAP Business Application Studio](exercises/ex0#access-sap-business-application-studio)
-  - [Create development space](exercises/ex0#create-dev-space)
+  - [Create development space](exercises/ex0#create-development-space)
   - [Get the sample scenario](exercises/ex0#get-the-sample-scenario)
   - [Reopen the exposed port](exercises/ex0#reopen-the-exposed-port)
   
