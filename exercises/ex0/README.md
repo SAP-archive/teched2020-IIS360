@@ -56,6 +56,14 @@ Once your dev space has status running, click on the development space name to o
 
 ![enter dev space](../ex0/images/00_00_0060.png)
 
+Open a workspace by clicking the button in the project explorer
+
+![open workspace](../ex0/images/00_00_0065.png)
+
+Select folder **projects** and click **Open**
+
+![select ws folder](../ex0/images/00_00_0066.png)
+
 ## Get the sample scenario
 
 Access the Github Repository via [this link](https://github.com/SAP-samples/teched2020-IIS360)\
