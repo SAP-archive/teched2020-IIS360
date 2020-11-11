@@ -53,7 +53,7 @@ By adding the using statement (3), a new service is exposed with a definition ba
 Since there is no backend connectivity in place yet, you will start with using local data first.
 
 In BAS project explorer, open folder **app/test-resources/api-hub/data**.\
-(5) Select the two CSV files, drag and drop to folder **db/data**
+(5) Select the two CSV files, drag and drop to folder **db/data**.\
 
 - API_BUSINESS_PARTNER-A_BusinessPartner.csv
 - API_BUSINESS_PARTNER-A_BusinessPartnerAddress.csv
@@ -91,7 +91,7 @@ In BAS project explorer, open folder **app/test-resources/api-hub/data**.\
 
 ![](./images/image8.png)
 
-(11) Click ![](./images/image11.png) to confirm replacement of the existing csv file.
+(11) Click ![](./images/image11.png) to confirm replacement of the existing csv file.\
 
 ![](./images/image10.png)
 
@@ -128,6 +128,8 @@ extend scp.cloud.Individual with {
 ```
 
 ![](./images/image16.png)
+
+Note that the mock data that was added in step (11) for entity scp.cloud.Individual properties **businessPartnerID** and **addressID** need to match existing business partner address data keys in your S/4 HANA cloud system when later switching from mock data to real S/4 HANA Cloud connectivity.
 
 You can test the new associations in the preview browser tab.
 Select entity **Individual** and add the following to the browser Url
