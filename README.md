@@ -6,7 +6,7 @@ This repository contains the material for the SAP TechEd 2020 session called IIS
 
 ## Overview
 
-This session introduces attendees to the creation of a SAP Fiori elements app based on an OData V4 service. You will start with a CAP (nodeJS) based sample service, and make usage of the different SAP Fiori tools in order to generate and extend the app.
+This session introduces attendees to the creation of a SAP Fiori elements app based on an OData V4 service. You will start with a SAP Cloud Application Programming Model (nodeJS) based sample service, and make usage of the different SAP Fiori tools in order to generate and extend the app.
 
 ## Requirements
 
@@ -25,7 +25,7 @@ There are no special requirements to follow the exercises in this repository.
   - [Reopen the exposed port](exercises/ex0#reopen-the-exposed-port)
   
 - [Exercise 1 - Generating a SAP Fiori elements app](exercises/ex1#exercise-1---generating-a-fiori-elements-app)
-  - [Exercise 1.1 Using the UI Generator](exercises/ex1#exercise-11---using-the-ui-generator)
+  - [Exercise 1.1 Using the SAP Fiori Tools Application Generator](exercises/ex1#exercise-11---using-the-sap-fiori-tools-application-generator)
   - [Exercise 1.2 Starting the App](exercises/ex1#exercise-12-testing-the-app)
   
 - [Exercise 2 - Switch to Flexible Column Layout](exercises/ex2#exercise-2---switch-to-flexible-column-layout)

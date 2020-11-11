@@ -1,12 +1,12 @@
 # Exercise 1 - Generating a Fiori elements app
 
-In this exercise, we will create an SAP Fiori elements application based on the given CAP service.
-For this we will make usage of the SAP Fiori Tools Application Generator.\
-We will consume our local CAP service and use the List Report Object Page floorplan.
+In this exercise, you will create a SAP Fiori elements application of type List Report Object Page, based on the given
+SAP Cloud Application Programming Model sample service.
+For this you will make usage of the SAP Fiori Tools Application Generator.\
 
-## Exercise 1.1 Using the UI Generator
+## Exercise 1.1 Using the SAP Fiori Tools Application Generator
 
-(1) In SAP Business Application Studio, invoke the Command Palette 
+(1) In SAP Business Application Studio, invoke the Command Palette
 (View -\>Command Palette or ctrl+shift+p) and choose
  ![](./images/image2.png).
 
@@ -27,7 +27,7 @@ We will consume our local CAP service and use the List Report Object Page floorp
 
 ![](./images/image7.png)
 
-(7) Click the **Browse for folder** icon to select your CAP project folder.
+(7) Click the **Browse for folder** icon to select your projects folder.
 
 ![](./images/image9.png)
 
@@ -48,7 +48,7 @@ Click ![](./images/image11.png).
 (12) In the Entity Selection drop down, select **Incidents** as main entity.\
 The properties of this entity will be used for display of data on List
 Report, showing data from the entity collection.\
-Leave value for drop down **Navigation Entity** to **none** since we want to show
+Leave value for drop down **Navigation Entity** to **none** since you want to show
 data of a single instance of the main entity on the object page, too.
 
 (13) Click ![](./images/image6.png).
@@ -69,7 +69,7 @@ some of the subsequent exercises to work properly)
 
 (18) Select **Yes** in order to skip generation of an
 additional associated annotation.cds file.\
-The CAP service already provides a basic set of UI annotations in a
+The sample service already provides a basic set of UI annotations in a
 corresponding file in app-\>annotation.cds.
 
 (19) Click ![](./images/image21.png).
@@ -78,7 +78,7 @@ corresponding file in app-\>annotation.cds.
 
 This will start the app generation.\
 When done, a dialog appears asking for opening the app in a new workspace.\
-Close the dialog by clicking the cross icon in the top right corner since we don't want to have the workspace root set to the newly created app folder inside the CAP project.
+Close the dialog by clicking the cross icon in the top right corner since the workspace root should not be switched to the newly created app folder inside the sample service project.
 
 ![close new ws](../ex1/images/image181.png)
 

@@ -2,7 +2,7 @@
 
 Welcome to the workshop 'Creating Simple Fiori elements apps with OData V4'.\
 This workshop will guide you step-by-step through the process of creating a Fiori elements floorplans for OData V4 app.\
-Based on a CAP OData service equipped with basic UI annotations, you will learn how to generate and enhance a\
+Based on a SAP Cloud Application Programming Model service equipped with basic UI annotations, you will learn how to generate and enhance a\
 List Report Object Page Fiori elements application with the help of Fiori Tools and CDS annotation modelling.
 
 ## Access SAP Business Application Studio (TechEd 2020 live workshop registered participants only)

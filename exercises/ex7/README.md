@@ -1,13 +1,12 @@
 # Exercise 7 - Adding a contact card showing data from SAP S/4 HANA
 
-In this exercise, you extend your CAP service with the consumption of an external Business Partner service.<br>
-You get its definition from SAP's SAP API Business Hub.<br>
-First, you will work with local data and later on get the data directly from the external SAP S/4HANA system.<br>
+In this exercise, you extend the sample service with the consumption of an external Business Partner service.<br>
+First, you will work with local mock data and later on get the data directly from the external SAP S/4HANA cloud system.<br>
 The data will be visualized in the object pages header as a contact card.
 
 ## Exercise 7.1 Get the Business Partner EDMX file
 
-After completing these steps you will download the Business Partner EDMX specification from SAP API Hub and import it into the CAP service.\
+After completing these steps you will download the Business Partner EDMX specification from SAP API Hub and import it into the sample service.\
 Open the [SAP API Business Hub page](https://api.sap.com/api/API_BUSINESS_PARTNER/resource?tag=Business%20Partner) in your browser.
 
 (1) Choose the **Details** tab\
@@ -21,12 +20,12 @@ In case you have problems downloading the file, you can also find API_BUSINESS_P
 
 ## Exercise 7.2 Add the EDMX File and local data to your project
 
-In this exercise, you will import the downloaded EDMX specification into the CAP service.
+In this exercise, you will import the downloaded EDMX specification into the sample service.
 By providing mock data, you will be able to develop and test the imported entities without the need of having S/4 HANA backend connectivity in place.
 
-If not already running, start the CAP service with **cds watch**.\
+If not already running, start the OData service in a terminal session with **cds watch**.\
 Drag the API_BUSINESS_PARTNER.edmx file from your browser's download area/folder onto your BAS workplace and drop it into folder **srv**.\
-CAP will automatically create a new folder  **srv/external** and generate a new file API_BUSINESS_PARTNER.csn in it, which is a compact representation of CDS.\
+The application programming model will automatically create a new folder  **srv/external** and generate a new file API_BUSINESS_PARTNER.csn in it, which is a compact representation of CDS.\
 If the folder is not automatically generated, run the following command in your terminal session from the projects root folder:\
 **cds import srv/API_BUSINESS_PARTNER.edmx**
 
@@ -191,7 +190,7 @@ Some further notes: in a deployment scenario, you would create a destination ser
 Details about creating a destination in SAP Cloud Platform can be found [here](https://help.sap.com/viewer/92204dcdf722491883c7819f66a70de8/latest/en-US/e08040a9cf664555957a419dc2df0e19.html).\
 Then you can configure the external service in the package.json file using [this guide](https://cap.cloud.sap/docs/guides/consuming-services#configuring-required-services).
 
-In this exercise, you will add custom handler code which is called on the READ event of the BusinessPartner and BusinessPartnerAddress entities. Whenever an OData call for business partner data issued from the UI, this handler is called. For further details about the currently supported query capabilities, please refer to the [CAP documentation](https://cap.cloud.sap/docs/guides/consuming-services#sending-requests).
+In this exercise, you will add custom handler code which is called on the READ event of the BusinessPartner and BusinessPartnerAddress entities. Whenever an OData call for business partner data issued from the UI, this handler is called. For further details about the currently supported query capabilities, please refer to the [SAP Cloud Application Programming Model documentation](https://cap.cloud.sap/docs/guides/consuming-services#sending-requests).
 
 In BAS project explorer, open folder **app/test-resources/api-hub**.\
 (19) Drag file ![](./images/image21.png).\
