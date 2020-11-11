@@ -72,11 +72,17 @@ additional associated annotation.cds file.\
 The CAP service already provides a basic set of UI annotations in a
 corresponding file in app-\>annotation.cds.
 
-(19) Click ![](./images/image21.png).\
+(19) Click ![](./images/image21.png).
 
 ![](./images/image18.png)
 
-This will start the app generation. When done, you can review the generated artifacts in the Explorer View of SAP Business Application Studio.
+This will start the app generation.\
+When done, a dialog appears asking for opening the app in a new workspace.\
+Close the dialog by clicking the cross icon in the top right corner since we don't want to have the workspace root set to the newly created app folder inside the CAP project.
+
+![close new ws](../ex1/images/image181.png)
+
+You can review the generated artifacts in the Explorer View of SAP Business Application Studio.
 
 ![](./images/image29.png)
 
