@@ -56,29 +56,48 @@ Once your development space has status running, click on the development space n
 
 ![enter dev space](../ex0/images/00_00_0060.png)
 
-Open a workspace by clicking the button in the project explorer
+## Get the sample scenario
+
+Get the GitHub repository clone Url from the repositories [root page](https://github.com/SAP-samples/teched2020-IIS360).\
+Click on button **Code** (1), then click icon (2).
+
+![copy link](../ex0/images/00_00_0070.png)
+
+In the dev space, you will see a **Welcome Page**.\
+Click on the link **Clone from Git**.
+
+![Click on link "Clone from Git"](../ex0/images/click-clone-from-git.png)
+
+Alternatively, you can go via menu **View->Find Command...** and search for command **git clone**.
+
+![command git clone](../ex0/images/cloneCommand.png)
+
+Paste the repository link into the input field.
+
+```abap
+https://github.com/SAP-samples/teched2020-IIS360.git
+```
+
+![Enter the github repository URL](../ex0/images/enter-github-repository.png)
+
+When the cloning is finished, open a workspace by clicking the button in the project explorer
 
 ![open workspace](../ex0/images/00_00_0065.png)
 
-Select folder **projects** and click **Open**
+Select folder **teched2020-IIS360** and click **Open**.
 
 ![select ws folder](../ex0/images/00_00_0066.png)
-
-## Get the sample scenario
-
-Access the Github Repository via [this link](https://github.com/SAP-samples/teched2020-IIS360)\
-Click on the button **Code** (1), then click on the icon (2) to copy the git clone link.
-
-![copy link](../ex0/images/00_00_0070.png)
 
 (3) Open a new terminal via the header menu.
 
 ![new terminal](../ex0/images/00_00_0080.png)
 
-In the terminal window, type the following commands and confirm with return:
-- cd projects
-- git clone https://github.com/SAP-samples/teched2020-IIS360.git (you can paste the copied link here)
-- cd teched2020-IIS360
+In the terminal window, make sure that the command line prompt shows folder **teched2020-IIS360**.
+
+![command line prompt](../ex0/images/00_00_0081.png)
+
+Type the following commands and confirm with return:
+
 - npm install (this installs all node modules as defined in the projects package.json)
 - cds w (this compiles the service and runs it in watch mode)
 
