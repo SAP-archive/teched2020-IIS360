@@ -55,6 +55,8 @@ data of a single instance of the main entity on the object page, too.
 
 ![](./images/image15.png)
 
+Finally add some attributes to the application project.\
+The **Module name** and the **Application namespace** should be as shown below to keep aligned with the following exercises.\
 (14) Enter as module name **incidents** (module name has to match exactly for
 some of the subsequent exercises to work properly)
 
