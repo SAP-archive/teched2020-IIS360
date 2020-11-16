@@ -158,9 +158,9 @@ module.exports = cds.service.impl(async function (srv) {
                         tx.run(
                             UPDATE(BusinessPartner)
                             .set({
-                                BusinessPartnerFullName: each.BusinessPartnerFullName
+                                BusinessPartnerFullName: data.BusinessPartnerFullName
                             }).where({
-                                BusinessPartner: each.BusinessPartner
+                                BusinessPartner: data.BusinessPartner
                             })
                         )
                     } catch (error) {
