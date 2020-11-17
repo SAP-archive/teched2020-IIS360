@@ -1,29 +1,9 @@
 namespace scp.cloud;
 using IncidentService as service from './incidentservice';
+
 using {
     cuid
 } from '@sap/cds/common';
-
-type Identifier : String(100)@(title : 'Identifier');
-@cds.autoexpose
-abstract entity identified : cuid {
-    identifier : Identifier not null;
-}
-
-//Bolded display of first table column values can be achieved by defining annotations Common.SemanticKey and
-//Common.TextArrangement for the entities key and referring to a 'human-readable' identifier to be displayed instead.
-
-annotate identified with @(
-    Common.SemanticKey : [identifier],
-    UI.Identification  : [{Value : identifier}]
-) {
-
-    ID         @Common : {
-        Text            : identifier,
-        TextArrangement : #TextOnly
-
-    };
-}
 
 annotate cuid with {
     ID @(
@@ -33,20 +13,6 @@ annotate cuid with {
     );
 }
 
-type TechnicalBooleanFlag : Boolean @(
-    UI.Hidden,
-    Core.Computed
-);
-
-type TechnicalFieldControlFlag : Integer @(
-    UI.Hidden,
-    Core.Computed
-);
-
-type Criticality : Integer @(
-    UI.Hidden,
-    Core.Computed
-);
 
 annotate service.Incidents with {
     ID @UI.Hidden: true;
