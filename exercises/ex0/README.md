@@ -84,7 +84,7 @@ When the cloning is finished, open a workspace by clicking the button in the pro
 
 ![open workspace](../ex0/images/00_00_0065.png)
 
-Select folder **teched2020-IIS360** and click **Open**.
+Select folder **teched2020-IIS360** and click **Open**. This will restart SAP Business Application Studio and show the selected workspace folder content in the Explorer.
 
 ![select ws folder](../ex0/images/00_00_0066.png)
 
@@ -111,7 +111,8 @@ You can now provide an alias for the exposed port.\
 ![SAP Business Application Studio - Google Chrome](../ex0/images/00_00_0120.png)
 
 A browser is opened.\
-(6) Click the **$metadata** link
+(6) Click the **$metadata** link to get the OData services metadata shown.\
+Click on the different service entities to display data.
 
 ![metadata](../ex0/images/00_00_0130.png)
 
@@ -143,4 +144,4 @@ With the setup procedure done, you now have completed:
 - Creation of your development space
 - Setting up the sample OData V4 service in SBAS
 
-Continue to - [Exercise 1 - Generation of the Fiori elements app](../ex1/README.md)
+Continue to - [Exercise 1 - Generating a SAP Fiori elements app](../ex1/README.md)

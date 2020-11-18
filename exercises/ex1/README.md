@@ -1,18 +1,19 @@
-# Exercise 1 - Generating a Fiori elements app
+# Exercise 1 - Generating a SAP Fiori elements app
 
 In this exercise, you will create a SAP Fiori elements application of type List Report Object Page, based on the given
 SAP Cloud Application Programming Model sample service.
-For this you will make usage of the SAP Fiori Tools Application Generator.\
+For this you will make usage of the SAP Fiori Tools Application Generator.
 
 ## Exercise 1.1 Using the SAP Fiori Tools Application Generator
 
-(1) In SAP Business Application Studio, invoke the Command Palette
-(View -\>Command Palette or ctrl+shift+p) and choose
- ![](./images/image2.png).
+(1) In SAP Business Application Studio, invoke the Command Palette\
+(View -\>Find Command... or ctrl+shift+p(Win)/cmd+shift+p(Mac))\
+and type **yeoman** in the search field.\
+Choose ![](./images/image2.png).
 
 ![](./images/image1.png)
 
-(2) Click on the tile **SAP Fiori elements application**.\
+(2) Click on tile **SAP Fiori elements application**.\
 (3) Click ![](./images/image4.png).
 
 ![](./images/image3.png)
@@ -94,7 +95,7 @@ After completing these steps you will have started and tested the generated app.
 
 (20) Switch to the service preview browser tab and refresh it.\
 Click on the served path.\
-If your preview browser tab had been closed, you can relaunch it by following the steps 'Reopen the exposed ports' as described [here](../ex0#reopen-the-exposed-port).\
+If your preview browser tab had been closed, you can relaunch it by following the steps 'Reopen the exposed ports' as described [here](../ex0#reopen-the-exposed-port).
 
 
 ![](./images/image22.png)
@@ -104,7 +105,7 @@ If your preview browser tab had been closed, you can relaunch it by following th
 ![](./images/image24.png)
 
 (22) Click ![](./images/image26.png) to trigger selection.\
-You can use the selection fields in order to set a filter.\
+You can use the selection fields in order to set a filter. If collapsed, you can expand the selection field area by clicking the small chevron icon on top.
 
 ![](./images/image25.png)
 
@@ -113,13 +114,22 @@ You can use the selection fields in order to set a filter.\
 ![](./images/image27.png)
 
 
-On the object page, you can click **Edit** which creates an edit draft and sets the UI to edit mode.\
-Changing input field values will automatically update the draft when input field focus is changed, or when you navigate back to the list report.\
-While in edit mode, the List Report shows a draft indicator in the corresponding line item.
-The draft is saved back to the active instance by pressing **Save** on the bottom of the object page.\
-You can create a new draft on the List Report by clicking button **Create**.
+On the object page, you can click **Edit** which creates an edit draft and sets the UI to edit mode.
 
 ![](./images/image28.png)
+
+Changing input field values will automatically update the draft when input field focus is changed, or when you navigate back to the list report.\
+The draft is saved back to the active instance by pressing **Save** on the bottom of the object page.
+
+![](./images/image28a.png)
+
+For instances in edit mode, the List Report shows a draft indicator in the corresponding line item.\
+You can create a new draft on the List Report by clicking button **Create**.
+
+![](./images/image27a.png)
+
+
+
 
 ## Summary
 
