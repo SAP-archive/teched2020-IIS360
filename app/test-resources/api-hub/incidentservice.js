@@ -1,5 +1,4 @@
 const cds = require("@sap/cds");
-const _ = require("lodash");
 /**
  * Enumeration values for FieldControlType
  * @see https://github.com/SAP/odata-vocabularies/blob/master/vocabularies/Common.md#FieldControlType
@@ -93,96 +92,83 @@ module.exports = cds.service.impl(async function (srv) {
         !req.query.cqn.where || (req.query.cqn.where && req.query.cqn.where[0] != "exists") ? extSrv.tx(req).run(req.query) : console.log('skipped')
     )
 
-    this.after('READ', Incidents, async (response, context) => {
-        return Promise.all(
-            //check on expanded entities in query response
-            response.filter(response => response.assignedIndividual && (response.assignedIndividual.businessPartner || response.assignedIndividual.businessPartnerAddress))
+    this.on('READ', Incidents, async (context, next) => {
+        if (context.query.SELECT.columns && context.query.SELECT.columns.find(c => c.ref[0] === 'assignedIndividual')) {
+            const node = context.query.SELECT.columns.find(c => c.ref[0] === 'assignedIndividual');
+            //check on expanded entities in query and enhance query with BP association columns  
+            //Experimental: currently no CAP support for external associated read when in draft mode                  
+            if (node.expand.find(c => c.ref[0] === 'businessPartner') && !node.expand.find(c => c.ref[0] === 'businessPartnerID')) {
+                node.expand.push({ ref: ['businessPartnerID'] })
+            }
+        }
+        const response = await next();
+        await Promise.all(
+            response.filter(response => response.assignedIndividual && response.assignedIndividual.businessPartnerID)
             .map(each =>
-                //asynchronous parallel read from S/4 service for expand on businessPartner and businessPartnerAddress                 
+                //asynchronous parallel read from S/4 service for expand on businessPartner
                 Promise.all([
-                    getBusinessPartner(each.assignedIndividual.businessPartner, context),
-                    getBusinessPartnerAddress(each.assignedIndividual.businessPartnerAddress, context)
+                    getBPartner(each.assignedIndividual, context)
                 ])
             )
         )
+        return response;
     })
 
-    this.after('READ', Individual, async (response, context) => {
-        return Promise.all(
-            //check on expanded entities in query response
-            response.filter(response => response.businessPartner || response.businessPartnerAddress)
+    this.on('READ', Individual, async (context, next) => {
+        //check on expanded entities in query and enhance query with BP association columns
+        //Experimental: currently no CAP support for external associated read when in draft mode
+        if (context.query.SELECT.columns && (context.query.SELECT.columns.find(c => c.ref[0] === 'businessPartner')) || context.query.SELECT.columns.find(c => c.ref[0] === 'businessPartnerAddress')) {
+            if (!context.query.SELECT.columns.find(c => c.ref[0] === 'businessPartnerID')) {
+                context.query.SELECT.columns.push({
+                    ref: ['businessPartnerID']
+                });
+                if (!context.query.SELECT.columns.find(c => c.ref[0] === 'addressID')) {
+                    context.query.SELECT.columns.push({
+                        ref: ['addressID']
+                    });
+                }
+            }
+        }
+        const response = await next();
+        await Promise.all(
+            response.filter(response => response.businessPartnerID && response.addressID)
             .map(each =>
-                //asynchronous parallel read from S/4 service for expand on businessPartner and businessPartnerAddress                 
+                //asynchronous parallel read from S/4 service for expand on businessPartner entities               
                 Promise.all([
-                    getBusinessPartner(each.businessPartner, context),
-                    getBusinessPartnerAddress(each.businessPartnerAddress, context)
+                    getBPartner(each, context),
+                    getBPartnerAddress(each, context)
                 ])
             )
         )
+        return response;
     })
 
-    this.after('READ', BusinessPartner, async (response, context) => {
-        if (context.query.cqn.where && context.query.cqn.where[0] === "exists") {
-            return Promise.all(
-                response.map(each =>
-                    Promise.all([
-                        getBusinessPartner(each, context)
-                    ])
-                )
-            )
-        }
-    })
-
-    this.after('READ', BusinessPartnerAddress, async (response, context) => {
-        if (context.query.cqn.where && context.query.cqn.where[0] === "exists") {
-            return Promise.all(
-                response.map(each =>
-                    Promise.all([
-                        getBusinessPartnerAddress(each, context)
-                    ])
-                )
-            )
-        }
-    })
-
-    const getBusinessPartner = async (each, context) => {
+    const getBPartner = async (each, context) => {
         if (!extSrv.options.mocked && each) {
             await extSrv.tx(context).run(
-                SELECT.one.from(BusinessPartner).where({
-                    BusinessPartner: each.BusinessPartner
+                    SELECT.one.from(BusinessPartner).where({
+                        BusinessPartner: each.businessPartnerID
+                    })
+                )
+                .then(data => {
+                    each.businessPartner = {};
+                    Object.assign(each.businessPartner, data);
                 })
-            ).then(data => {
-                if (!_.isEqual(each, data)) {
-                    try {
-                        const tx = cds.transaction(context);
-                        tx.run(
-                            UPDATE(BusinessPartner)
-                            .set({
-                                BusinessPartnerFullName: data.BusinessPartnerFullName
-                            }).where({
-                                BusinessPartner: data.BusinessPartner
-                            })
-                        )
-                    } catch (error) {
-                        console.log("bp not updated");
-                    }
-                };
-                Object.assign(each, data);
-            })
         }
     }
 
-    const getBusinessPartnerAddress = async (each, context) => {
+    const getBPartnerAddress = async (each, context) => {
         if (!extSrv.options.mocked && each) {
             await extSrv.tx(context).run(
                 SELECT.one.from(BusinessPartnerAddress).where({
-                    BusinessPartner: each.BusinessPartner
+                    BusinessPartner: each.businessPartnerID
                 }).and({
-                    AddressID: each.AddressID
+                    AddressID: each.addressID
                 })
-            ).then(data =>
-                Object.assign(each, data)
-            )
+            ).then(data => {
+                each.businessPartnerAddress = {};
+                Object.assign(each.businessPartnerAddress, data)
+            })
         }
     }
     //S/4 HANA integration: End Custom query handlers     

@@ -7,8 +7,7 @@
   "private": true,
   "dependencies": {
     "@sap/cds": "^4",
-    "express": "^4",
-    "lodash": "^4.17.20"
+    "express": "^4"
   },
   "devDependencies": {
     "sqlite3": "^5"
