@@ -23,7 +23,7 @@ Page**
 ![SAP Business Application Studio - Google
 Chrome](./images/image3.png)
 
-(3) In the drop down box **initialLoad**, select
+(3) In the drop down box **Initial Load**, select
 ![](./images/image6.png).\
 The configuration is automatically saved.
 

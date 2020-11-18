@@ -38,7 +38,7 @@ In the List Report, select a line item to open object page.
 
 ![](./images/image13.png)
 
-(8) The page is shown in flexible column layout.\ 
+(8) The page is shown in flexible column layout.\
 Select another List Report line item in order to display its details in the object page.
 
 ![](./images/image15.png)
