@@ -135,5 +135,4 @@ You can create a new draft on the List Report by clicking button **Create**.
 
 You've now successfully generated and tested the Fiori elements app.
 
-Continue to - [Exercise 2 - Extending the app with the Page Map](../ex2/README.md)
-
+Continue to - [Exercise 2 - Switch to Flexible Column Layout](../ex2/README.md)
