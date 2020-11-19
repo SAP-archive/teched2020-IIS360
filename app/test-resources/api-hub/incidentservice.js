@@ -93,12 +93,14 @@ module.exports = cds.service.impl(async function (srv) {
     )
 
     this.on('READ', Incidents, async (context, next) => {
-        if (context.query.SELECT.columns && context.query.SELECT.columns.find(c => c.ref[0] === 'assignedIndividual')) {
-            const node = context.query.SELECT.columns.find(c => c.ref[0] === 'assignedIndividual');
-            //check on expanded entities in query and enhance query with BP association columns  
-            //Experimental: currently no CAP support for external associated read when in draft mode                  
-            if (node.expand.find(c => c.ref[0] === 'businessPartner') && !node.expand.find(c => c.ref[0] === 'businessPartnerID')) {
-                node.expand.push({ ref: ['businessPartnerID'] })
+        const node = context.query.SELECT.columns && context.query.SELECT.columns.find(c => c.ref[0] === 'assignedIndividual')
+        //check on expanded entities in query and enhance query with BP association columns  
+        //Experimental: currently no CAP support for external associated read when in draft mode        
+        if (node && node.expand.find(c => c.ref[0] === 'businessPartner') && !node.expand.find(c => c.ref[0] === 'businessPartnerID')) {
+            {
+                node.expand.push({
+                    ref: ['businessPartnerID']
+                })
             }
         }
         const response = await next();
