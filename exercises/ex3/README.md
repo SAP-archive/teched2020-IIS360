@@ -41,7 +41,7 @@ With it, all personalizations of visible selection fields and table columns can 
 saved as a presentation variant.\
 With the page map, you can switch to control level variant management.
 This allows separate management of filter and table variants on List Report.\
-(4) In the Page Editor properties for table view, open drop down box **variantManagement** and select **Control**.
+(4) In the Page Editor properties for table view, open drop down box **Variant Management** and select **Control**.
 
 ![SAP Business Application Studio - Google
 Chrome](./images/image7.png)
@@ -76,7 +76,7 @@ Chrome](./images/image13.png)
 ![SAP Business Application Studio - Google
 Chrome](./images/image15.png)
 
-(12) Open drop down box **editableHeaderContent** and
+(12) Open drop down box **Editable Header Content** and
 set to ![](./images/image18.png).
 
 ![SAP Business Application Studio - Google
@@ -108,7 +108,7 @@ Go back to Business Application Studio.
 ![SAP Business Application Studio - Google
 Chrome](./images/image23.png)
 
-(17) In the drop down box for **sectionLayout**, select ![](./images/image26.png)
+(17) In the drop down box for **Section Layout**, select ![](./images/image26.png)
 
 ![SAP Business Application Studio - Google
 Chrome](./images/image25.png)
