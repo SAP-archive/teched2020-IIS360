@@ -24,7 +24,7 @@ Page**
 Chrome](./images/image3.png)
 
 (3) In the drop down box **Initial Load**, select
-![](./images/image6.png).\
+**True**.\
 The configuration is automatically saved.
 
 ![SAP Business Application Studio - Google
@@ -77,7 +77,7 @@ Chrome](./images/image13.png)
 Chrome](./images/image15.png)
 
 (12) Open drop down box **Editable Header Content** and
-set to ![](./images/image18.png).
+set to **False**.
 
 ![SAP Business Application Studio - Google
 Chrome](./images/image17.png)
@@ -108,7 +108,7 @@ Go back to Business Application Studio.
 ![SAP Business Application Studio - Google
 Chrome](./images/image23.png)
 
-(17) In the drop down box for **Section Layout**, select ![](./images/image26.png)
+(17) In the drop down box for **Section Layout**, select **Tabs**
 
 ![SAP Business Application Studio - Google
 Chrome](./images/image25.png)
