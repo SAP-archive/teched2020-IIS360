@@ -2,11 +2,12 @@
 
 ## Description
 
-This repository contains the material for the SAP TechEd 2020 session called IIS360 - Simplify Development of SAP Fiori Apps with OData V4.
+This repository contains the material for the SAP TechEd 2020 session **IIS360 - Simplify Development of SAP Fiori Apps with OData V4**.
 
 ## Overview
 
-This session introduces attendees to the creation of a SAP Fiori elements app based on an OData V4 service. You will start with a SAP Cloud Application Programming Model (nodeJS) based sample service, and make usage of the different SAP Fiori tools in order to generate and extend the app.
+This session introduces attendees to the creation of a SAP Fiori elements Floorplans for OData V4 app.\
+You will start in the SAP Business Application Studio with a sample service (based on the SAP Cloud Application Programming Model for nodeJS), and make usage of the SAP Fiori tools in order to generate and extend the app.
 
 ## Requirements
 
