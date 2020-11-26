@@ -2,7 +2,8 @@
 
 ## Description
 
-This repository contains the material for the SAP TechEd 2020 session **IIS360 - Simplify Development of SAP Fiori Apps with OData V4**.
+This repository contains the material for the SAP TechEd 2020 session\
+**IIS360 - Simplify Development of SAP Fiori Apps with OData V4**.
 
 ## Overview
 
