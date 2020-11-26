@@ -44,7 +44,7 @@ Click on the button **Create Dev Space**.
 
 ![Create Dev Space](../ex0/images/00_00_0030.png)
 
-Enter a name for your development space and select application profile **SAP Cloud Business Application**.
+Enter a name for your development space and select application profile **Full Stack Cloud Application**.
 
 ![Select Profile](../ex0/images/00_00_0040.png)
 
