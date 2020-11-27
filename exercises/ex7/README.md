@@ -186,7 +186,7 @@ Locate section **header facet enhancement**.\
 
 ![](./images/image19.png)
 
-## Exercise 7.4 Fetching Business Partner Data from an S/4 HANA Cloud system
+## Exercise 7.5 Fetching Business Partner Data from an S/4 HANA Cloud system
 
 In order to consume data from an S/4 HANA Cloud system in a local setup, you need to add the VCAP_SERVICE credentials to the default-env.json file located in the root folder of this project.
 The file has been prepared for basic authentication so that you just have to enter user and password, and complete the OData URL to the S/4 HANA cloud instance.\
