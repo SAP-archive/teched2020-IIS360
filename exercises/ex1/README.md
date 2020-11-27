@@ -49,7 +49,7 @@ Click ![](./images/image11.png).
 (12) In the Entity Selection drop down, select **Incidents** as main entity.\
 The properties of this entity will be used for display of data on List
 Report, showing data from the entity collection.\
-Leave value for drop down **Navigation Entity** to **none** since you want to show
+Leave value for drop down **Navigation Entity** to **None** since you want to show
 data of a single instance of the main entity on the object page, too.
 
 (13) Click ![](./images/image6.png).
