@@ -17,7 +17,7 @@ If you’re using Chrome as a browser, you now see the downloaded file in the fo
 
 ![](./images/image1.png)
 
-## Exercise 7.2 Add the EDMX File and Local Data to your Project
+## Exercise 7.2 Adding the EDMX File and Local Data to your Project
 
 In this exercise, you will import the downloaded EDMX specification into the sample service.
 By providing mock data, you will be able to develop and test the imported entities without the need of having S/4 HANA backend connectivity in place.

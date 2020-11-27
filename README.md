@@ -17,7 +17,7 @@ There are no special requirements to follow the exercises in this repository.
 ## Exercises
 
 - [Getting Started - Setting up your Development Environment](exercises/ex0#getting-started---setting-up-your-development-environment)
-  - [Access SAP Business Application Studio (TechEd 2020 Live Workshop Registered Participants Only)](exercises/ex0#access-sap-business-application-studio-teched-2020-live-workshop-registered-participants-only)
+  - [Accessing SAP Business Application Studio (TechEd 2020 Live Workshop Registered Participants Only)](exercises/ex0#accessing-sap-business-application-studio-teched-2020-live-workshop-registered-participants-only)
   - [Setting up SAP Business Application Studio in an SAP Cloud Platform Trial Account](exercises/ex0#setting-up-sap-business-application-studio-in-an-sap-cloud-platform-trial-account)
     - [New Trial Users](exercises/ex0#new-trial-users)
     - [Existing Trial Users](exercises/ex0#existing-trial-users)
@@ -27,16 +27,16 @@ There are no special requirements to follow the exercises in this repository.
   - [Reopening the Exposed Port](exercises/ex0#reopening-the-exposed-port)
   
 - [Exercise 1 - Generating an SAP Fiori Elements App](exercises/ex1#exercise-1---generating-an-sap-fiori-elements-app)
-  - [Exercise 1.1 Using the SAP Fiori Tools Application Generator](exercises/ex1#exercise-11---using-the-sap-fiori-tools-application-generator)
-  - [Exercise 1.2 Starting the App](exercises/ex1#exercise-12-testing-the-app)
+  - [Exercise 1.1 Using the SAP Fiori Tools Application Generator](exercises/ex1#exercise-11-using-the-sap-fiori-tools-application-generator)
+  - [Exercise 1.2 Starting the App](exercises/ex1#exercise-12-starting-the-app)
   
 - [Exercise 2 - Switching to Flexible Column Layout](exercises/ex2#exercise-2---switching-to-flexible-column-layout)
 
 - [Exercise 3 - Configuring the App](exercises/ex3#exercise-3---configuring-the-app)
-  - [Exercise 3.1 Enable Data Load During Start of the App](exercises/ex3#exercise-31-data-load-during-start-of-the-app)
+  - [Exercise 3.1 Enable Data Load During Start of the App](exercises/ex3#exercise-31-enable-data-load-during-start-of-the-app)
   - [Exercise 3.2 Enable Control Level Variant Management](exercises/ex3#exercise-32-enable-control-level-variant-managment)
   - [Exercise 3.3 Configure Editable Object Page Header](exercises/ex3#exercise-33-configure-editable-object-page-header)
-  - [Exercise 3.4 Tab Based Section Layout](exercises/ex3#exercise-34-tab-based-section-layout)
+  - [Exercise 3.4 Enable Tab Based Section Layout](exercises/ex3#exercise-34-enable-tab-based-section-layout)
   
 - [Exercise 4 - Adding a Custom Page](exercises/ex4#exercise-4---adding-a-custom-page)
   - [Exercise 4.1 Copy over the Sample Custom Page](exercises/ex4#exercise-41-copy-over-the-sample-custom-page)
@@ -54,10 +54,10 @@ There are no special requirements to follow the exercises in this repository.
   - [Exercise 6.3 Adding a new Table Column with Criticality Highlighting](exercises/ex6#exercise-63-adding-a-new-table-column-with-criticality-highlighting)
   
 - [Exercise 7 - Adding a Contact Card Showing Data from SAP S/4 HANA](exercises/ex7#exercise-7---adding-a-contact-card-showing-data-from-sap-s4-hana)
-  - [Exercise 7.1 Get the Business Partner EDMX File](#exercise-71-get-the-business-partner-edmx-file)
+  - [Exercise 7.1 Get the Business Partner EDMX File](exercises/ex7#exercise-71-get-the-business-partner-edmx-file)
   - [Exercise 7.2 Adding the EDMX File and Local Data to your Project](exercises/ex7#exercise-72-adding-the-edmx-file-and-local-data-to-your-project)
   - [Exercise 7.3 Adding Associations to the Incidents Service Entities](exercises/ex7#exercise-73-adding-associations-to-the-incidents-service-entities)
-  - [Exercise 7.4 Adding an Annotation for a Contact Card](#exercise-74-adding-an-annotation-for-a-contact-card)
+  - [Exercise 7.4 Adding an Annotation for a Contact Card](excercises/ex7#exercise-74-adding-an-annotation-for-a-contact-card)
   - [Exercise 7.4 Fetching Business Partner Data from an S/4 HANA Cloud system](exercises/ex7#exercise-74-fetching-business-partner-data-from-an-s4-hana-cloud-system)
 
 ## How to obtain support

@@ -38,7 +38,7 @@ Click on the Quick Tool Access icon **SAP Business Application Studio**.
 
 ![Welcome SCP Trial](../ex0/images/00_00_0020.png)
 
-## Create Development SUpace
+## Creating the Development Space
 
 Click on the button **Create Dev Space**.
 
@@ -56,7 +56,7 @@ Once your development space has status running, click on the development space n
 
 ![enter dev space](../ex0/images/00_00_0060.png)
 
-## Get the Sample Scenario
+## Getting the Sample Scenario
 
 Get the GitHub repository clone Url from the repository's [landing page](https://github.com/SAP-samples/teched2020-IIS360).\
 Click on button **Code** (1), then click icon (2).
