@@ -58,7 +58,7 @@ Once your development space has status running, click on the development space n
 
 ## Get the sample scenario
 
-Get the GitHub repository clone Url from the repositories [root page](https://github.com/SAP-samples/teched2020-IIS360).\
+Get the GitHub repository clone Url from the repository's [landing page](https://github.com/SAP-samples/teched2020-IIS360).\
 Click on button **Code** (1), then click icon (2).
 
 ![copy link](../ex0/images/00_00_0070.png)
