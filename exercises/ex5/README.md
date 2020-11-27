@@ -4,12 +4,13 @@ In this exercise, we will add a custom section to the object page by using the S
 
 ## Custom Sections Overview
 
-Custom sections offer the possibility of enhancing the object page with a freestyle UI5 XML fragment.\
+Custom sections offer the possibility of enhancing the object page with freestyle UI5 code.\
+In this exercise, we will add a UI5 XML fragment showing a Gantt Chart to the object page.
 The object page provides its current model context to the custom section, allowing displaying data from the UI5 OData model via context binding.\
 
 ## Exercise 5.1.1 Enhancing the language model
 
-For the title of custom sections to be shown on the object page, we want to use a property from the language model of the app.\
+For the title of the custom section to be shown on the object page, we want to use a property from the language model of the app.\
 (1) Open file **app/incidents/webapp/i18n/i18n.properties**\
 (2) Enter the following new property:
 
@@ -25,7 +26,7 @@ Save changes (**File->Save**).
 ## Exercise 5.1.2 Add a custom section via Page Map
 
 (3) The sample scenario provides a prepared XML fragment in the folder **app/incidents/webapp/ext/fragment**,\
-along with a javaScript file where you can implement event handler functions.
+along with a javaScript file where custom event handler code can be implemented.
 
 In the SAP Business Application Studio, open the page map (via Context Menu on the folder **app** or via **View -> Command Palette...**)\
 (4) On the page map tile **Object Page**, click icon ![](./images/image5.png) (**Configure Page**.).\
@@ -41,9 +42,11 @@ In the SAP Business Application Studio, open the page map (via Context Menu on t
 {i18n>MaxProcessingTime}
 ```
 
-(7) Click radio button **Use Existing Fragment**
+(7) Click radio button **Use Existing Fragment**.
 
 ![](./images/image8.png).
+
+Note that in field **Fragment Name** existing fragment **CustomSectionGantt** is automatically preselected.\
 
 (8) Open the drop down **Target Facet/Section** and select **IncidentOverViewFacet**.\
 In combination with the **Section Position** (we leave it to **After**), you define where the custom section should be located\

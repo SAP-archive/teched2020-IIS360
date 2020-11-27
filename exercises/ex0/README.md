@@ -98,8 +98,8 @@ In the terminal window, make sure that the command line prompt shows folder **te
 
 Type the following commands and confirm with return:
 
-- npm install (this installs all node modules as defined in the projects package.json)
-- cds w (this compiles the service and runs it in watch mode)
+- **npm install** (this installs all node modules as defined in the projects package.json)
+- **cds w** (this compiles the service and runs it in watch mode)
 
 (4) Click button **Expose and Open** on the appearing dialog
 
@@ -111,8 +111,7 @@ You can now provide an alias for the exposed port.\
 ![SAP Business Application Studio - Google Chrome](../ex0/images/00_00_0120.png)
 
 A browser is opened.\
-(6) Click the **$metadata** link to get the OData services metadata shown.\
-Click on the different service entities to display data.
+(6) Click the **$metadata** link to get the OData services metadata shown.
 
 ![metadata](../ex0/images/00_00_0130.png)
 

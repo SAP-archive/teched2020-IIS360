@@ -1,4 +1,5 @@
 using IncidentService as service from '../srv/incidentservice';
+using from '../srv/common';
 
 annotate service.Incidents with @(UI : {
     //basic list report annotations
@@ -64,7 +65,11 @@ annotate service.Incidents with @(UI : {
     HeaderFacets                         : [{
         $Type  : 'UI.ReferenceFacet',
         Target : '@UI.FieldGroup#HeaderGeneralInformation'
-    }],
+    },
+    //begin of header facet enhancement
+
+    //end of header facet enhancement
+    ],
 
     //Group of fields with an optional label
     //https://github.com/SAP/odata-vocabularies/blob/master/vocabularies/UI.md#FieldGroupType

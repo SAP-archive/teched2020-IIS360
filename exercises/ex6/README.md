@@ -2,7 +2,6 @@
 
 In this exercise, we will enhance the UI by adding annotations. For each exercise, you will make usage of the CDS compilers
 LSP support for annotation modelling. Alternatively, you can apply prepared code snippets.
-After applying new annotations, you can use Format Document (Shift+Alt+F) to format code for better readability.
 
 ## Exercise 6.1 Adding a field group
 
@@ -19,14 +18,14 @@ The field group annotation definition with the link to the different data field 
 ![](./images/image3.png)
 
 Trigger the LSP support for annotation modelling by pressing keys **ctrl+space**.\
+Filter the available menu entries by typing **field**.\
 (3) In the popup menu, select **FieldGroup**.
 
 ![](./images/image4.png)
 
-The annotation is added along with its basic structural elements.\ 
-The cursor is placed between 'FieldGroup' and ':' .\
+The annotation is added along with its basic structural elements. The cursor is placed between 'FieldGroup' and ':' .\
 Here you add a qualifier for the annotation which you later can refer to.\
-(4)Type **#Admin** as qualifier. 
+(4)Type **#Admin** as qualifier.
 
 ![](./images/image6.png)
 
@@ -42,14 +41,14 @@ Trigger again LSP support (ctrl+ space).\
 
 ![](./images/image8.png)
 
-DataField record is added along with its required value, the cursor is placed inside the record {}.\
-Trigger LSP support.\
+DataField record is added along with its required value, the cursor is placed inside the record {} after property **Value : **.\
+Trigger again LSP support.\
 Start typing in **created** to filter the list.\ 
 (7) Select property ![](./images/image10.png).
 
 ![](./images/image9.png)
 
-(8) Place the cursor after the record {}, and add additional DataField record with Value **'createdBy'** in the same way
+(8) Place the cursor after the comma of record {}, and add additional DataField record with Value **'createdBy'** in the same way
 
 ![](./images/image11.png)
 
@@ -95,7 +94,7 @@ The annotation is added along with its basic structural elements.\
 ![](./images/image16.png)
 
 Press **Tab** key to move cursor to the Label property.\
-(13) Type in **'{i18n\>AdminData}'**. This refers to a property defined in the language model definition file (db/_i18n/i18n.properties). Hovering the mouse over the value gives a preview of the underlying text.
+(13) Type in **'{i18n\>AdminData}'** in quotes. This refers to a property defined in the language model definition file (db/_i18n/i18n.properties). Hovering the mouse over the value gives a preview of the underlying text.
 
 ![](./images/image19.png)
 
@@ -114,6 +113,7 @@ The full annotation:
             }
 ```
 
+Make sure that the service is running (Terminal command **cds w**).\
 Switch to the preview browser tab and refresh.\
 (15) On the object page, new section **'Admin Data'** is shown inside the collection facet **Incident Overview**.
 
@@ -122,11 +122,10 @@ Switch to the preview browser tab and refresh.\
 ## Exercise 6.3 Add a new table column with criticality highlighting
 
 In this exercise, you will add an additional column to table **Incident Flow** shown on the object page.\
-Tables are defined by a so called **lineItem annotations**, representing a collection of different kinds of data field annotations.\
+Tables are defined by a so called **lineItem annotation**, representing a collection of different kinds of data field annotations.\
 Each data field annotation refers to a property of the annotated service entity, representing a piece of data.\
 An overview of the different data representation options can be found [here](https://github.com/SAP/odata-vocabularies/blob/master/vocabularies/UI.md#DataFieldAbstract).\
-
-You will enhance the existing lineItem annotation for entity **IncidentFlow** by adding an additional data field annotation.
+You can now enhance the existing lineItem annotation for entity **IncidentFlow** by adding an additional data field annotation.
 
 (16) Open file **app/annotations.cds**.\
 Place cursor in section **'column enhancement'**
@@ -146,8 +145,7 @@ With the cursor sitting behind **Value :**, trigger LSP support.\
 
 For highlighting of table column values, we now add property **Criticality**.\
 As value we point it to a corresponding property of entity **IncidentFlow** representing the criticality of each entity instance as a number.\
-
-Add an empty line after **Value : stepStatus**\
+Add an empty line after **Value : stepStatus,**\
 Trigger LSP support (ctrl+space).\
 (19)Choose ![](./images/image28.png).
 

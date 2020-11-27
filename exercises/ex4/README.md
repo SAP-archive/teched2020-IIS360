@@ -30,7 +30,7 @@ Open the dropdown list **Select Page Type**.\
 ![](./images/image8.png)
 
 (6) We want to navigate to the custom page from the table **Incident Flow** shown on the object page.\
- Open the dropdown list **Navigation** to select the corresponding navigation property.
+ Open the **Navigation** dropdown list.
 ![](./images/image10.png)
 
 (7) Select entry ![](./images/image13.png).

@@ -14,7 +14,8 @@ Alternatively, choose **Application Modeller - Show Page Map** via Command Palet
 ![](./images/image3.png)
 
 (3) The Page Map is opened in a separate tab, showing pages and navigations.\
-In the top toolbar of the Page Map, click the page details icon ![](./images/image6.png) to the right.
+In the top toolbar of the Page Map, click the page details icon ![](./images/image6.png) to the right.\
+This opens up panel **Global Page Settings**.
 
 
 ![](./images/image5.png)
@@ -33,8 +34,8 @@ Option **Select Layout for 3 Columns**: select **Mid-Expanded**
 
 ![](./images/image11.png)
 
-(7) Switch to the preview browser tab and refresh with F5.\
-In the List Report, select a line item to open object page.
+(7) Switch to the preview browser tab. If the app is still open from the previous exercise, navigate back to the Fiori Launch Page and refresh the browser.\
+Now start the app again by clicking the launchpage icon. In the List Report, select a line item to open object page.
 
 ![](./images/image13.png)
 
@@ -50,6 +51,8 @@ Select another List Report line item in order to display its details in the obje
 The List Report column is closed, and the object page is shown full screen.
 
 ![](./images/image19.png)
+
+You can toggle back to split layout by clicking the same icon again.
 
 ## Summary
 

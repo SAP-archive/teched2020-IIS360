@@ -12,7 +12,7 @@ triggered when the app is started.
 
 In the SAP Business Application Studio, open the page map (via Context Menu on the folder **app** or via **View -> Command Palette...**)
 
-(1) On the tile **List Report**, click **Configure
+(1) On the tile **List Report**, click icon **Configure
 Page**
 
 ![](./images/image1.png).
@@ -30,9 +30,9 @@ The configuration is automatically saved.
 ![SAP Business Application Studio - Google
 Chrome](./images/image5.png)
 
-Refresh the preview browser, then navigate back to the Fiori launch
-page.
-Data will now be immediately loaded when starting the app.
+Navigate back to the Fiori launch
+page and refresh the browser.
+Data will now be immediately loaded in the list report page when starting the app.
 
 ## Exercise 3.2 Enable control level variant management
 
@@ -40,7 +40,7 @@ The List Report pages offers per default page variant management.\
 With it, all personalizations of visible selection fields and table columns can be
 saved as a presentation variant.\
 With the page map, you can switch to control level variant management.
-This allows separate management of filter and table variants on List Report.\
+This allows separate management of filter and table variants on the List Report page.\
 (4) In the Page Editor properties for table view, open drop down box **Variant Management** and select **Control**.
 
 ![SAP Business Application Studio - Google
@@ -53,8 +53,8 @@ Refresh the preview browser tab. You now can manage the filter (5) and table var
 ## Exercise 3.3 Configure Editable Object Page Header
 
 When in edit mode, header fields are per default shown as editable
-input fields.\This might not be wanted in case these fields are
-additionally displayed in another section of the object page (7)(8).
+input fields.\
+This might not be wanted in case these fields are additionally displayed in another section of the object page (7)(8).
 
 ![](./images/image10.png)
 
