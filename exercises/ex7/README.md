@@ -1,10 +1,10 @@
-# Exercise 7 - Adding a contact card showing data from SAP S/4 HANA
+# Exercise 7 - Adding a Contact Card Showing Data from SAP S/4 HANA
 
 In this exercise, you extend the sample service with the consumption of an external Business Partner service.<br>
 First, you will work with local mock data and later on get the data directly from the external SAP S/4HANA cloud system.<br>
 The data will be visualized in the object pages header as a contact card.
 
-## Exercise 7.1 Get the Business Partner EDMX file
+## Exercise 7.1 Get the Business Partner EDMX File
 
 You will now download the Business Partner EDMX specification from SAP API Hub and import it into the sample service.\
 Open the [SAP API Business Hub page](https://api.sap.com/api/API_BUSINESS_PARTNER/resource?tag=Business%20Partner) in your browser.
@@ -17,7 +17,7 @@ If you’re using Chrome as a browser, you now see the downloaded file in the fo
 
 ![](./images/image1.png)
 
-## Exercise 7.2 Add the EDMX File and local data to your project
+## Exercise 7.2 Add the EDMX File and Local Data to your Project
 
 In this exercise, you will import the downloaded EDMX specification into the sample service.
 By providing mock data, you will be able to develop and test the imported entities without the need of having S/4 HANA backend connectivity in place.
@@ -73,7 +73,7 @@ data for the projected entity fields only.
 
 ![](./images/image6.png)
 
-## Exercise 7.3 Add associations to Incidents Service entities
+## Exercise 7.3 Adding Associations to the Incidents Service Entities
 
 In this exercise, you will add additional properties to entity **Individual** and associations to the Business Partner Service entities.
 
@@ -144,7 +144,7 @@ This will show the business partner address data inline with the Individual data
 
 ![](./images/image15a.png)
 
-## Exercise 7.4 Add annotation for contact card
+## Exercise 7.4 Adding an Annotation for a Contact Card
 
 In this exercise you will add an annotation of type **@Communication.Contact** with properties referring to the new external entities, and enhance the object page header to show a contact card link.
 
@@ -186,7 +186,7 @@ Locate section **header facet enhancement**.\
 
 ![](./images/image19.png)
 
-## Exercise 7.4 Fetch business partner data from S/4 HANA Cloud system
+## Exercise 7.4 Fetching Business Partner Data from an S/4 HANA Cloud system
 
 In order to consume data from an S/4 HANA Cloud system in a local setup, you need to add the VCAP_SERVICE credentials to the default-env.json file located in the root folder of this project.
 The file has been prepared for basic authentication so that you just have to enter user and password, and complete the OData URL to the S/4 HANA cloud instance.\

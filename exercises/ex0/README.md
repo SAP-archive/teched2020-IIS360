@@ -1,11 +1,11 @@
-# Getting Started - Setting up your development environment
+# Getting Started - Setting up your Development Environment
 
 Welcome to the workshop 'Creating Simple Fiori elements apps with OData V4'.\
 This workshop will guide you step-by-step through the process of creating a Fiori elements floorplans for OData V4 app.\
 Based on a SAP Cloud Application Programming Model service equipped with basic UI annotations, you will learn how to generate and enhance a\
 List Report Object Page Fiori elements application with the help of Fiori Tools and CDS annotation modelling.
 
-## Access SAP Business Application Studio (TechEd 2020 live workshop registered participants only)
+## Access SAP Business Application Studio (TechEd 2020 Live Workshop Registered Participants Only)
 
 Log on the SAP Business Application Studio via [this link](https://sap-ux-teched.cry10cf.int.applicationstudio.cloud.sap/index.html) by using the provided live workshop credentials.\
 You can continue with the step [Create Dev Space](#create-development-space).
@@ -38,7 +38,7 @@ Click on the Quick Tool Access icon **SAP Business Application Studio**.
 
 ![Welcome SCP Trial](../ex0/images/00_00_0020.png)
 
-## Create development space
+## Create Development SUpace
 
 Click on the button **Create Dev Space**.
 
@@ -56,7 +56,7 @@ Once your development space has status running, click on the development space n
 
 ![enter dev space](../ex0/images/00_00_0060.png)
 
-## Get the sample scenario
+## Get the Sample Scenario
 
 Get the GitHub repository clone Url from the repository's [landing page](https://github.com/SAP-samples/teched2020-IIS360).\
 Click on button **Code** (1), then click icon (2).
@@ -115,7 +115,7 @@ A browser is opened.\
 
 ![metadata](../ex0/images/00_00_0130.png)
 
-## Reopen the exposed port
+## Reopen the Exposed Port
 
 If you closed the preview browser tab, you can reopen it by applying the following steps.
 
@@ -143,4 +143,4 @@ With the setup procedure done, you now have completed:
 - Creation of your development space
 - Setting up the sample OData V4 service in SAP Business Application Studio
 
-Continue to - [Exercise 1 - Generating a SAP Fiori elements app](../ex1/README.md)
+Continue to - [Exercise 1 - Generating an SAP Fiori Elements App](../ex1/README.md)

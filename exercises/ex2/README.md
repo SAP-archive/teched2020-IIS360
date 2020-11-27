@@ -58,4 +58,4 @@ You can toggle back to split layout by clicking the same icon again.
 
 You've now enabled flexible column layout (FCL) for the app. FCL is supported for up to 2 navigation levels, splitting the screen into three areas.
 
-Continue to - [Exercise 3 - Configuring the app ](../ex3/README.md)
+Continue to - [Exercise 3 - Configuring the App ](../ex3/README.md)

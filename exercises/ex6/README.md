@@ -1,9 +1,9 @@
-# Exercise 6 - Enhance the UI with annotations
+# Exercise 6 - Enhance the UI with Annotations
 
 In this exercise, we will enhance the UI by adding annotations. For each exercise, you will make usage of the CDS compilers
 LSP support for annotation modelling. Alternatively, you can apply prepared code snippets.
 
-## Exercise 6.1 Adding a field group
+## Exercise 6.1 Adding a Field Group
 
 After completing these steps you will have added a new content section to the object page.\
 You will use annotation **FieldGroup** which represents a collection of different types of data fields.\
@@ -70,7 +70,7 @@ FieldGroup #Admin: {
 },
 ```
 
-## Exercise 6.2 Add a reference facet annotation
+## Exercise 6.2 Adding a reference facet annotation
 
 The different sections of the object pages content area are defined by so called **reference facet** annotations.\
 You can group several reference facets in so called **collection facet** annotations.\
@@ -119,7 +119,7 @@ Switch to the preview browser tab and refresh.\
 
 ![](./images/image21.png)
 
-## Exercise 6.3 Add a new table column with criticality highlighting
+## Exercise 6.3 Adding a new Table Column with Criticality Highlighting
 
 In this exercise, you will add an additional column to table **Incident Flow** shown on the object page.\
 Tables are defined by a so called **lineItem annotation**, representing a collection of different kinds of data field annotations.\

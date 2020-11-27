@@ -1,8 +1,8 @@
-# Exercise 3 - Configuring the app
+# Exercise 3 - Configuring the App
 
 In this exercise, we will configure the behaviour of the app using the Fiori page map tool.
 
-## Exercise 3.1 Enable data load during start of the app
+## Exercise 3.1 Enable Data Load During Start of the App
 
 When starting the app, per default the user has to press the
 **Go** button in order to trigger the selection.\
@@ -34,7 +34,7 @@ Navigate back to the Fiori launch
 page and refresh the browser.
 Data will now be immediately loaded in the list report page when starting the app.
 
-## Exercise 3.2 Enable control level variant management
+## Exercise 3.2 Enable Control Level Variant Management
 
 The List Report pages offers per default page variant management.\
 With it, all personalizations of visible selection fields and table columns can be
@@ -93,7 +93,7 @@ In the object page, click ![](./images/image20.png)
 
 ![](./images/image21.png)
 
-## Exercise 3.4 Tab based section layout
+## Exercise 3.4 Tab Based Section Layout
 
 Per default, all the sections in the object page are displayed one
 below the other.
