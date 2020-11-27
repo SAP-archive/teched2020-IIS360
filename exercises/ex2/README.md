@@ -1,4 +1,4 @@
-# Exercise 2 - Switch to Flexible Column Layout
+# Exercise 2 - Switching to Flexible Column Layout
 
 In this exercise, we will switch the page layout to flexible column layout by making usage of the SAP Fiori Tool Page Map.\
 Flexible column layout splits the screen into several areas, allowing faster navigation between the List Report line items.

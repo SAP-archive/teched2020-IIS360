@@ -95,7 +95,7 @@ After completing these steps you will have started and tested the generated app.
 
 (20) Switch to the service preview browser tab and refresh it.\
 Click on the served path.\
-If your preview browser tab had been closed, you can relaunch it by following the steps 'Reopen the exposed ports' as described [here](../ex0#reopen-the-exposed-port).
+If your preview browser tab had been closed, you can relaunch it by following the steps 'Reopening the exposed ports' as described [here](../ex0#reopening-the-exposed-port).
 
 
 ![](./images/image22.png)

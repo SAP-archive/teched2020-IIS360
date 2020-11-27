@@ -5,7 +5,7 @@ This workshop will guide you step-by-step through the process of creating a Fior
 Based on a SAP Cloud Application Programming Model service equipped with basic UI annotations, you will learn how to generate and enhance a\
 List Report Object Page Fiori elements application with the help of Fiori Tools and CDS annotation modelling.
 
-## Access SAP Business Application Studio (TechEd 2020 Live Workshop Registered Participants Only)
+## Accessing SAP Business Application Studio (TechEd 2020 Live Workshop Registered Participants Only)
 
 Log on the SAP Business Application Studio via [this link](https://sap-ux-teched.cry10cf.int.applicationstudio.cloud.sap/index.html) by using the provided live workshop credentials.\
 You can continue with the step [Create Dev Space](#create-development-space).

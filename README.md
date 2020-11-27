@@ -18,19 +18,19 @@ There are no special requirements to follow the exercises in this repository.
 
 - [Getting Started - Setting up your Development Environment](exercises/ex0#getting-started---setting-up-your-development-environment)
   - [Access SAP Business Application Studio (TechEd 2020 Live Workshop Registered Participants Only)](exercises/ex0#access-sap-business-application-studio-teched-2020-live-workshop-registered-participants-only)
-  - [Set up Business Application Studio in an SAP Cloud Platform Trial Account](exercises/ex0#set-up-business-application-studio-in-an-sap-cloud-platform-trial-account)
+  - [Setting up SAP Business Application Studio in an SAP Cloud Platform Trial Account](exercises/ex0#setting-up-sap-business-application-studio-in-an-sap-cloud-platform-trial-account)
     - [New Trial Users](exercises/ex0#new-trial-users)
     - [Existing Trial Users](exercises/ex0#existing-trial-users)
-    - [Access SAP Business Application Studio](exercises/ex0#access-sap-business-application-studio)
-  - [Create Development Space](exercises/ex0#create-development-space)
-  - [Get the Sample Scenario](exercises/ex0#get-the-sample-scenario)
-  - [Reopen the Exposed Port](exercises/ex0#reopen-the-exposed-port)
+    - [Accessing SAP Business Application Studio](exercises/ex0#accessing-sap-business-application-studio)
+  - [Creating the Development Space](exercises/ex0#creating-the-development-space)
+  - [Getting the Sample Scenario](exercises/ex0#getting-the-sample-scenario)
+  - [Reopening the Exposed Port](exercises/ex0#reopening-the-exposed-port)
   
 - [Exercise 1 - Generating an SAP Fiori Elements App](exercises/ex1#exercise-1---generating-an-sap-fiori-elements-app)
   - [Exercise 1.1 Using the SAP Fiori Tools Application Generator](exercises/ex1#exercise-11---using-the-sap-fiori-tools-application-generator)
   - [Exercise 1.2 Starting the App](exercises/ex1#exercise-12-testing-the-app)
   
-- [Exercise 2 - Switch to Flexible Column Layout](exercises/ex2#exercise-2---switch-to-flexible-column-layout)
+- [Exercise 2 - Switching to Flexible Column Layout](exercises/ex2#exercise-2---switching-to-flexible-column-layout)
 
 - [Exercise 3 - Configuring the App](exercises/ex3#exercise-3---configuring-the-app)
   - [Exercise 3.1 Enable Data Load During Start of the App](exercises/ex3#exercise-31-data-load-during-start-of-the-app)
