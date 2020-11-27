@@ -23,7 +23,7 @@ In this exercise, you will import the downloaded EDMX specification into the sam
 By providing mock data, you will be able to develop and test the imported entities without the need of having S/4 HANA backend connectivity in place.
 
 If not already running, start the OData service in a terminal session with **cds watch**.\
-Drag the API_BUSINESS_PARTNER.edmx file from your browser's download area/folder onto your BAS workplace and drop it into folder **srv**.
+Drag the API_BUSINESS_PARTNER.edmx file from your browser's download area/folder over to your SAP Business Application Studio explorer pane and drop it into folder **srv**.
 
 ![](./images/image2a.png)
 
@@ -31,7 +31,7 @@ The application programming model will automatically create a new folder  **srv/
 If the folder is not automatically generated, run the following command in your terminal session from the projects root folder:\
 **cds import srv/API_BUSINESS_PARTNER.edmx**
 
-In the BAS project explorer, open file **srv/incidentservice.cds**.\
+In the SAP Business Application Studio explorer pane, open file **srv/incidentservice.cds**.\
 (3) Add the following code in line 2:
 ```js
 using {API_BUSINESS_PARTNER as external} from '../srv/external/API_BUSINESS_PARTNER.csn';
@@ -54,7 +54,7 @@ entity BusinessPartnerAddress  as projection on external.A_BusinessPartnerAddres
 By adding the using statement (3), a new service is exposed with a definition based on the original edmx file. Furthermore, you have extended the Incidents service by adding two projected entities from the Business Partner API (4).\
 Since there is no backend connectivity in place yet, you will start with using local data first.
 
-In BAS project explorer, open folder **app/test-resources/api-hub/data**.\
+In SAP Business Application Studio explorer pane, open folder **app/test-resources/api-hub/data**.\
 (5) Select the following two CSV files, drag and drop them to folder **db/data**.
 
 - API_BUSINESS_PARTNER-A_BusinessPartner.csv
@@ -77,7 +77,7 @@ data for the projected entity fields only.
 
 In this exercise, you will add additional properties to entity **Individual** and associations to the Business Partner Service entities.
 
-In the BAS project explorer, open file **db/schema.cds**.\
+In the SAP Business Application Studio explorer pane, open file **db/schema.cds**.\
 (8) Scroll to the entity definition **Individual** and add the two additional properties
 ```js
 businessPartnerID : String;
@@ -87,7 +87,7 @@ addressID : String;
 ![](./images/image7.png)
 
 For the additional properties, you require additional mock data.\
-In BAS project explorer, open folder **app/test-resources/api-hub/data**.\
+In SAP Business Application Studio explorer pane, open folder **app/test-resources/api-hub/data**.\
 (9) Select the remaining CSV file scp.cloud.Individual.csv.\
 (10) Drag and drop to folder **db/data**.
 
@@ -107,7 +107,7 @@ In BAS project explorer, open folder **app/test-resources/api-hub/data**.\
 
 In order to incorporate the external services data into the service model,\
 you will now add some associations.\
-In BAS Explorer, open file **db/schema.cds**.
+In SAP Business Application Studio explorer pane, open file **db/schema.cds**.
 (14) Add the following code in line 2:
 
 ```js
@@ -148,7 +148,7 @@ This will show the business partner address data inline with the Individual data
 
 In this exercise you will add an annotation of type **@Communication.Contact** with properties referring to the new external entities, and enhance the object page header to show a contact card link.
 
-In BAS project explorer, open file **srv/common.cds**.\
+In SAP Business Application Studio explorer pane, open file **srv/common.cds**.\
 (16) Add the following code to the end of the files content:
 ```js
 annotate service.Individual with @(Communication.Contact : {
@@ -196,7 +196,7 @@ Then you can configure the external service in the package.json file using [this
 
 In this exercise, you will add custom handler code which is called on the READ event of the BusinessPartner and BusinessPartnerAddress entities. Whenever an OData call for business partner data issued from the UI, this handler is called. For further details about the currently supported query capabilities, please refer to the [SAP Cloud Application Programming Model documentation](https://cap.cloud.sap/docs/guides/consuming-services#sending-requests).
 
-In BAS project explorer, open folder **app/test-resources/api-hub**.\
+In SAP Business Application Studio explorer pane, open folder **app/test-resources/api-hub**.\
 (19) Drag file ![](./images/image21.png).\
 (20) Drop on folder **srv**.
 

@@ -9,7 +9,7 @@ After completing these steps you will have added a new content section to the ob
 You will use annotation **FieldGroup** which represents a collection of different types of data fields.\
 The field group annotation definition with the link to the different data field representation options can be found [here](https://github.com/SAP/odata-vocabularies/blob/master/vocabularies/UI.md#FieldGroupType).
 
-(1) In BAS Explorer, open file **app/annotations.cds**.
+(1) In the SAP Business Application Studio explorer pane, open file **app/annotations.cds**.
 
 ![](./images/image1.png)
 

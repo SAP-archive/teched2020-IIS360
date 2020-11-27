@@ -84,7 +84,7 @@ When the cloning is finished, open a workspace by clicking the button in the pro
 
 ![open workspace](../ex0/images/00_00_0065.png)
 
-Select folder **teched2020-IIS360** and click **Open**. This will restart SAP Business Application Studio and show the selected workspace folder content in the Explorer.
+Select folder **teched2020-IIS360** and click **Open**. This will restart SAP Business Application Studio and show the selected workspace folder content in the explorer pane.
 
 ![select ws folder](../ex0/images/00_00_0066.png)
 
@@ -139,8 +139,8 @@ If you closed the preview browser tab, you can reopen it by applying the followi
 
 With the setup procedure done, you now have completed:
 - setting up the SAP Cloud Platform trial account
-- Access to SAP Business Application Studio (SBAS)
+- Access to SAP Business Application Studio
 - Creation of your development space
-- Setting up the sample OData V4 service in SBAS
+- Setting up the sample OData V4 service in SAP Business Application Studio
 
 Continue to - [Exercise 1 - Generating a SAP Fiori elements app](../ex1/README.md)

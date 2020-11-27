@@ -1,4 +1,4 @@
-# Exercise 1 - Generating a SAP Fiori elements app
+# Exercise 1 - Generating an SAP Fiori elements app
 
 In this exercise, you will create a SAP Fiori elements application of type List Report Object Page, based on the given
 SAP Cloud Application Programming Model sample service.

@@ -26,7 +26,7 @@ There are no special requirements to follow the exercises in this repository.
   - [Get the sample scenario](exercises/ex0#get-the-sample-scenario)
   - [Reopen the exposed port](exercises/ex0#reopen-the-exposed-port)
   
-- [Exercise 1 - Generating a SAP Fiori elements app](exercises/ex1#exercise-1---generating-a-fiori-elements-app)
+- [Exercise 1 - Generating an SAP Fiori elements app](exercises/ex1#exercise-1---generating-an-sap-fiori-elements-app)
   - [Exercise 1.1 Using the SAP Fiori Tools Application Generator](exercises/ex1#exercise-11---using-the-sap-fiori-tools-application-generator)
   - [Exercise 1.2 Starting the App](exercises/ex1#exercise-12-testing-the-app)
   
