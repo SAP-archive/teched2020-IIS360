@@ -32,7 +32,7 @@ Choose 'SAP Business Application Studio' in the list of available subscriptions.
 Choose 'Subscribe'.\
 Navigate back to your subaccount overview page.
 
-### Access SAP Business Application Studio
+### Accessing SAP Business Application Studio
 
 Click on the Quick Tool Access icon **SAP Business Application Studio**.
 
