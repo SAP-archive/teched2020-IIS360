@@ -52,9 +52,9 @@ Report, showing data from the entity collection.\
 Leave value for drop down **Navigation Entity** to **None** since you want to show
 data of a single instance of the main entity on the object page, too.
 
-(13) Click ![](./images/image6.png).
-
 ![](./images/image15.png)
+
+(13) Click ![](./images/image6.png).
 
 Finally add some attributes to the application project.\
 The **Module name** and the **Application namespace** should be as shown below to keep aligned with the following exercises.\
@@ -68,16 +68,17 @@ some of the subsequent exercises to work properly)
 
 ![](./images/image17.png)
 
-(17) Select **Yes** in order to configure advanced options.
+(17) Select **Yes** in order to configure advanced options.\
+In drop down **UI5 version**, select **latest**.
 
 (18) Select **Yes** in order to skip generation of an
 additional associated annotation.cds file.\
 The sample service already provides a basic set of UI annotations in a
 corresponding file in app-\>annotation.cds.
 
-(19) Click ![](./images/image21.png).
-
 ![](./images/image18.png)
+
+(19) Click ![](./images/image21.png).
 
 This will start the app generation.\
 When done, a dialog appears asking for opening the app in a new workspace.\
