@@ -50,7 +50,7 @@ Open the dropdown list **Select Page Type**.\
 ![](./images/image18.png)
 
 (11) A success message toast ![](./images/image21.png) is shown.\
-(12) The page map now shows an additional page node below the object
+(12) The Page Map now shows an additional page node below the object
 page.
 
 ![](./images/image20.png)

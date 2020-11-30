@@ -1,6 +1,6 @@
 # Exercise 3 - Configuring the App
 
-In this exercise, we will configure the behaviour of the app using the Fiori page map tool.
+In this exercise, we will configure the behaviour of the app using the SAP Fiori Page Map.
 
 ## Exercise 3.1 Enable Data Load During Start of the App
 
@@ -10,7 +10,7 @@ This allows defining filters before the query is executed.\
 The default behaviour can be changed in a way that selection is immediately
 triggered when the app is started.
 
-In the SAP Business Application Studio, open the page map (via Context Menu on the folder **app** or via **View -> Command Palette...**)
+In the SAP Business Application Studio, open the SAP Fiori Page Map (via Context Menu on the folder **app** or via **View -> Command Palette...**)
 
 (1) On the tile **List Report**, click icon **Configure
 Page**
@@ -39,7 +39,7 @@ Data will now be immediately loaded in the list report page when starting the ap
 The List Report pages offers per default page variant management.\
 With it, all personalizations of visible selection fields and table columns can be
 saved as a presentation variant.\
-With the page map, you can switch to control level variant management.
+With the Page Map, you can switch to control level variant management.
 This allows separate management of filter and table variants on the List Report page.\
 (4) In the Page Editor properties for table view, open drop down box **Variant Management** and select **Control**.
 
@@ -60,12 +60,12 @@ This might not be wanted in case these fields are additionally displayed in anot
 
 In order to prevent that, you can set the header to display only during editing.\
 Switch back to Business Application Studio.\
-(9) Click ![](./images/image12.png) icon to get back to the page map overview.
+(9) Click ![](./images/image12.png) icon to get back to the Page Map overview.
 
 ![SAP Business Application Studio - Google
 Chrome](./images/image11.png)
 
-(10) In the page map overview, on the tile **Object Page** click the **Configure
+(10) In the Page Map overview, on the tile **Object Page** click the **Configure
 Page** icon![](./images/image14.png)
 
 ![SAP Business Application Studio - Google

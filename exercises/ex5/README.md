@@ -29,7 +29,7 @@ Save changes (**File->Save**).
 along with a javaScript file where custom event handler code can be implemented.
 
 In the SAP Business Application Studio, open the page map (via Context Menu on the folder **app** or via **View -> Command Palette...**)\
-(4) On the page map tile **Object Page**, click icon ![](./images/image5.png) (**Configure Page**.).\
+(4) On the SAP Fiori Page Map tile **Object Page**, click icon ![](./images/image5.png) (**Configure Page**.).\
 ![](./images/image3.png)
 
 (5) In the Page Editor, click icon![](./images/image7.png) (**Add Custom Section**) in the top right corner of area **sections**.
