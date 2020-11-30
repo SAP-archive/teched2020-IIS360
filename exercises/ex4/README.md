@@ -4,7 +4,7 @@ In this exercise, we will add a custom page to the app.
 
 ## Exercise 4.1 Copy over the Sample Custom Page
 
-With the Sap Fiori Tool **Page Map**, you can add additional object pages and custom pages to your app.\
+With the Sap Fiori tool **Page Map**, you can add additional object pages and custom pages to your app.\
 For custom pages, you have the option of having new custom view controller artifacts generated,\
 or, as we will do in this exercise, integrate an existing custom view in the navigation flow.\
 For this, we will copy the sample artifacts to the webapp folder of the app.

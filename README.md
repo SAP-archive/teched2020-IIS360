@@ -27,7 +27,7 @@ There are no special requirements to follow the exercises in this repository.
   - [Reopening the Exposed Port](exercises/ex0#reopening-the-exposed-port)
   
 - [Exercise 1 - Generating an SAP Fiori Elements App](exercises/ex1#exercise-1---generating-an-sap-fiori-elements-app)
-  - [Exercise 1.1 Using the SAP Fiori Tools Application Generator](exercises/ex1#exercise-11-using-the-sap-fiori-tools-application-generator)
+  - [Exercise 1.1 Using the SAP Fiori tools Application Generator](exercises/ex1#exercise-11-using-the-sap-fiori-tools-application-generator)
   - [Exercise 1.2 Starting the App](exercises/ex1#exercise-12-starting-the-app)
   
 - [Exercise 2 - Switching to Flexible Column Layout](exercises/ex2#exercise-2---switching-to-flexible-column-layout)

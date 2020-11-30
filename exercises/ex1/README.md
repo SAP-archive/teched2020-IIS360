@@ -2,9 +2,9 @@
 
 In this exercise, you will create a SAP Fiori elements application of type List Report Object Page, based on the given
 SAP Cloud Application Programming Model sample service.
-For this you will make usage of the SAP Fiori Tools Application Generator.
+For this you will make usage of the SAP Fiori tools Application Generator.
 
-## Exercise 1.1 Using the SAP Fiori Tools Application Generator
+## Exercise 1.1 Using the SAP Fiori tools Application Generator
 
 (1) In SAP Business Application Studio, invoke the Command Palette\
 (View -\>Find Command... or ctrl+shift+p(Win)/cmd+shift+p(Mac))\
@@ -114,7 +114,7 @@ You can use the selection fields in order to set a filter. If collapsed, you can
 ![](./images/image27.png)
 
 
-On the object page, you can click **Edit** which creates an edit draft and sets the UI to edit mode.
+On the object page, you can click **Edit** which creates a draft version of the displayed object and sets the UI to edit mode.
 
 ![](./images/image28.png)
 
