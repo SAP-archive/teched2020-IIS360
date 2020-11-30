@@ -82,7 +82,8 @@ set to **False**.
 ![SAP Business Application Studio - Google
 Chrome](./images/image17.png)
 
-(13) Switch back to the preview browser tab. In case the UI was in edit mode from the previous exercise, navigate back to the Fiori Launch Page and refresh the browser.
+(13) Switch back to the preview browser tab.\
+In case the UI was in edit mode from the previous exercise, navigate back to the Fiori Launch Page and refresh the browser.
 In the object page, click ![](./images/image20.png)
 
 ![](./images/image19.png)

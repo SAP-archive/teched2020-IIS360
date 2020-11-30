@@ -69,7 +69,8 @@ some of the subsequent exercises to work properly)
 ![](./images/image17.png)
 
 (17) Select **Yes** in order to configure advanced options.\
-In drop down **UI5 version**, select **latest**.
+In drop down **UI5 version**, select **1.84.1**.
+Please note: don't choose **Latest** as UI5 version since it might still point to a version below 1.84 during TechEd2020.
 
 (18) Select **Yes** in order to skip generation of an
 additional associated annotation.cds file.\
