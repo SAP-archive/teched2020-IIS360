@@ -8,7 +8,7 @@ List Report Object Page Fiori elements application with the help of Fiori tools 
 ## Accessing SAP Business Application Studio (TechEd 2020 Live Workshop Registered Participants Only)
 
 Log on the SAP Business Application Studio via [this link](https://sap-ux-teched.cry10cf.int.applicationstudio.cloud.sap/index.html) by using the provided live workshop credentials.\
-You can continue with the step [Create Dev Space](#create-development-space).
+You can continue with the step [Create Dev Space](#creating-the-development-space).
 
 ## Setting up Business Application Studio in an SAP Cloud Platform Trial Account
 
