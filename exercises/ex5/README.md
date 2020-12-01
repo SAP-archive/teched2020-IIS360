@@ -6,7 +6,7 @@ In this exercise, we will add a custom section to the object page by using the S
 
 Custom sections offer the possibility of enhancing the object page with freestyle UI5 code.\
 In this exercise, we will add a UI5 XML fragment showing a Gantt Chart to the object page.
-The object page provides its current model context to the custom section, allowing displaying data from the UI5 OData model via context binding.\
+The object page provides its current model context to the custom section, allowing displaying data from the UI5 OData model via context binding.
 
 ## Exercise 5.1.1 Enhancing the Language Model
 
@@ -25,10 +25,10 @@ Save changes (**File->Save**).
 
 ## Exercise 5.1.2 Adding a Custom Section via Page Map
 
-(3) The sample scenario provides a prepared XML fragment in the folder **app/incidents/webapp/ext/fragment**,\
+(3) The sample scenario provides a prepared XML fragment in the folder **app/incidents/webapp/ext/fragment** (copied over from folder app/test-resources in [Exercise 4.1](../ex4#exercise-41-copy-over-the-sample-custom-page)),\
 along with a javaScript file where custom event handler code can be implemented.
 
-In the SAP Business Application Studio, open the page map (via Context Menu on the folder **app** or via **View -> Command Palette...**)\
+In the SAP Business Application Studio, open the SAP Fiori Page Map (via Context Menu on the folder **app** or via **View -> Command Palette...**)\
 (4) On the SAP Fiori Page Map tile **Object Page**, click icon ![](./images/image5.png) (**Configure Page**.).\
 ![](./images/image3.png)
 
