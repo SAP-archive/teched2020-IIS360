@@ -88,7 +88,7 @@ In the object page, click ![](./images/image20.png)
 
 ![](./images/image19.png)
 
-(14) The header area now stays in display mode when in edit mode.
+(14) The header area now stays in display mode when the object page is in edit mode.
 
 (15) Click ![](./images/image22.png)to switch back to display mode.
 
@@ -103,7 +103,7 @@ You can configure to have them displayed in separate tabs.
 
 Go back to Business Application Studio.
 
-(16) In the object page editor, click
+(16) In the Page Editor of the object page, click
 ![](./images/image24.png)
 
 ![SAP Business Application Studio - Google
@@ -124,6 +124,6 @@ In the sample scenario there are currently only 2 content sections, so you can s
 
 ## Summary
 
-By using the page map, you've now configured initial load during app start, editable header content, control level variant management and tab based section layout.
+By using the SAP Fiori Page Map, you've now configured initial load during app start, editable header content, control level variant management and tab based section layout.
 
 Continue to - [Exercise 4 - Adding a Custom Page ](../ex4/README.md)
