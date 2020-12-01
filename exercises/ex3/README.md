@@ -126,4 +126,4 @@ In the sample scenario there are currently only 2 content sections, so you can s
 
 By using the SAP Fiori Page Map, you've now configured initial load during app start, editable header content, control level variant management and tab based section layout.
 
-Continue to - [Exercise 4 - Adding a Custom Page ](../ex4/README.md)
+Continue to - [Exercise 4 - Adding a Custom Page](../ex4/README.md)
