@@ -112,8 +112,7 @@ In SAP Business Application Studio explorer pane, open folder **app/test-resourc
 
 ![](./images/image14.png)
 
-In order to incorporate the external services data into the service model,\
-you will now add some associations.\
+In order to incorporate the external services data into the service model, you will now add some associations.\
 In SAP Business Application Studio explorer pane, open file **db/schema.cds**.\
 (14) Add the following code in section **begin add using statement** at the beginning of the file:
 
@@ -139,7 +138,8 @@ extend scp.cloud.Individual with {
 ![](./images/image16.png)
 
 Note that the mock data that was added in step (11) for entity scp.cloud.Individual properties **businessPartnerID** and **addressID**\
-need to match existing business partner address data keys in your S/4 HANA cloud system when later switching from mock data to real S/4 HANA Cloud connectivity.
+need to match existing business partner address data keys in your SAP S/4 HANA cloud system when later switching\
+from mock data to real SAP S/4 HANA Cloud connectivity.
 
 You can test the new associations in the preview browser tab.
 Select service entity **Individual** and add the following to the browser Url
@@ -154,7 +154,8 @@ This will show the business partner address data inline with the Individual data
 
 ## Exercise 7.4 Adding an Annotation for a Contact Card
 
-In this exercise you will add an annotation of type **@Communication.Contact** with properties referring to the new external entities, and enhance the object page header to show a contact card link.
+In this exercise you will add an annotation of type **@Communication.Contact** with properties referring to the\
+new external entities, and enhance the object page header to show a contact card link.
 
 In SAP Business Application Studio explorer pane, open file **srv/common.cds**.\
 (16) Add the following code to section **add contact card annotation** at the end of the file:
@@ -176,8 +177,7 @@ annotate service.Individual with @(Communication.Contact : {
 ![](./images/image17.png)
 
 To visualize the contact card in the object pages header, you need to add an additional annotation.\
-Open file **app/annotation.cds**.\
-Locate section **begin of header facet enhancement**.\
+Open file **app/annotation.cds** and locate section **begin of header facet enhancement**.\
 (17) Enter the following code:
 
 ```js
@@ -203,16 +203,16 @@ the object page header now shows a contact card link.
 
 In order to consume business partner data from an S/4 HANA Cloud system, inbound communication to an SAP S/4 HANA tenant needs to be in place.\
 An example for the necessary implementation steps (create communication system and communication arrangement) is described [here](https://help.sap.com/viewer/b0e8d558ba2f47f5b02a3fc0ac9edc34/SHIP/en-US/70fb7224a6df4e099ff264081667a0fc.html).\
-The SAP S/4 HANA API **technical user credentials for inbound communication** (generated with the setup of the communication system in SAP S/4 HANA Cloud)\
-need to be added to file **default-env.json**, located in the root folder of the sample project.\
+The SAP S/4 HANA API **technical user credentials for inbound communication** (generated with the setup of the communication system\
+in SAP S/4 HANA Cloud) need to be added to file **default-env.json**, located in the root folder of the sample project.\
 Furthermore, the Business Partner OData API URL for the specific SAP S/4 HANA cloud instance needs to be completed.\
 The relevant fields are highlighted in the screenshot below.
 
 ![](./images/image19a.png)
 
 In this exercise, you will add custom handler code which is called on the READ event of the BusinessPartner and BusinessPartnerAddress entities.\
-Whenever an OData call for business partner data issued from the UI, this handler is called. For further details about the currently supported query capabilities,\
-please refer to the [SAP Cloud Application Programming Model documentation](https://cap.cloud.sap/docs/guides/consuming-services#sending-requests), chapter **Sending Requests**.
+Whenever an OData call for business partner data issued from the UI, this handler is called.\
+For further details about the currently supported query capabilities, please refer to chapter **Sending Requests** of the [SAP Cloud Application Programming Model documentation](https://cap.cloud.sap/docs/guides/consuming-services#sending-requests).
 
 In SAP Business Application Studio explorer pane, open folder **app/test-resources/api-hub**.\
 (19) Drag file ![](./images/image21.png).\
