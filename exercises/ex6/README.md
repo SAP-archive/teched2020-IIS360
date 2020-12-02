@@ -41,9 +41,9 @@ Trigger again LSP support (ctrl+ space).\
 
 ![](./images/image8.png)
 
-DataField record is added along with its required value, the cursor is placed inside the record {} after property **Value : **.\
+DataField record is added along with its required value, the cursor is placed inside the record {} after property **Value:**.\
 Trigger again LSP support.\
-Start typing in **created** to filter the list.\ 
+Start typing in **created** to filter the list.\
 (7) Select property ![](./images/image10.png).
 
 ![](./images/image9.png)
@@ -70,7 +70,7 @@ FieldGroup #Admin: {
 },
 ```
 
-## Exercise 6.2 Adding a reference facet annotation
+## Exercise 6.2 Adding a Reference Facet Annotation
 
 The different sections of the object pages content area are defined by so called **reference facet** annotations.\
 You can group several reference facets in so called **collection facet** annotations.\
@@ -84,7 +84,7 @@ You will now add the field group **#Admin** you just created by referring to in 
 
 ![](./images/image13.png)
 
-The annotation is added along with its basic structural elements.\ 
+The annotation is added along with its basic structural elements.\
 (11) For property **'Target'**, place cursor inside quotes ' ' and trigger LSP support (ctrl+space).
 
 ![](./images/image15.png)
@@ -113,7 +113,7 @@ The full annotation:
             }
 ```
 
-Make sure that the service is running (Terminal command **cds w**).\
+Make sure that all changes are saved and that the service is running (Terminal command **cds w**).\
 Switch to the preview browser tab and refresh.\
 (15) On the object page, new section **'Admin Data'** is shown inside the collection facet **Incident Overview**.
 
@@ -128,7 +128,7 @@ An overview of the different data representation options can be found [here](htt
 You can now enhance the existing lineItem annotation for entity **IncidentFlow** by adding an additional data field annotation.
 
 (16) Open file **app/annotations.cds**.\
-Place cursor in section **'column enhancement'**
+Place cursor in section **'column enhancement'**.
 
 ![](./images/image22.png)
 
@@ -168,7 +168,7 @@ The full annotation:
 
 Switch to the preview browser tab and refresh.\
 (21) On the object page, A new column **Process Step Status** is shown
-in the table **Incident Process Flow**
+in the table **Incident Process Flow**.
 
 ![](./images/image31.png)
 
