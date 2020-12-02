@@ -162,7 +162,7 @@ The full annotation:
 {
     $Type : 'UI.DataField',
     Value : stepStatus,
-    Criticality : criticality
+    Criticality : criticality,
 },
 ```
 
