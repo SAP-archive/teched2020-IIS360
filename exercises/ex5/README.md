@@ -47,9 +47,9 @@ In the SAP Business Application Studio, open the SAP Fiori Page Map (via Context
 
 ![](./images/image8.png).
 
-Note that in field **Fragment Name** existing fragment **CustomSectionGantt** is automatically preselected.\
+Note that in field **Fragment Name** existing fragment **CustomSectionGantt** is automatically preselected.
 
-(8) Open the drop down **Target Facet/Section** and select **IncidentOverViewFacet**.\
+(8) Open the drop down **Target Facet/Section** and select **IncidentOverviewFacet**.\
 In combination with the **Section Position** (we leave it to **After**), you define where the custom section should be located\
 on the object page.
 

@@ -32,12 +32,13 @@ If the folder is not automatically generated, run the following command in your 
 **cds import srv/API_BUSINESS_PARTNER.edmx**
 
 In the SAP Business Application Studio explorer pane, open file **srv/incidentservice.cds**.\
-(3) Add the following code in line 2:
+(3) Add the following code in section **begin add using statement** at the beginning of the file:
+
 ```js
 using {API_BUSINESS_PARTNER as external} from '../srv/external/API_BUSINESS_PARTNER.csn';
 ```
 
-In the same file, scroll down to **//Expose additional entities**.\
+In the same file, scroll down to section **Expose additional entities**.\
 (4) Enter the following code below:
 ```js
 @readonly
@@ -49,12 +50,16 @@ entity BusinessPartnerAddress  as projection on external.A_BusinessPartnerAddres
     key BusinessPartner, key AddressID, CityName, Country, PostalCode, StreetName, HouseNumber
 };
 ```
+
+By adding the **using** statement (3), a new service is exposed with a definition based on the original edmx file.\
+Furthermore, you have extended the Incidents service by adding two projected entities from the Business Partner API (4).
+
 ![](./images/image3.png)
 
-By adding the using statement (3), a new service is exposed with a definition based on the original edmx file. Furthermore, you have extended the Incidents service by adding two projected entities from the Business Partner API (4).\
-Since there is no backend connectivity in place yet, you will start with using local data first.
+Since there is no backend connectivity in place yet, you will start with using local data first.\
+In SAP Business Application Studio explorer pane, open folder\
+**app/test-resources/api-hub/data**.
 
-In SAP Business Application Studio explorer pane, open folder **app/test-resources/api-hub/data**.\
 (5) Select the following two CSV files, drag and drop them to folder **db/data**.
 
 - API_BUSINESS_PARTNER-A_BusinessPartner.csv
@@ -62,9 +67,8 @@ In SAP Business Application Studio explorer pane, open folder **app/test-resourc
 
 ![](./images/image4.png)
 
-(6) In the preview browser tab, click on one of the marked entities to show mock data.
-Note that only the fields show data where mock data has been provided
-for.
+(6) In the preview browser tab, click on one of the marked entities to show mock data.\
+Note that only the fields show data where mock data has been provided for.
 
 ![](./images/image5.png)
 
@@ -78,7 +82,8 @@ data for the projected entity fields only.
 In this exercise, you will add additional properties to entity **Individual** and associations to the Business Partner Service entities.
 
 In the SAP Business Application Studio explorer pane, open file **db/schema.cds**.\
-(8) Scroll to the entity definition **Individual** and add the two additional properties
+(8) Scroll to section **Begin add additional properties** in entity **Individual** and add these two additional properties:
+
 ```js
 businessPartnerID : String;
 addressID : String;
@@ -86,7 +91,7 @@ addressID : String;
 
 ![](./images/image7.png)
 
-For the additional properties, you require additional mock data.\
+For the additional properties, mock data is required.\
 In SAP Business Application Studio explorer pane, open folder **app/test-resources/api-hub/data**.\
 (9) Select the remaining CSV file scp.cloud.Individual.csv.\
 (10) Drag and drop to folder **db/data**.
@@ -107,8 +112,8 @@ In SAP Business Application Studio explorer pane, open folder **app/test-resourc
 
 In order to incorporate the external services data into the service model,\
 you will now add some associations.\
-In SAP Business Application Studio explorer pane, open file **db/schema.cds**.
-(14) Add the following code in line 2:
+In SAP Business Application Studio explorer pane, open file **db/schema.cds**.\
+(14) Add the following code in section **begin add using statement** at the beginning of the file:
 
 ```js
 using {API_BUSINESS_PARTNER as external} from '../srv/external/API_BUSINESS_PARTNER.csn';
@@ -116,7 +121,7 @@ using {API_BUSINESS_PARTNER as external} from '../srv/external/API_BUSINESS_PART
 
 ![](./images/image15.png)
 
-Scroll down to section **//add associations to external entities** at the end of the file\
+Scroll down to section **add associations to external entities** at the end of the file.\
 (15) Add the following code:
 
 ```js
@@ -131,10 +136,11 @@ extend scp.cloud.Individual with {
 
 ![](./images/image16.png)
 
-Note that the mock data that was added in step (11) for entity scp.cloud.Individual properties **businessPartnerID** and **addressID** need to match existing business partner address data keys in your S/4 HANA cloud system when later switching from mock data to real S/4 HANA Cloud connectivity.
+Note that the mock data that was added in step (11) for entity scp.cloud.Individual properties **businessPartnerID** and **addressID**\
+need to match existing business partner address data keys in your S/4 HANA cloud system when later switching from mock data to real S/4 HANA Cloud connectivity.
 
 You can test the new associations in the preview browser tab.
-Select entity **Individual** and add the following to the browser Url
+Select service entity **Individual** and add the following to the browser Url
 
 ```js
 (id=067460c5-196c-4783-9563-ede797399da8)?$expand=businessPartnerAddress
@@ -149,7 +155,8 @@ This will show the business partner address data inline with the Individual data
 In this exercise you will add an annotation of type **@Communication.Contact** with properties referring to the new external entities, and enhance the object page header to show a contact card link.
 
 In SAP Business Application Studio explorer pane, open file **srv/common.cds**.\
-(16) Add the following code to the end of the files content:
+(16) Add the following code to section **add contact card annotation** at the end of the file:
+
 ```js
 annotate service.Individual with @(Communication.Contact : {
       fn   : businessPartner.BusinessPartnerFullName,
@@ -161,15 +168,14 @@ annotate service.Individual with @(Communication.Contact : {
             country  : businessPartnerAddress.Country,
             locality : businessPartnerAddress.CityName
         }]
-})
-;
+});
 ```
 
 ![](./images/image17.png)
 
 To visualize the contact card in the object pages header, you need to add an additional annotation.\
 Open file **app/annotation.cds**.\
-Locate section **header facet enhancement**.\
+Locate section **begin of header facet enhancement**.\
 (17) Enter the following code:
 
 ```js
@@ -182,19 +188,31 @@ Locate section **header facet enhancement**.\
 
 ![](./images/image18.png)
 
-(18) Go to the preview browser tab and refresh. The Object Page header shows a contact card link.
+(18) Go to the preview browser tab and refresh.
 
 ![](./images/image19.png)
 
+By enhancing the header facet with an annotation of type **reference facet** targeting the **@Communication.Contact** annotation,\
+the object page header now shows a contact card link.
+
 ## Exercise 7.5 Fetching Business Partner Data from an S/4 HANA Cloud system
 
-In order to consume data from an S/4 HANA Cloud system in a local setup, you need to add the VCAP_SERVICE credentials to the default-env.json file located in the root folder of this project.
-The file has been prepared for basic authentication so that you just have to enter user and password, and complete the OData URL to the S/4 HANA cloud instance.\
-Some further notes: in a deployment scenario, you would create a destination service and bind it to your application in order to have the VCAP_SERVICE credentials.
+In order to consume data from an S/4 HANA Cloud system in a local setup, you need to add\
+the **VCAP_SERVICE credentials** to file **default-env.json** located in the root folder of this project.\
+The file has been prepared for basic authentication so that you just have to enter user and password, \
+and complete the **OData API URL** to your S/4 HANA cloud instance.
+
+![](./images/image19a.png)
+
+
+**Some further notes**: in a deployment scenario, you would create a destination service targeting your S/4 HANA Cloud system and bind it to your application\
+in order to get the VCAP_SERVICE credentials.\
 Details about creating a destination in SAP Cloud Platform can be found [here](https://help.sap.com/viewer/92204dcdf722491883c7819f66a70de8/latest/en-US/e08040a9cf664555957a419dc2df0e19.html).\
 Then you can configure the external service in the package.json file using [this guide](https://cap.cloud.sap/docs/guides/consuming-services#configuring-required-services).
 
-In this exercise, you will add custom handler code which is called on the READ event of the BusinessPartner and BusinessPartnerAddress entities. Whenever an OData call for business partner data issued from the UI, this handler is called. For further details about the currently supported query capabilities, please refer to the [SAP Cloud Application Programming Model documentation](https://cap.cloud.sap/docs/guides/consuming-services#sending-requests).
+In this exercise, you will add custom handler code which is called on the READ event of the BusinessPartner and BusinessPartnerAddress entities.\
+Whenever an OData call for business partner data issued from the UI, this handler is called. For further details about the currently supported query capabilities,\
+please refer to the [SAP Cloud Application Programming Model documentation](https://cap.cloud.sap/docs/guides/consuming-services#sending-requests).
 
 In SAP Business Application Studio explorer pane, open folder **app/test-resources/api-hub**.\
 (19) Drag file ![](./images/image21.png).\
@@ -206,7 +224,7 @@ In SAP Business Application Studio explorer pane, open folder **app/test-resourc
 
 ![](./images/image22.png)
 
-Open file package.json and scroll down to section **"cds"**
+In the explorer pane, open file package.json in the root folder and scroll down to section **"cds"**.\
 (22) Remove hyphens from properties **model** and **credentials** to enable the external service configuration.\
 More details abound external services configuration can be found [here](https://cap.cloud.sap/docs/guides/services#rest-and-odata).
 

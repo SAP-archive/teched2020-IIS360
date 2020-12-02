@@ -1,4 +1,7 @@
 namespace scp.cloud;
+//begin add using statement
+
+//end add using statement
 
 using {
   managed,
@@ -81,8 +84,9 @@ entity IncidentProcessTimeline : managed {
 
 entity Individual : managed {
   key id                : UUID;
-      // businessPartnerID : String;
-      // addressID         : String;
+//Begin add additional properties
+
+//End add additional properties
       @assert.integrity : false
       Incidents         : Association to many Incidents
                             on Incidents.assignedIndividual = $self;
