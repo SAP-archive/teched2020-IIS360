@@ -10,7 +10,8 @@ You will now download the Business Partner EDMX specification from SAP API Hub a
 Open the [SAP API Business Hub page](https://api.sap.com/api/API_BUSINESS_PARTNER/resource?tag=Business%20Partner) in your browser.
 
 (1) Choose the **Details** tab\
-(2) Click button **Download API Specification** and select ![](./images/image2.png).\
+(2) Click button **Download API Specification** and select ![](./images/image2.png)
+
 If required, log on.
 In case you don't have credentials, or have problems downloading the file, you can also find the file API_BUSINESS_PARTNER.edmx within project folder app/test-resources/api-hub.\
 If you’re using Chrome as a browser, you now see the downloaded file in the footer bar.
@@ -38,8 +39,9 @@ In the SAP Business Application Studio explorer pane, open file **srv/incidentse
 using {API_BUSINESS_PARTNER as external} from '../srv/external/API_BUSINESS_PARTNER.csn';
 ```
 
-In the same file, scroll down to section **Expose additional entities**.\
+In the same file, scroll down to section **expose additional entities**.\
 (4) Enter the following code below:
+
 ```js
 @readonly
 entity BusinessPartner         as projection on external.A_BusinessPartner {
