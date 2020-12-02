@@ -13,7 +13,7 @@ Open the [SAP API Business Hub page](https://api.sap.com/api/API_BUSINESS_PARTNE
 (2) Click button **Download API Specification** and select ![](./images/image2.png).\
 If required, log on.
 In case you don't have credentials, or have problems downloading the file, you can also find the file API_BUSINESS_PARTNER.edmx within project folder app/test-resources/api-hub.\
-If you’re using Chrome as a browser, you now see the downloaded file in the footer bar.\
+If you’re using Chrome as a browser, you now see the downloaded file in the footer bar.
 
 ![](./images/image1.png)
 
