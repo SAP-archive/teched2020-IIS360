@@ -8,7 +8,7 @@ Custom sections offer the possibility of enhancing the object page with freestyl
 In this exercise, we will add a UI5 XML fragment showing a Gantt Chart to the object page.
 The object page provides its current model context to the custom section, allowing displaying data from the UI5 OData model via context binding.
 
-## Exercise 5.1.1 Enhancing the Language Model
+## Exercise 5.1 Enhancing the Language Model
 
 For the title of the custom section to be shown on the object page, we want to use a property from the language model of the app.\
 (1) Open file **app/incidents/webapp/i18n/i18n.properties**\
@@ -23,9 +23,10 @@ MaxProcessingTime=Maximum Processing Time
 
 Save changes (**File->Save**).
 
-## Exercise 5.1.2 Adding a Custom Section via Page Map
+## Exercise 5.2 Adding a Custom Section via Page Map
 
-(3) The sample scenario provides a prepared XML fragment in the folder **app/incidents/webapp/ext/fragment** (copied over from folder app/test-resources in [Exercise 4.1](../ex4#exercise-41-copy-over-the-sample-custom-page)),\
+(3) The sample scenario provides a prepared XML fragment in the folder **app/incidents/webapp/ext/fragment**\
+(copied over in [Exercise 4.1](../ex4#exercise-41-copy-over-the-sample-custom-page)),\
 along with a javaScript file where custom event handler code can be implemented.
 
 In the SAP Business Application Studio, open the SAP Fiori Page Map (via Context Menu on the folder **app** or via **View -> Command Palette...**)\

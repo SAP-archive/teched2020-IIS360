@@ -39,14 +39,14 @@ There are no special requirements to follow the exercises in this repository.
   - [Exercise 3.4 Enable Tab Based Section Layout](exercises/ex3#exercise-34-enable-tab-based-section-layout)
   
 - [Exercise 4 - Adding a Custom Page](exercises/ex4#exercise-4---adding-a-custom-page)
-  - [Exercise 4.1 Copy over the Sample Custom Page](exercises/ex4#exercise-41-copy-over-the-sample-custom-page)
+  - [Exercise 4.1 Copy Over the Sample Custom Page](exercises/ex4#exercise-41-copy-over-the-sample-custom-page)
   - [Exercise 4.2 Adding a Custom Page via SAP Fiori Page Map](exercises/ex4#exercise-42-adding-a-custom-page-via-sap-fiori-page-map)
   - [Exercise 4.3 Custom Page: Testing the App](exercises/ex4#exercise-43-custom-page-testing-the-app)
   
 - [Exercise 5 - Adding a Custom Section](exercises/ex5#exercise-5---adding-a-custom-section)
   - [Custom Sections Overview](exercises/ex5#custom-sections-overview)
-  - [Exercise 5.1.1 Enhancing the Language Model](exercises/ex5#exercise-511-enhancing-the-language-model)
-  - [Exercise 5.1.2 Adding a Custom Section via Page Map](exercises/ex5#exercise-512-adding-a-custom-section-via-page-map)
+  - [Exercise 5.1 Enhancing the Language Model](exercises/ex5#exercise-51-enhancing-the-language-model)
+  - [Exercise 5.2 Adding a Custom Section via Page Map](exercises/ex5#exercise-52-adding-a-custom-section-via-page-map)
   
 - [Exercise 6 - Enhance the UI with Annotations](exercises/ex6#exercise-6---enhance-the-ui-with-annotations)
   - [Exercise 6.1 Adding a Field Group](exercises/ex6#exercise-61-adding-a-field-group)
