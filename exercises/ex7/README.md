@@ -195,24 +195,22 @@ Locate section **begin of header facet enhancement**.\
 By enhancing the header facet with an annotation of type **reference facet** targeting the **@Communication.Contact** annotation,\
 the object page header now shows a contact card link.
 
-## Exercise 7.5 Fetching Business Partner Data from an S/4 HANA Cloud system
+## Exercise 7.5 Fetching Business Partner Data from an SAP S/4 HANA Cloud system
 
-In order to consume data from an S/4 HANA Cloud system in a local setup, you need to add\
-the **VCAP_SERVICE credentials** to file **default-env.json** located in the root folder of this project.\
-The file has been prepared for basic authentication so that you just have to enter user and password, \
-and complete the **OData API URL** to your S/4 HANA cloud instance.
+### Prerequisites
+
+In order to consume business partner data from an S/4 HANA Cloud system, inbound communication to an SAP S/4 HANA tenant needs to be in place.\
+An example for the necessary implementation steps (create communication system and communication arrangement) is described [here](https://help.sap.com/viewer/b0e8d558ba2f47f5b02a3fc0ac9edc34/SHIP/en-US/70fb7224a6df4e099ff264081667a0fc.html).\
+The SAP S/4 HANA API **technical user credentials for inbound communication** (generated with the setup of the communication system in SAP S/4 HANA Cloud)\
+need to be added to file **default-env.json**, located in the root folder of the sample project.\
+Furthermore, the Business Partner OData API URL for the specific SAP S/4 HANA cloud instance needs to be completed.\
+The relevant fields are highlighted in the screenshot below.
 
 ![](./images/image19a.png)
 
-
-**Some further notes**: in a deployment scenario, you would create a destination service targeting your S/4 HANA Cloud system and bind it to your application\
-in order to get the VCAP_SERVICE credentials.\
-Details about creating a destination in SAP Cloud Platform can be found [here](https://help.sap.com/viewer/92204dcdf722491883c7819f66a70de8/latest/en-US/e08040a9cf664555957a419dc2df0e19.html).\
-Then you can configure the external service in the package.json file using [this guide](https://cap.cloud.sap/docs/guides/consuming-services#configuring-required-services).
-
 In this exercise, you will add custom handler code which is called on the READ event of the BusinessPartner and BusinessPartnerAddress entities.\
 Whenever an OData call for business partner data issued from the UI, this handler is called. For further details about the currently supported query capabilities,\
-please refer to the [SAP Cloud Application Programming Model documentation](https://cap.cloud.sap/docs/guides/consuming-services#sending-requests).
+please refer to the [SAP Cloud Application Programming Model documentation](https://cap.cloud.sap/docs/guides/consuming-services#sending-requests), chapter **Sending Requests**.
 
 In SAP Business Application Studio explorer pane, open folder **app/test-resources/api-hub**.\
 (19) Drag file ![](./images/image21.png).\

@@ -58,7 +58,7 @@ There are no special requirements to follow the exercises in this repository.
   - [Exercise 7.2 Adding the EDMX File and Local Data to your Project](exercises/ex7#exercise-72-adding-the-edmx-file-and-local-data-to-your-project)
   - [Exercise 7.3 Adding Associations to the Incidents Service Entities](exercises/ex7#exercise-73-adding-associations-to-the-incidents-service-entities)
   - [Exercise 7.4 Adding an Annotation for a Contact Card](excercises/ex7#exercise-74-adding-an-annotation-for-a-contact-card)
-  - [Exercise 7.5 Fetching Business Partner Data from an S/4 HANA Cloud system](exercises/ex7#exercise-75-fetching-business-partner-data-from-an-s4-hana-cloud-system)
+  - [Exercise 7.5 Fetching Business Partner Data from an SAP S/4 HANA Cloud system](exercises/ex7#exercise-75-fetching-business-partner-data-from-an-sap-s4-hana-cloud-system)
 
 ## How to obtain support
 
