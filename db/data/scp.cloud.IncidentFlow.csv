@@ -1,4 +1,5 @@
 id;processStep;stepStatus;criticality;incident_ID;stepStartDate;stepEndDate
+2feec9ec-c192-48c6-8971-e3c4838cb801;Incident Reporting;Done;3;2feec9ec-c192-48c6-8971-e3c4838cb861;2020-06-02;2020-06-16
 2feec9ec-c192-48c6-8971-e3c4838cb802;Incident Record Review;Done;3;2feec9ec-c192-48c6-8971-e3c4838cb861;2020-06-15;2020-06-30
 2feec9ec-c192-48c6-8971-e3c4838cb803;Incident Investigation;Blocked;1;2feec9ec-c192-48c6-8971-e3c4838cb861;2020-06-20;2020-08-31
 2feec9ec-c192-48c6-8971-e3c4838cb804;Incident Report Generation;Open;2;2feec9ec-c192-48c6-8971-e3c4838cb861;2020-08-31;2020-09-15
