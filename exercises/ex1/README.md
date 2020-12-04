@@ -71,16 +71,14 @@ some of the subsequent exercises to work properly)
 In drop down **UI5 version**, select **1.84.1**.\
 **Please note**: in order to have some of the subsequent exercises working properly, don't choose **Latest** as UI5 version since it might still point to a version below 1.84 during TechEd2020.
 
-(18) Select **Yes** in order to skip generation of an
-additional associated annotation.cds file.\
-The sample service already provides a basic set of UI annotations in a
-corresponding file in app-\>annotation.cds.
+(18) Select **Yes** in order to **skip generation of an
+additional associated annotation.cds file**.\
+The sample service already provides a basic set of UI annotations with file **app/annotations.cds**.
+
+**Please note**: in case you hadn't set the skip generation flag in step (18) before finishing the app generation, you will have to manually adjust the rewritten **using** statement\
+in file **app/index.cds** so that it points again to file **app/annotations.cds**, and manually delete the additional generated annotations.cds file in folder **app/incidents**.
 
 ![](./images/image18.png)
-
-Note that in case you hadn't set the skip generation flag in (18) before app generation is triggered, you will have to adjust the path to the anntotation.cds\
-file in folder app/index.cds, and manually delete the additional generated annotation.cds file in folder app/webapp (or alternatively leave the path in index.cds\
-as is and move file app/annotation.cds over to folder app/webapp, overwriting the additionally generated file in there).
 
 (19) Click ![](./images/image21.png).
 
@@ -90,9 +88,11 @@ Close the dialog by clicking the cross icon in the top right corner since the wo
 
 ![close new ws](../ex1/images/image181.png)
 
-You can review the generated artifacts in the Explorer View of SAP Business Application Studio.
+You can now review the generated artifacts in the Explorer View of SAP Business Application Studio.\
+The generated artifacts are located in folder **app/incidents**.\
+As mentioned, check that the **using** statement in file **app/index.cds** still points to the preconfigured annotations file as shown below.
 
-![](./images/image29.png)
+![](./images/image18a.png)
 
 ## Exercise 1.2 Starting the App
 
