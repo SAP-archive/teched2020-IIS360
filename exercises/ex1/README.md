@@ -75,8 +75,8 @@ In drop down **UI5 version**, select **1.84.1**.\
 additional associated annotation.cds file**.\
 The sample service already provides a basic set of UI annotations with file **app/annotations.cds**.
 
-**Please note**: in case you hadn't set the skip generation flag in step (18) before finishing the app generation, you will have to manually adjust the rewritten **using** statement\
-in file **app/index.cds** so that it points again to file **app/annotations.cds**, and manually delete the additional generated annotations.cds file in folder **app/incidents**.
+**Please note**: in case you don't set the skip annotation generation flag in step (18) before finishing the app generation, you will have to manually adjust the rewritten **using** statement\
+in file **app/index.cds** so that it points again to preconfigured file **app/annotations.cds**, and manually delete the additional generated annotations.cds file in folder **app/incidents**.
 
 ![](./images/image18.png)
 
