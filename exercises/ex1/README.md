@@ -49,8 +49,7 @@ Click ![](./images/image11.png).
 (12) In the Entity Selection drop down, select **Incidents** as main entity.\
 The properties of this entity will be used for display of data on List
 Report, showing data from the entity collection.\
-Leave value for drop down **Navigation Entity** to **None** since you want to show
-data of a single instance of the main entity on the object page, too.
+Leave value for drop down **Navigation Entity** as is (**None**).
 
 ![](./images/image15.png)
 
@@ -78,6 +77,10 @@ The sample service already provides a basic set of UI annotations in a
 corresponding file in app-\>annotation.cds.
 
 ![](./images/image18.png)
+
+Note that in case you hadn't set the skip generation flag in (18) before app generation is triggered, you will have to adjust the path to the anntotation.cds\
+file in folder app/index.cds, and manually delete the additional generated annotation.cds file in folder app/webapp (or alternatively leave the path in index.cds\
+as is and move file app/annotation.cds over to folder app/webapp, overwriting the additionally generated file in there).
 
 (19) Click ![](./images/image21.png).
 
