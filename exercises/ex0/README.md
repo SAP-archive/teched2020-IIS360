@@ -64,7 +64,7 @@ Click on button **Code** (1), then click icon (2).
 ![copy link](../ex0/images/00_00_0070.png)
 
 In the dev space, you will see a **Welcome Page**.\
-Click on the link **Clone from Git**.
+Click on tile **Clone from Git**.
 
 ![Click on link "Clone from Git"](../ex0/images/click-clone-from-git.png)
 
