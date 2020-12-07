@@ -4,8 +4,7 @@ In this exercise, we will enhance the UI by adding annotations. For each exercis
 code suggestion support for annotation modelling.
 
 **Please note:** In SAP Business Application Studio, some users experienced issues with the triggering keyboard shortcut for code suggestion not working (**ctrl+space**) .\
-In such a case, you can assign a different shortcut in SAP Business Application Studio under\
-**File->Settings->Open Keyboard Shortcuts** (in there, search for shortcut command **Trigger Suggest**).
+In such a case, you can assign a different shortcut in SAP Business Application Studio under **File->Settings->Open Keyboard Shortcuts** (shortcut command **Trigger Suggest**).
 
 ![](./images/image0.png)
 
