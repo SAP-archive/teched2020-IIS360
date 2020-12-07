@@ -13,6 +13,8 @@ Choose ![](./images/image2.png).
 
 ![](./images/image1.png)
 
+Note that opening the app generator for the first time might take some time until the generator templates are initially loaded.
+
 (2) Click on tile **SAP Fiori elements application**.\
 (3) Click ![](./images/image4.png).
 
