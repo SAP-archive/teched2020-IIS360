@@ -1,7 +1,13 @@
 # Exercise 6 - Enhance the UI with Annotations
 
 In this exercise, we will enhance the UI by adding annotations. For each exercise, you will make usage of the CDS compilers
-LSP support for annotation modelling. Alternatively, you can apply prepared code snippets.
+code suggestion support for annotation modelling.
+
+**Please note:** In SAP Business Application Studio, some users experienced issues with the triggering keyboard shortcut for code suggestion not working (**ctrl+space**) .\
+In such a case, you can assign a different shortcut in SAP Business Application Studio under\
+**File->Settings->Open Keyboard Shortcuts** (in there, search for shortcut command **Trigger Suggest**).
+
+![](./images/image0.png)
 
 ## Exercise 6.1 Adding a Field Group
 
