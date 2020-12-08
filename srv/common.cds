@@ -58,3 +58,5 @@ annotate service.IncidentStatus with {
         TextArrangement : #TextOnly
     }    @title :  '{i18n>IncidentStatus}'
 };
+
+//add contact card annotation
