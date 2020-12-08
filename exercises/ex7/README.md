@@ -226,6 +226,8 @@ In SAP Business Application Studio explorer pane, open folder **app/test-resourc
 
 In the explorer pane, open file package.json in the root folder and scroll down to section **"cds"**.\
 (22) Remove hyphens from properties **model** and **credentials** to enable the external service configuration.\
+**Please note**: the credentials need to be maintained in file **default-env.json** as mentioned in the prerequisites,\
+otherwise the external query handler will fail after enabling the external service configuration.\
 More details abound external services configuration can be found [here](https://cap.cloud.sap/docs/guides/services#rest-and-odata).
 
 ![](./images/image24.png)
