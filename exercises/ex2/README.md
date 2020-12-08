@@ -37,20 +37,20 @@ by clicking icon ![](./images/image6.png) in the top right corner of the Page Ma
 ![](./images/image11.png)
 
 (7) Switch to the preview browser tab. If the app is still open from the previous exercise, navigate back to the Fiori Launch Page and refresh the browser.\
-Now start the app again by clicking the launchpage icon. In the List Report, select a line item to open object page.
+Now start the app again by clicking the launchpage icon. In the List Report, select a line item to open Object Page.
 
 ![](./images/image13.png)
 
 (8) The page is shown in flexible column layout.\
-Select another List Report line item in order to display its details in the object page.
+Select another List Report line item in order to display its details in the Object Page.
 
 ![](./images/image15.png)
 
-(9) In the top right corner of the object page, click icon **Enter Full Screen** ![](./images/image18.png).
+(9) In the top right corner of the Object Page, click icon **Enter Full Screen** ![](./images/image18.png).
 
 ![](./images/image17.png)
 
-The List Report column is closed, and the object page is shown full screen.
+The List Report column is closed, and the Object Page is shown full screen.
 
 ![](./images/image19.png)
 

@@ -2,7 +2,7 @@
 
 In this exercise, you extend the sample service with the consumption of an external Business Partner service.<br>
 First, you will work with local mock data and later on get the data directly from the external SAP S/4HANA cloud system.<br>
-The data will be visualized in the object pages header as a contact card.
+The data will be visualized in the Object Pages header as a contact card.
 
 ## Exercise 7.1 Get the Business Partner EDMX File
 
@@ -155,7 +155,7 @@ This will show the business partner address data inline with the Individual data
 ## Exercise 7.4 Adding an Annotation for a Contact Card
 
 In this exercise you will add an annotation of type **@Communication.Contact** with properties referring to the\
-new external entities, and enhance the object page header to show a contact card link.
+new external entities, and enhance the Object Page header to show a contact card link.
 
 In SAP Business Application Studio explorer pane, open file **srv/common.cds**.\
 (16) Add the following code to section **add contact card annotation** at the end of the file:
@@ -176,7 +176,7 @@ annotate service.Individual with @(Communication.Contact : {
 
 ![](./images/image17.png)
 
-To visualize the contact card in the object pages header, you need to add an additional annotation.\
+To visualize the contact card in the Object Pages header, you need to add an additional annotation.\
 Open file **app/annotation.cds** and locate section **begin of header facet enhancement**.\
 (17) Enter the following code:
 
@@ -195,7 +195,7 @@ Open file **app/annotation.cds** and locate section **begin of header facet enha
 ![](./images/image19.png)
 
 By enhancing the header facet with an annotation of type **reference facet** targeting the **@Communication.Contact** annotation,\
-the object page header now shows a contact card link.
+the Object Page header now shows a contact card link.
 
 ## Exercise 7.5 Fetching Business Partner Data from an SAP S/4 HANA Cloud system
 
@@ -241,7 +241,7 @@ The OData response will now show data retrieved from the S/4 HANA system.
 
 ![](./images/image26.png)
 
-(24) In your preview browser, open the app and navigate to the object page.\
+(24) In your preview browser, open the app and navigate to the Object Page.\
 The contact card now shows data from S/4 HANA.
 
 ![](./images/image27.png)

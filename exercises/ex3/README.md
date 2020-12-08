@@ -32,7 +32,7 @@ Chrome](./images/image5.png)
 
 Navigate back to the Fiori launch
 page and refresh the browser.
-Data will now be immediately loaded in the list report page when starting the app.
+Data will now be immediately loaded in the List Report page when starting the app.
 
 ## Exercise 3.2 Enable Control Level Variant Management
 
@@ -54,7 +54,7 @@ Refresh the preview browser tab. You now can manage the filter (5) and table var
 
 When in edit mode, header fields are per default shown as editable
 input fields.\
-This might not be wanted in case these fields are additionally displayed in another section of the object page (7)(8).
+This might not be wanted in case these fields are additionally displayed in another section of the Object Page (7)(8).
 
 ![](./images/image10.png)
 
@@ -71,7 +71,7 @@ Page** icon![](./images/image14.png)
 ![SAP Business Application Studio - Google
 Chrome](./images/image13.png)
 
-(11) Click ![](./images/image16.png) to display the object page header configuration properties.
+(11) Click ![](./images/image16.png) to display the Object Page header configuration properties.
 
 ![SAP Business Application Studio - Google
 Chrome](./images/image15.png)
@@ -84,11 +84,11 @@ Chrome](./images/image17.png)
 
 (13) Switch back to the preview browser tab.\
 In case the UI was in edit mode from the previous exercise, navigate back to the Fiori Launch Page and refresh the browser.
-In the object page, click ![](./images/image20.png)
+In the Object Page, click ![](./images/image20.png)
 
 ![](./images/image19.png)
 
-(14) The header area now stays in display mode when the object page is in edit mode.
+(14) The header area now stays in display mode when the Object Page is in edit mode.
 
 (15) Click ![](./images/image22.png)to switch back to display mode.
 
@@ -96,14 +96,14 @@ In the object page, click ![](./images/image20.png)
 
 ## Exercise 3.4 Tab Based Section Layout
 
-Per default, all the sections in the object page are displayed one
+Per default, all the sections in the Object Page are displayed one
 below the other.
 
 You can configure to have them displayed in separate tabs.
 
 Go back to Business Application Studio.
 
-(16) In the Page Editor of the object page, click
+(16) In the Page Editor of the Object Page, click
 ![](./images/image24.png)
 
 ![SAP Business Application Studio - Google
@@ -114,12 +114,12 @@ Chrome](./images/image23.png)
 ![SAP Business Application Studio - Google
 Chrome](./images/image25.png)
 
-(18) Refresh the app preview browser tab. Each object page section is
+(18) Refresh the app preview browser tab. Each Object Page section is
 now displayed in a separate tab.
 
 ![](./images/image27.png)
 
-Tab based layout helps to reduce the need for scrolling the page in case of many object page sections.\
+Tab based layout helps to reduce the need for scrolling the page in case of many Object Page sections.\
 In the sample scenario there are currently only 2 content sections, so you can switch back to page based section layout.
 
 ## Summary

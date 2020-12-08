@@ -4,7 +4,7 @@ In this exercise, we will add a custom page to the app.
 
 ## Exercise 4.1 Copy Over the Sample Custom Page
 
-With the SAP Fiori tool **Page Map**, you can add additional object pages and custom pages to your app.\
+With the SAP Fiori tool **Page Map**, you can add additional Object Pages and custom pages to your app.\
 For custom pages, you have the option of having new custom view controller artifacts generated,\
 or, as we will do in this exercise, integrate an existing custom view in the navigation flow.\
 For this, we will copy the sample artifacts to the webapp folder of the app.
@@ -29,7 +29,7 @@ Open the dropdown list **Select Page Type**.\
 
 ![](./images/image8.png)
 
-(6) We want to navigate to the custom page from the table **Incident Flow** shown on the object page.\
+(6) We want to navigate to the custom page from the table **Incident Flow** shown on the Object Page.\
  Open the **Navigation** dropdown list.
 ![](./images/image10.png)
 
@@ -69,7 +69,7 @@ The custom page is opened to the right.\
 
 The right page column is expanded. \
 (15) The custom page title shows the process step title from the selected item of table Incident Process Flow via context model binding.\
-(16) As the object page, the custom page offers the expand/collapse buttons for the flexible column layout.
+(16) As the Object Page, the custom page offers the expand/collapse buttons for the flexible column layout.
 
 ![](./images/image25.png)
 

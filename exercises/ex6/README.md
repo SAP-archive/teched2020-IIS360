@@ -10,7 +10,7 @@ In such a case, you can assign a different shortcut in SAP Business Application 
 
 ## Exercise 6.1 Adding a Field Group
 
-After completing these steps you will have added a new content section to the object page.\
+After completing these steps you will have added a new content section to the Object Page.\
 You will use annotation **FieldGroup** which represents a collection of different types of data fields.\
 The field group annotation definition with the link to the different data field representation options can be found [here](https://github.com/SAP/odata-vocabularies/blob/master/vocabularies/UI.md#FieldGroupType).
 
@@ -77,7 +77,7 @@ FieldGroup #Admin: {
 
 ## Exercise 6.2 Adding a Reference Facet Annotation
 
-The different sections of the object pages content area are defined by so called **reference facet** annotations.\
+The different sections of the Object Pages content area are defined by so called **reference facet** annotations.\
 You can group several reference facets in so called **collection facet** annotations.\
 You will now add the field group **#Admin** you just created by referring to in a new reference facet inside the  collection facet **IncidentOverviewFacet**.
 
@@ -120,13 +120,13 @@ The full annotation:
 
 Make sure that all changes are saved and that the service is running (Terminal command **cds w**).\
 Switch to the preview browser tab and refresh.\
-(15) On the object page, new section **'Admin Data'** is shown inside the collection facet **Incident Overview**.
+(15) On the Object Page, new section **'Admin Data'** is shown inside the collection facet **Incident Overview**.
 
 ![](./images/image21.png)
 
 ## Exercise 6.3 Adding a new Table Column with Criticality Highlighting
 
-In this exercise, you will add an additional column to table **Incident Flow** shown on the object page.\
+In this exercise, you will add an additional column to table **Incident Flow** shown on the Object Page.\
 Tables are defined by a so called **lineItem annotation**, representing a collection of different kinds of data field annotations.\
 Each data field annotation refers to a property of the annotated service entity, representing a piece of data.\
 An overview of the different data representation options can be found [here](https://github.com/SAP/odata-vocabularies/blob/master/vocabularies/UI.md#DataFieldAbstract).\
@@ -172,7 +172,7 @@ The full annotation:
 ```
 
 Switch to the preview browser tab and refresh.\
-(21) On the object page, A new column **Process Step Status** is shown
+(21) On the Object Page, A new column **Process Step Status** is shown
 in the table **Incident Process Flow**.
 
 ![](./images/image31.png)

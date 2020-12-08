@@ -2,7 +2,7 @@ using IncidentService as service from '../srv/incidentservice';
 using from '../srv/common';
 
 annotate service.Incidents with @(UI : {
-    //basic list report annotations
+    //basic List Report annotations
     //the presentation variant defines a per default ascending sorting for the LR table
     //https://github.com/SAP/odata-vocabularies/blob/master/vocabularies/Common.md#SortOrderType
     PresentationVariant                  : {
@@ -61,7 +61,7 @@ annotate service.Incidents with @(UI : {
         Title          : {Value : title}
     },
 
-    //Facets for additional object header information (shown in the object page header)
+    //Facets for additional object header information (shown in the Object Page header)
     HeaderFacets                         : [{
         $Type  : 'UI.ReferenceFacet',
         Target : '@UI.FieldGroup#HeaderGeneralInformation'
@@ -113,7 +113,7 @@ annotate service.Incidents with @(UI : {
 
     //end of field group enhancement
 
-    //object page content area is organized by facets referring to e.g. fieldgroup and lineItem annotations
+    //Object Page content area is organized by facets referring to e.g. fieldgroup and lineItem annotations
     //https://github.com/SAP/odata-vocabularies/blob/master/vocabularies/UI.md#Facet
     Facets                               : [
     {
@@ -139,7 +139,7 @@ annotate service.Incidents with @(UI : {
         //end of reference facet enhancement
         ]
     },
-    //this facet shows a table on the object page by referring to a lineItem annotation via association incidentFlow
+    //this facet shows a table on the Object Page by referring to a lineItem annotation via association incidentFlow
     //the referred LineItem annotation definition for entity IncidentFlow is defined below
     {
         $Type         : 'UI.ReferenceFacet',

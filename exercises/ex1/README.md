@@ -116,17 +116,17 @@ You can use the selection fields in order to set a filter. If collapsed, you can
 
 ![](./images/image25.png)
 
-(23) Click on a list item to navigate to the object page.
+(23) Click on a list item to navigate to the Object Page.
 
 ![](./images/image27.png)
 
 
-On the object page, you can click **Edit** which creates a draft version of the displayed object and sets the UI to edit mode.
+On the Object Page, you can click **Edit** which creates a draft version of the displayed object and sets the UI to edit mode.
 
 ![](./images/image28.png)
 
-Changing input field values will automatically update the draft when input field focus is changed, or when you navigate back to the list report.\
-The draft is saved back to the active instance by pressing **Save** on the bottom of the object page.
+Changing input field values will automatically update the draft when input field focus is changed, or when you navigate back to the List Report.\
+The draft is saved back to the active instance by pressing **Save** on the bottom of the Object Page.
 
 ![](./images/image28a.png)
 
