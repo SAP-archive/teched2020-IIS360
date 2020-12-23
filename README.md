@@ -1,5 +1,7 @@
 # IIS360 - Simplify Development of SAP Fiori Apps with OData V4
 
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/teched2020-IIS360)](https://api.reuse.software/info/github.com/SAP-samples/teched2020-IIS360)
+
 ## Description
 
 This repository contains the material for the SAP TechEd 2020 session\
