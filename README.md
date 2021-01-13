@@ -20,7 +20,6 @@ There are no special requirements to follow the exercises in this repository.
 ## Exercises
 
 - [Getting Started - Setting up your Development Environment](exercises/ex0#getting-started---setting-up-your-development-environment)
-  - [Accessing SAP Business Application Studio (TechEd 2020 Live Workshop Registered Participants Only)](exercises/ex0#accessing-sap-business-application-studio-teched-2020-live-workshop-registered-participants-only)
   - [Setting up SAP Business Application Studio in an SAP Cloud Platform Trial Account](exercises/ex0#setting-up-sap-business-application-studio-in-an-sap-cloud-platform-trial-account)
     - [New Trial Users](exercises/ex0#new-trial-users)
     - [Existing Trial Users](exercises/ex0#existing-trial-users)
