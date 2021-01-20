@@ -8,8 +8,8 @@ For this you will make usage of the SAP Fiori tools Application Generator.
 
 (1) In SAP Business Application Studio, invoke the Command Palette\
 (View -\>Find Command... or ctrl+shift+p(Win)/cmd+shift+p(Mac))\
-and type **yeoman** in the search field.\
-Choose ![](./images/image2.png).
+and type **Fiori: Open Application Generator** in the search field.\
+Choose the list entry.
 
 ![](./images/image1.png)
 
