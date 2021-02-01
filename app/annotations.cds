@@ -3,15 +3,6 @@ using from '../srv/common';
 
 annotate service.Incidents with @(UI : {
     //basic List Report annotations
-    //the presentation variant defines a per default ascending sorting for the LR table
-    //https://github.com/SAP/odata-vocabularies/blob/master/vocabularies/Common.md#SortOrderType
-    PresentationVariant                  : {
-        SortOrder      : [{
-            $Type    : 'Common.SortOrderType',
-            Property : priority_code
-        }],
-        Visualizations : ['@UI.LineItem']
-    },
     //the lineItem annotation defines the table columns for UI display of the annotated entity
     //https://github.com/SAP/odata-vocabularies/blob/master/vocabularies/UI.md#LineItem
     //Table columns are defined by building blocks of type DataFieldAbstract
