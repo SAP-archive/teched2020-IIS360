@@ -39,21 +39,21 @@ annotate service.Incidents with {
 };
 
 annotate service.Category with {
-    code @Common : {
+    code @UI.Hidden @Common : {
         Text            : name,
         TextArrangement : #TextOnly
     }    @title :  '{i18n>Category}'
 };
 
 annotate service.Priority with {
-    code @Common : {
+    code @UI.Hidden @Common : {
         Text            : name,
         TextArrangement : #TextOnly
     }    @title :  '{i18n>Priority}'
 };
 
 annotate service.IncidentStatus with {
-    code @Common : {
+    code @UI.Hidden @Common : {
         Text            : name,
         TextArrangement : #TextOnly
     }    @title :  '{i18n>IncidentStatus}'
