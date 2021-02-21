@@ -41,7 +41,7 @@ With it, all personalizations of visible selection fields and table columns can 
 saved as a presentation variant.\
 With the Page Map, you can switch to control level variant management.
 This allows separate management of filter and table variants on the List Report page.\
-(4) In the Page Editor properties for table view, open drop down box **Variant Management** and select **Control**.
+(4) In the Page Editor properties for ListReport, open drop down box **Variant Management** and select **Control**.
 
 ![SAP Business Application Studio - Google
 Chrome](./images/image7.png)
