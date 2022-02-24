@@ -4,8 +4,8 @@
 
 ## Description
 
-This repository contains the material for the SAP TechEd 2020 session\
-**IIS360 - Simplify Development of SAP Fiori Apps with OData V4**.
+The exercises in this repository are deprecated. Please refer to the material for the SAP TechEd 2021 session\
+[IIS160 - Accelerate the Development of SAP Fiori Apps Using SAP Fiori Elements.](https://github.com/SAP-samples/teched2021-IIS160)
 
 ## Overview
 
